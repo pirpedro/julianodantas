@@ -1,0 +1,3 @@
+O projeto spemArti_model é o projeto de modelagem do spemArti. Deve ser importado na ferramenta Rational Software Architect ou equivalente.
+O projeto spemartiproject é um projeto eclipse.
+ 
