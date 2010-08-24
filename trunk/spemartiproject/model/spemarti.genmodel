@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/spemartiproject/src"
+    modelPluginID="spemartiproject" modelName="Spemarti" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>spemarti.ecore</foreignModel>
+  <genPackages prefix="Spemarti" disposableProviderFactory="true" ecorePackage="spemarti.ecore#/">
+    <genClasses ecoreClass="spemarti.ecore#//Image"/>
+    <genClasses image="false" ecoreClass="spemarti.ecore#//SimpleInformationElement"/>
+    <genClasses ecoreClass="spemarti.ecore#//VersionedExtent">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//VersionedExtent/isCheckedOut"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//VersionedExtent/annotation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/versionhistory"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/configuration"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/conflict"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/previousVersion"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/baseVersion"/>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionedExtent/checkOut"/>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionedExtent/checkIn"/>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionedExtent/unCheckOut"/>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionedExtent/lookupByVersionId">
+        <genParameters ecoreParameter="spemarti.ecore#//VersionedExtent/lookupByVersionId/name"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionedExtent/lookupByLabel">
+        <genParameters ecoreParameter="spemarti.ecore#//VersionedExtent/lookupByLabel/label"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionedExtent/delete"/>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionedExtent/createExtent"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//VersionHistory">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionHistory/versions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionHistory/rootVersion"/>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionHistory/delete"/>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionHistory/lookupByLabel">
+        <genParameters ecoreParameter="spemarti.ecore#//VersionHistory/lookupByLabel/label"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//VersionHistory/lookupByVersionId">
+        <genParameters ecoreParameter="spemarti.ecore#//VersionHistory/lookupByVersionId/id"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Version">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//Version/label"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//Version/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//Version/creationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//Version/annotation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Version/previousVersion"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Version/nextVersion"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Version/baseline"/>
+      <genOperations ecoreOperation="spemarti.ecore#//Version/addLabel">
+        <genParameters ecoreParameter="spemarti.ecore#//Version/addLabel/label"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//Version/removeLabel">
+        <genParameters ecoreParameter="spemarti.ecore#//Version/removeLabel/label"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//Version/delete"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Baseline">
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference spemarti.ecore#//Baseline/memberof"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference spemarti.ecore#//Baseline/member"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Baseline/configuration"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Baseline/version"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Configuration">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//Configuration/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Configuration/memberof"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Configuration/member"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Configuration/versionedExtent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Configuration/previousBaseline"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//Configuration/annotation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Configuration/baseline"/>
+      <genOperations ecoreOperation="spemarti.ecore#//Configuration/makeBaseline"/>
+      <genOperations ecoreOperation="spemarti.ecore#//Configuration/getBaselineHistory"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//BaselineHistory"/>
+    <genClasses ecoreClass="spemarti.ecore#//Label"/>
+    <genClasses image="false" ecoreClass="spemarti.ecore#//FragmentDefinition"/>
+    <genClasses image="false" ecoreClass="spemarti.ecore#//WorkProductDefinition"/>
+    <genClasses ecoreClass="spemarti.ecore#//Diagram">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Diagram/image"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="spemarti.ecore#//ComplexInformationElement"/>
+    <genClasses ecoreClass="spemarti.ecore#//Question">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference spemarti.ecore#//Question/asks"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference spemarti.ecore#//Question/answers"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Text"/>
+    <genClasses ecoreClass="spemarti.ecore#//List">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//List/isLabeled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//List/isOrdered"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//List/isEnumerated"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//List/contents"/>
+      <genOperations ecoreOperation="spemarti.ecore#//List/orderByAZ"/>
+      <genOperations ecoreOperation="spemarti.ecore#//List/orderByZA"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Matrix">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Matrix/header"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Matrix/lines"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Table">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Table/matrixes"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Group">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Group/group"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Group/group2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Group/childs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference spemarti.ecore#//Group/internalContents"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Workspace">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//Workspace/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//Workspace/annotation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference spemarti.ecore#//Workspace/versionedExtent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference spemarti.ecore#//Workspace/configuration"/>
+      <genOperations ecoreOperation="spemarti.ecore#//Workspace/copy">
+        <genParameters ecoreParameter="spemarti.ecore#//Workspace/copy/workspace"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//Workspace/restore">
+        <genParameters ecoreParameter="spemarti.ecore#//Workspace/restore/version"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//Workspace/update">
+        <genParameters ecoreParameter="spemarti.ecore#//Workspace/update/version"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//Workspace/merge">
+        <genParameters ecoreParameter="spemarti.ecore#//Workspace/merge/version"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//Workspace/lookupByVersionHistory">
+        <genParameters ecoreParameter="spemarti.ecore#//Workspace/lookupByVersionHistory/versionHistory"/>
+      </genOperations>
+      <genOperations ecoreOperation="spemarti.ecore#//Workspace/getVersionSet"/>
+      <genOperations ecoreOperation="spemarti.ecore#//Workspace/getCheckedOutVersionSet"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Session">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Session/workspace"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//ContainerDefinition"/>
+    <genClasses ecoreClass="spemarti.ecore#//ArtifactDefinition"/>
+  </genPackages>
+</genmodel:GenModel>
