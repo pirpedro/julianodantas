@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_JZtoU64HEd-RkJJJ0t-iKw" name="spemarti">
+  <packageImport xmi:id="_JZtoVK4HEd-RkJJJ0t-iKw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZtoVa4HEd-RkJJJ0t-iKw" name="Image">
+    <generalization xmi:id="_JZtoVq4HEd-RkJJJ0t-iKw" general="_JZtoXa4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZtoV64HEd-RkJJJ0t-iKw" name="Diagram">
+    <ownedComment xmi:id="_JZtoWK4HEd-RkJJJ0t-iKw" annotatedElement="_JZtoV64HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Diagram&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>Diagram&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação Diagrama.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Diagram&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de diagrama&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>como um tipo complexo de informação no metamodelo.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>image:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>Image&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, esta associação representa a ligação entre um&#xD;
+    diagrama e sua imagem.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Artefatos de Software possuem formas&#xD;
+    de representação de conteúdo através&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>de diagramas. Estes diagramas servem para representar o conhecimento necessários&#xD;
+    através&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>de imagens, muitas vezes exemplificado algo que foi descrito anteriormente. O conceito&#xD;
+    de&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>diagrama foi modelado através da metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>Diagram&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, que define um relacionamento para&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>armazenar a imagem que ele representa.&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_JZtoWa4HEd-RkJJJ0t-iKw" general="_JZuPAK4HEd-RkJJJ0t-iKw"/>
+    <ownedAttribute xmi:id="_JZtoWq4HEd-RkJJJ0t-iKw" name="image" visibility="public" type="_JZtoVa4HEd-RkJJJ0t-iKw" aggregation="shared" association="_JZtoYa4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZtoW64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZtoXK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZtoXa4HEd-RkJJJ0t-iKw" name="SimpleInformationElement" isAbstract="true">
+    <ownedComment xmi:id="_JZtoXq4HEd-RkJJJ0t-iKw" annotatedElement="_JZtoXa4HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>Simple Information Element&lt;/font> &lt;font&#xD;
+    face=&quot;Times New Roman&quot;>é uma metaclasse abstrata para generalizar&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>qualquer elemento que modele o conceito de Tipo de Informação e que utilize apenas&#xD;
+    os&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>tipos primitivos definidos através de&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>UML&#xD;
+    DataType&lt;/font>&lt;/i> &lt;font face=&quot;Times New Roman&quot;>(Object Management Group, 2007b).&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Independente do Processo de Software&#xD;
+    escolhido, algumas estruturas de informação&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>são genéricamente utilzados. Conforme existem diversos tipos de informações, o&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Courier&quot;>SimpleInformationElement&lt;/font> &lt;font face=&quot;Times New Roman&quot;>determina os tipos mais simples que&#xD;
+    possam existir, desde&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>que sejam independentes de processo e utilizem apenas tipos de dados definidos&#xD;
+    previamente&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>pela&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>UML DataType&lt;/font>&lt;/i> &lt;font&#xD;
+    face=&quot;Times New Roman&quot;>(i.e.&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>Boolean&lt;/font>&lt;/i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>,&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>Integer&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>,&lt;/font>&#xD;
+    &lt;i>&lt;font face=&quot;Times New Roman&quot;>String&lt;/font>&lt;/i> &lt;font face=&quot;Times New Roman&quot;>e&lt;/font> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>UnlimitedNatural&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>).&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_JZtoX64HEd-RkJJJ0t-iKw" general="_JZuPSa4HEd-RkJJJ0t-iKw"/>
+    <generalization xmi:id="_JZtoYK4HEd-RkJJJ0t-iKw" general="_JZvdga4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZtoYa4HEd-RkJJJ0t-iKw" memberEnd="_JZtoWq4HEd-RkJJJ0t-iKw _JZtoYq4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZtoYq4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZtoV64HEd-RkJJJ0t-iKw" association="_JZtoYa4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZuPAK4HEd-RkJJJ0t-iKw" name="ComplexInformationElement" isAbstract="true">
+    <ownedComment xmi:id="_JZuPAa4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPAK4HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>ComplexInformationElement&lt;/font> &lt;font&#xD;
+    face=&quot;Times New Roman&quot;>é uma metaclasse abstrata para generalizar&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>qualquer elemento que modele o conceito de Tipo de Informação e que utilize os&#xD;
+    tipos&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>primitivos definidos através de&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>UML&#xD;
+    DataType&lt;/font>&lt;/i> &lt;font face=&quot;Times New Roman&quot;>e também os tipos simples modelads através da&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>metaclasse&lt;/font> &lt;font face=&quot;Courier&quot;>SimpleInformation Element&lt;/font>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;strong>Generalização:&lt;/strong>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;CMSY10&quot;>&lt;strong>•&lt;/strong>&lt;/font> &lt;strong>&lt;font&#xD;
+    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>SimpleInformationElement&lt;/font>&lt;/strong> &lt;font&#xD;
+    face=&quot;Times New Roman&quot;>&lt;strong>especializando&lt;/strong>&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>o conceito de tipo simples de informação para tipos&#xD;
+    complexos no metamodelo.&lt;/strong>&lt;/font>&lt;/font>&#xD;
+&lt;/p>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;br />&#xD;
+&lt;/font>&lt;/font>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>&lt;strong>Semântica:&lt;/strong>&lt;/font> &lt;font face=&quot;Times New Roman&quot;>Conforme a necessidade de&#xD;
+    divisão entre os diversos tipos de estruturas de&lt;/font>&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>informação existentes, a&#xD;
+    metaclasse&lt;/strong>&lt;/font> &lt;font face=&quot;Courier&quot;>&lt;strong>ComplexInformationElement&lt;/strong>&lt;/font> &lt;font&#xD;
+    face=&quot;Times New Roman&quot;>&lt;strong>serve como superclasse&lt;/strong>&lt;/font>&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>genérica dos tipos&#xD;
+    complexos. Esta metaclasse torna os conceitos definidos em C.3.4&lt;/strong>&lt;/font>&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>mais especializados,&#xD;
+    permitindo que haja relacionamento entre os tipos simples, formando assim&lt;/strong>&lt;/font>&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>estruturas complexas de&#xD;
+    informação.&lt;/strong>&lt;/font>&lt;/font>&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_JZuPAq4HEd-RkJJJ0t-iKw" general="_JZtoXa4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZuPA64HEd-RkJJJ0t-iKw" name="Question">
+    <ownedComment xmi:id="_JZuPBK4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPA64HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Question&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>Question&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação “pergunta x&#xD;
+    respostas”,&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>ou seja, define questões.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Question&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito questão&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>como um tipo complexo de informação no metamodelo.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>asks:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>Text&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, utilizado para criar as perguntas a serem&#xD;
+    feitas;&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>answers:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>Text&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, utilizado para incluir as respostas&#xD;
+    recebidas.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Informações primodiais para a&#xD;
+    construção de aplicações são geralmente adquiridas&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>no momento em que se entrevista um&lt;/font> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>stakeholder&lt;/font>&lt;/i> &lt;font face=&quot;Times New Roman&quot;>ou se questiona um cliente&#xD;
+    específico.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>Tais informações são encontradas a medida que se obtem as respostas a alguma pergunta&#xD;
+    feita.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>De um modo geral, é possível observar que um fato bastante comum é documentar&#xD;
+    perguntas&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>importantes, assim como dúvidas existentes durante o desenvolvimento, assim como as&#xD;
+    respostas&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>obtidas. Diante da necessidade de possuir este tipo de informação, em nosso&#xD;
+    metamodelo,&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>este conceito é definido pela metaclasse&lt;/font> &lt;font face=&quot;Courier&quot;>Question&lt;/font>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_JZuPBa4HEd-RkJJJ0t-iKw" general="_JZuPAK4HEd-RkJJJ0t-iKw"/>
+    <ownedAttribute xmi:id="_JZuPBq4HEd-RkJJJ0t-iKw" name="asks" visibility="public" type="_JZuPJq4HEd-RkJJJ0t-iKw" aggregation="composite" association="_JZuPKa4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPB64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPCK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPCa4HEd-RkJJJ0t-iKw" name="answers" visibility="public" type="_JZuPJq4HEd-RkJJJ0t-iKw" aggregation="composite" association="_JZuPK64HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPCq4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPC64HEd-RkJJJ0t-iKw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZuPDK4HEd-RkJJJ0t-iKw" name="List">
+    <ownedComment xmi:id="_JZuPDa4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPDK4HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>List&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação Lista, reponsável por&#xD;
+    agrupar&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>os elementos sequencialmente.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>List&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de lista como&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>um tipo complexo de informação no metamodelo.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Atributos:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>isLabeled&lt;/font>&lt;/b>&lt;font face=&quot;Times New Roman&quot;>:&lt;/font>&#xD;
+    &lt;i>&lt;font face=&quot;Times New Roman&quot;>Boolean&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, define se os elementos da lista&#xD;
+    possuirão rótulos adicionais;&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>isOrderer&lt;/font>&lt;/b>&lt;font face=&quot;Times New Roman&quot;>:&lt;/font>&#xD;
+    &lt;i>&lt;font face=&quot;Times New Roman&quot;>Boolean&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, define se os elementos da lista serão&#xD;
+    ordenados;&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>isEnumerated&lt;/font>&lt;/b>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>:&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>Boolean&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, define&#xD;
+    se os elementos da lista possuirão numeração identificadora&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>com início em 1;&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>contents:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>SimpleInformationElement&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, conforme a necessidade de&#xD;
+    agrupar outros tipos de&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>informação, essa associação permite inserir tipos de informação na lista.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Operações:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Times New Roman&quot;>orderByAZ(), ordena todos os elementos do conteúdo da lista,&#xD;
+    do menor para o maior&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>elemento. Caso sejam do tipo&lt;/font> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>Integer&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, será respeitada a ordem numérica. Caso&#xD;
+    sejam&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;i>&lt;font face=&quot;Times New Roman&quot;>String&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, será respeitada a ordem&#xD;
+    alfabética.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Times New Roman&quot;>orderByZA(), ordena todos os elementos do conteúdo da lista,&#xD;
+    do maior para o menor&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>elemento. Caso sejam do tipo&lt;/font> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>Integer&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, será respeitada a ordem numérica invertida.&#xD;
+    Caso&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>sejam&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>String&lt;/font>&lt;/i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>, será respeitada a ordem alfabética invertida.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Algumas&#xD;
+    informações são organizadas em forma de listas. Num contexto geral,&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>listas são bastante utilizadas, pode-se perceber seu uso em:&#xD;
+    aplicações bancárias, onde são&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>utilizadas para expressar itens de forma organizada,&#xD;
+    geralmente com base em alguma ordem;&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>e na própria lingua portuguesa, que utiliza listas para&#xD;
+    permitir enumerações e itenizações de&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>descrições ou elementos existentes, geralmente destacados&#xD;
+    através de rótulos e enumerações.&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>Nesse sentido, a metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>List&lt;/font> &lt;font face=&quot;Times New Roman&quot;>é responsável por permitir a criação de conjuntos de tipos&#xD;
+    de&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>informação para uma melhor organização desse tipos, atuando&#xD;
+    como um agrupador sequencial.&lt;/font>&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_JZuPDq4HEd-RkJJJ0t-iKw" general="_JZuPAK4HEd-RkJJJ0t-iKw"/>
+    <ownedAttribute xmi:id="_JZuPD64HEd-RkJJJ0t-iKw" name="isLabeled" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPEK4HEd-RkJJJ0t-iKw" name="isOrdered" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPEa4HEd-RkJJJ0t-iKw" name="isEnumerated" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPEq4HEd-RkJJJ0t-iKw" name="contents" visibility="public" type="_JZtoXa4HEd-RkJJJ0t-iKw" aggregation="shared" association="_JZuPRa4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPE64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPFK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JZuPFa4HEd-RkJJJ0t-iKw" name="orderByAZ" visibility="public"/>
+    <ownedOperation xmi:id="_JZuPFq4HEd-RkJJJ0t-iKw" name="orderByZA" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZuPF64HEd-RkJJJ0t-iKw" name="Matrix">
+    <ownedComment xmi:id="_JZuPGK4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPF64HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Matrix&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>Matrix&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação com base em matrizes e&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>tabulação.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Matrix&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de matrizes&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>como um tipo complexo de informação no metamodelo.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>header:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>List&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, utilizado para criar o cabeçalho da matriz caso&#xD;
+    necessário;&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>lines:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>List&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, utilizado para incluir as linhas da matriz ou&#xD;
+    tabulação.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Algumas informações são organizadas&#xD;
+    em forma de matrizes, conforme necessidade&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>de organizá-las em formatos tabulares. Num contexto mais específico podemos citar&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>seu uso em situações como por exemplo do RUP, que define algumas das suas&#xD;
+    informações&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>em forma de tabela, tais como: perfil do&lt;/font> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>stakeholder&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, levantamento de riscos e problemas a&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>serem enfrentados. De um modo geral, podemos também inserir neste mesmo contexto,&#xD;
+    documentos&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>feitos através do&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>Microsoft Excel&lt;/font>&lt;/i> &lt;font&#xD;
+    size=&quot;1&quot; face=&quot;Times New Roman&quot;>&lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;>TM&lt;/font>&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, o&#xD;
+    qual se caracteriza por ter uma planilha que se&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>constitui em um matrizes. Diante da necessidade de possuir este tipo de informação, em&#xD;
+    nosso&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>metamodelo, este conceito é definido pela metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>Matrix&lt;/font>&lt;font face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_JZuPGa4HEd-RkJJJ0t-iKw" general="_JZuPAK4HEd-RkJJJ0t-iKw"/>
+    <ownedAttribute xmi:id="_JZuPGq4HEd-RkJJJ0t-iKw" name="header" visibility="private" type="_JZuPDK4HEd-RkJJJ0t-iKw" association="_JZuPPa4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPG64HEd-RkJJJ0t-iKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPHK4HEd-RkJJJ0t-iKw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPHa4HEd-RkJJJ0t-iKw" name="lines" visibility="public" type="_JZuPDK4HEd-RkJJJ0t-iKw" aggregation="shared" association="_JZuPQa4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPHq4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPH64HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZuPIK4HEd-RkJJJ0t-iKw" name="Table">
+    <ownedComment xmi:id="_JZuPIa4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPIK4HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Table&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>Table&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação Tabela.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Table&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>Matrix&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de tabela como um tipo de Matrix,&#xD;
+    sendo&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>um tipo complexo no metamodelo.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>matrixes:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>Matrix&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, define o conjunto de matrizes existentes em uma&#xD;
+    tabela;&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Assim como existem informações que&#xD;
+    são organizadas em matrizes, num contexto&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>mais específico existem também informações organizadas de tal forma, que se parecem&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>com um conjunto de matrizes. Documentos feitos através do&lt;/font> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>Microsoft Excel&lt;/font>&lt;/i> &lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;>&lt;font size=&quot;1&quot;&#xD;
+    face=&quot;Times New Roman&quot;>TM&lt;/font>&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, o qual se&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>caracteriza por ter uma planilha que se constitui em um matrizes, desta forma, nota-se que&#xD;
+    um&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>conjunto de matrizes pode permitir a formação de uma tabela. Diante da necessidade de&#xD;
+    possuir&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>este tipo de informação, em nosso metamodelo, este conceito é definido pela&#xD;
+    metaclasse&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Courier&quot;>Tabela&lt;/font>&lt;font face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_JZuPIq4HEd-RkJJJ0t-iKw" general="_JZuPF64HEd-RkJJJ0t-iKw"/>
+    <ownedAttribute xmi:id="_JZuPI64HEd-RkJJJ0t-iKw" name="matrixes" visibility="public" type="_JZuPF64HEd-RkJJJ0t-iKw" aggregation="shared" association="_JZuPLa4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPJK4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPJa4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZuPJq4HEd-RkJJJ0t-iKw" name="Text">
+    <ownedComment xmi:id="_JZuPJ64HEd-RkJJJ0t-iKw" annotatedElement="_JZuPJq4HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Text&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>Text&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação Texto.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Text&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>SimpleInformationElement&lt;/font> &lt;font face=&quot;Times New Roman&quot;>definindo o conceito de texto a um&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>tipo simples de informação no metamodelo.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Atributos:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>value&lt;/font>&lt;/b>&lt;font face=&quot;Times New Roman&quot;>:&lt;/font>&#xD;
+    &lt;i>&lt;font face=&quot;Times New Roman&quot;>String&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, conteúdo do texto a ser&#xD;
+    preenchido.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Artefatos de Software possuem textos&#xD;
+    para representar o conhecimento necessários&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>através de palavras. O conceito de texto foimodelado simplesmente através&#xD;
+    dametaclasse&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Courier&quot;>Text&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, que define um atributo para armazenar o conteúdo a ser&#xD;
+    preenchido.&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_JZuPKK4HEd-RkJJJ0t-iKw" general="_JZtoXa4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZuPKa4HEd-RkJJJ0t-iKw" memberEnd="_JZuPBq4HEd-RkJJJ0t-iKw _JZuPKq4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZuPKq4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPA64HEd-RkJJJ0t-iKw" association="_JZuPKa4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZuPK64HEd-RkJJJ0t-iKw" name="answers" memberEnd="_JZuPCa4HEd-RkJJJ0t-iKw _JZuPLK4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZuPLK4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPA64HEd-RkJJJ0t-iKw" association="_JZuPK64HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZuPLa4HEd-RkJJJ0t-iKw" memberEnd="_JZuPI64HEd-RkJJJ0t-iKw _JZuPLq4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZuPLq4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPIK4HEd-RkJJJ0t-iKw" association="_JZuPLa4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZuPL64HEd-RkJJJ0t-iKw" name="Group">
+    <ownedComment xmi:id="_JZuPMK4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPL64HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Group&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>Group&lt;/font> &lt;font face=&quot;Times New Roman&quot;>organiza outros tipos de informação existente, agindo&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>como um agrupador.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Group&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>List&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de agrupador como um tipo especial de&#xD;
+    lista,&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>sendo um tipo complexo de informação no metamodelo.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>childs:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>Group&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, esta associação define a existência de um&#xD;
+    conjunto sub agrupadores de&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>um agrupador a ser utilizado. Isto permite a criação de agrupadores em árvore, ou&#xD;
+    seja,&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>permite a criação de estruturas de informação agrupadas de forma hierárquica. Desta&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>forma, cada agrupador, ou grupo de informações, pode sempre ser aninhado por outro&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>grupo. Esta associação possui uma restrição em relação aos grupos possíveis, não&#xD;
+    permitindo&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>que um grupo seja filho dele mesmo. Além disso, este atributo não pode agrupar a&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>mesma informação mais de uma vez.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>internalContents:&lt;/font>&lt;/b> &lt;font&#xD;
+    face=&quot;Courier&quot;>SimpleInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, conforme a necessidade de agrupar&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>outros tipos de informação, essa associação permite criar estruturas mais&#xD;
+    complexas,&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>agrupando-as.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>parent:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>Group&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, assim como foi definida a existência de uma&#xD;
+    hierarquia de grupos, ou&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>agrupadores, a partir do atributo&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>childs&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, esta associação permite a identificação de um&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>pai para um conjunto de sub agrupadores. Desta forma, os&#xD;
+    grupos inseridos no conjunto&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>definido pela associação&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>childs&lt;/font> &lt;font face=&quot;Times New Roman&quot;>conseguem identificar a qual grupo estão&#xD;
+    agrupados.&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>Esta associação possui uma restrição em relação a um pai&#xD;
+    possíveis, não permitindo que&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>um grupo seja pai dele própaio.&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Algumas&#xD;
+    informações relevantes são agrupadas através de agrupadores de informações&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>para que o Artefato de Software esteja melhor organizado.&#xD;
+    Essas informações são,&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>em sua maioria, informações relacionadas, que juntas podem&#xD;
+    representam alguma outra informação&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>ainda mais importante, de forma&lt;/font> &lt;i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>ad hoc&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>. Além disso, no contexto de organização&#xD;
+    da&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>informação, muitas vezes a utilização de agrupamentos&#xD;
+    facilita a visualização ou até mesmo&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>o acesso a informação pretendida. O conceito de agrupamento&#xD;
+    foi modelado através da metaclasse&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Courier&quot;>Group&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, que possui relacionamentos&#xD;
+    para armazenar informações tanto internamente, em&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>se tratando de composição de informações, quanto&#xD;
+    externamente, no tocante a agrupamento de&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>diferentes informações relacionadas.&lt;/font>&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_JZuPMa4HEd-RkJJJ0t-iKw" general="_JZuPDK4HEd-RkJJJ0t-iKw"/>
+    <ownedAttribute xmi:id="_JZuPMq4HEd-RkJJJ0t-iKw" name="group" visibility="private" type="_JZuPL64HEd-RkJJJ0t-iKw" association="_JZuPOq4HEd-RkJJJ0t-iKw"/>
+    <ownedAttribute xmi:id="_JZuPM64HEd-RkJJJ0t-iKw" name="group2" visibility="private" type="_JZuPL64HEd-RkJJJ0t-iKw" association="_JZuPOq4HEd-RkJJJ0t-iKw"/>
+    <ownedAttribute xmi:id="_JZuPNK4HEd-RkJJJ0t-iKw" name="childs" visibility="public" type="_JZuPL64HEd-RkJJJ0t-iKw" aggregation="shared" association="_JZuPO64HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPNa4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPNq4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPN64HEd-RkJJJ0t-iKw" name="internalContents" visibility="public" type="_JZtoXa4HEd-RkJJJ0t-iKw" aggregation="composite" association="_JZuPR64HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPOK4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPOa4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZuPOq4HEd-RkJJJ0t-iKw" memberEnd="_JZuPMq4HEd-RkJJJ0t-iKw _JZuPM64HEd-RkJJJ0t-iKw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZuPO64HEd-RkJJJ0t-iKw" memberEnd="_JZuPNK4HEd-RkJJJ0t-iKw _JZuPPK4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZuPPK4HEd-RkJJJ0t-iKw" name="parent" visibility="public" type="_JZuPL64HEd-RkJJJ0t-iKw" association="_JZuPO64HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZuPPa4HEd-RkJJJ0t-iKw" memberEnd="_JZuPGq4HEd-RkJJJ0t-iKw _JZuPPq4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZuPPq4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPF64HEd-RkJJJ0t-iKw" association="_JZuPPa4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPP64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPQK4HEd-RkJJJ0t-iKw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZuPQa4HEd-RkJJJ0t-iKw" memberEnd="_JZuPHa4HEd-RkJJJ0t-iKw _JZuPQq4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZuPQq4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPF64HEd-RkJJJ0t-iKw" association="_JZuPQa4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPQ64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPRK4HEd-RkJJJ0t-iKw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZuPRa4HEd-RkJJJ0t-iKw" memberEnd="_JZuPEq4HEd-RkJJJ0t-iKw _JZuPRq4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZuPRq4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPDK4HEd-RkJJJ0t-iKw" association="_JZuPRa4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZuPR64HEd-RkJJJ0t-iKw" memberEnd="_JZuPN64HEd-RkJJJ0t-iKw _JZuPSK4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZuPSK4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPL64HEd-RkJJJ0t-iKw" association="_JZuPR64HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZuPSa4HEd-RkJJJ0t-iKw" name="VersionedExtent">
+    <ownedComment xmi:id="_JZuPSq4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPSa4HEd-RkJJJ0t-iKw">
+      <body>Represents a MOF Extent for which versioning has been enabled.&#xD;
+Superclasses MOF:Extent</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_JZuPS64HEd-RkJJJ0t-iKw" name="isCheckedOut" visibility="private" isReadOnly="true">
+      <ownedComment xmi:id="_JZuPTK4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPS64HEd-RkJJJ0t-iKw">
+        <body>isCheckedOut, type = Boolean, isReadOnly = true&#xD;
+• A VersionedExtent is modifiable only if isCheckedOut is true.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPTa4HEd-RkJJJ0t-iKw" name="annotation" visibility="private">
+      <ownedComment xmi:id="_JZuPTq4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPTa4HEd-RkJJJ0t-iKw">
+        <body>annotation, type = String, [0..1]&#xD;
+• When isCheckedOut is true, this attribute contains the annotation attribute for the version that will be created when&#xD;
+this VersionedExtent is checked in. If the isCheckedOut is false that attribute does not exist and cannot be written&#xD;
+to.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPT64HEd-RkJJJ0t-iKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPUK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPUa4HEd-RkJJJ0t-iKw" name="versionhistory" visibility="public" type="_JZu2P64HEd-RkJJJ0t-iKw" association="_JZu2X64HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZuPUq4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPUa4HEd-RkJJJ0t-iKw">
+        <body>versionHistory, type = VersionHistory, isReadOnly = true&#xD;
+• The VersionHistory that contains the versions for this VersionedExtent.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPU64HEd-RkJJJ0t-iKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPVK4HEd-RkJJJ0t-iKw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPVa4HEd-RkJJJ0t-iKw" name="conflict" visibility="public" type="_JZu2HK4HEd-RkJJJ0t-iKw" association="_JZu2ZK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZuPVq4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPVa4HEd-RkJJJ0t-iKw">
+        <body>conflict reference, type = Version, [0..*], isReadOnly = false, composite&#xD;
+• These are the conflicts created by a merge. After the client resolves the conflict (by appropriately modifying the&#xD;
+content of the VersionedExtent), the client indicates that the conflict has been resolved by adding the version to the&#xD;
+previousVersion list of the VersionedContext, and removing the version from the conflict list.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPV64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPWK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPWa4HEd-RkJJJ0t-iKw" name="previousVersion" visibility="public" type="_JZu2HK4HEd-RkJJJ0t-iKw" association="_JZu2aK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZuPWq4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPWa4HEd-RkJJJ0t-iKw">
+        <body>previousVersion, type = Version, [1..*], isReadOnly = false&#xD;
+• When isCheckedOut is true, this reference identifies the versions that will be the previousVersion for the version&#xD;
+that will be created when this VersionedExtent is checked in.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPW64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPXK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPXa4HEd-RkJJJ0t-iKw" name="baseVersion" visibility="public" type="_JZu2HK4HEd-RkJJJ0t-iKw" association="_JZu2bK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZuPXq4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPXa4HEd-RkJJJ0t-iKw">
+        <body>baseVersion, type = Version, isReadOnly = true&#xD;
+• The currently selected version for this VersionedExtent. This is the version that this VersionedExtent is currently&#xD;
+based on, but when checked-out, is not necessarily equal to. In particular, the base version of a checked-out&#xD;
+VersionedExtent is the Version content that was started with (i.e., that the current checked-out content is ‘based&#xD;
+on’).</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZuPX64HEd-RkJJJ0t-iKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZuPYK4HEd-RkJJJ0t-iKw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZuPYa4HEd-RkJJJ0t-iKw" name="configuration" visibility="public" type="_JZu2cK4HEd-RkJJJ0t-iKw" association="_JZvdLq4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZuPYq4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPYa4HEd-RkJJJ0t-iKw">
+        <body>configuration, type = Configuration, isReadOnly = true&#xD;
+• The Configuration to which this VersionedExtent belongs.</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JZuPY64HEd-RkJJJ0t-iKw" name="checkOut" visibility="public">
+      <ownedComment xmi:id="_JZuPZK4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPY64HEd-RkJJJ0t-iKw">
+        <body>checkOut () operation, return type = null, isQuery = false&#xD;
+• Allows modifications to be performed on the content of this VersionedExtent.</body>
+      </ownedComment>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZuPZa4HEd-RkJJJ0t-iKw" name="checkIn" visibility="public">
+      <ownedComment xmi:id="_JZuPZq4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPZa4HEd-RkJJJ0t-iKw">
+        <body>checkIn (), return type = Version, isQuery = false&#xD;
+• Creates a new Version object with the current content of this VersionedExtent, disallows modifications to be made&#xD;
+to the content of this VersionedExtent until it is subsequently checked out. This Version is now available to other&#xD;
+Workspaces.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZuPZ64HEd-RkJJJ0t-iKw" name="version" type="_JZu2HK4HEd-RkJJJ0t-iKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZuPaK4HEd-RkJJJ0t-iKw" name="unCheckOut" visibility="public"/>
+    <ownedOperation xmi:id="_JZuPaa4HEd-RkJJJ0t-iKw" name="lookupByVersionId" visibility="public">
+      <ownedComment xmi:id="_JZuPaq4HEd-RkJJJ0t-iKw" annotatedElement="_JZuPaa4HEd-RkJJJ0t-iKw">
+        <body>lookupByVersionId (id : String), return type = Version, [0..1] isQuery = true&#xD;
+• Returns the version, if any, of this VersionedExtent having the specified id.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZuPa64HEd-RkJJJ0t-iKw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_JZuPbK4HEd-RkJJJ0t-iKw" name="version" type="_JZu2HK4HEd-RkJJJ0t-iKw" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2EK4HEd-RkJJJ0t-iKw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2Ea4HEd-RkJJJ0t-iKw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZu2Eq4HEd-RkJJJ0t-iKw" name="lookupByLabel" visibility="public">
+      <ownedComment xmi:id="_JZu2E64HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Eq4HEd-RkJJJ0t-iKw">
+        <body>lookupByLabel (label : String), return type = Version, [0..1], isQuery = true&#xD;
+• Returns the version, if any, of this VersionedExtent having the specified label.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZu2FK4HEd-RkJJJ0t-iKw" name="label">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_JZu2Fa4HEd-RkJJJ0t-iKw" name="version" type="_JZu2HK4HEd-RkJJJ0t-iKw" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2Fq4HEd-RkJJJ0t-iKw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2F64HEd-RkJJJ0t-iKw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZu2GK4HEd-RkJJJ0t-iKw" name="delete" visibility="public">
+      <ownedComment xmi:id="_JZu2Ga4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2GK4HEd-RkJJJ0t-iKw">
+        <body>lookupByLabel (label : String), return type = Version, [0..1], isQuery = true&#xD;
+• Returns the version, if any, of this VersionedExtent having the specified label.</body>
+      </ownedComment>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZu2Gq4HEd-RkJJJ0t-iKw" name="createExtent" visibility="public">
+      <ownedParameter xmi:id="_JZu2G64HEd-RkJJJ0t-iKw" name="versionExtent" type="_JZuPSa4HEd-RkJJJ0t-iKw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZu2HK4HEd-RkJJJ0t-iKw" name="Version">
+    <ownedComment xmi:id="_JZu2Ha4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2HK4HEd-RkJJJ0t-iKw">
+      <body>Each instance of Version is a snapshot of a VersionedExtent.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_JZu2Hq4HEd-RkJJJ0t-iKw" name="label" visibility="private" isReadOnly="true">
+      <ownedComment xmi:id="_JZu2H64HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Hq4HEd-RkJJJ0t-iKw">
+        <body>label, type = Label, multivalued [0..*], isReadOnly = true&#xD;
+• A user assigned string that can be used to identify the version. Several can be applied to one version. Also, version&#xD;
+labels must be unique among all the version labels within the VersionHistory of that version.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2IK4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2Ia4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2Iq4HEd-RkJJJ0t-iKw" name="id" visibility="private" isReadOnly="true">
+      <ownedComment xmi:id="_JZu2I64HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Iq4HEd-RkJJJ0t-iKw">
+        <body>id, type = String, isReadOnly = true&#xD;
+• This attribute is an id for the version that is unique within the VersionHistory of that version.&#xD;
+• The format of the string is implementation-defined.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2JK4HEd-RkJJJ0t-iKw" name="creationDate" visibility="private">
+      <ownedComment xmi:id="_JZu2Ja4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2JK4HEd-RkJJJ0t-iKw">
+        <body>creationDate, type = Long, isReadOnly = true&#xD;
+• Used to record the timestamp when the Version object was created.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2Jq4HEd-RkJJJ0t-iKw" name="annotation" visibility="private">
+      <ownedComment xmi:id="_JZu2J64HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Jq4HEd-RkJJJ0t-iKw">
+        <body>annotation, type = String, [0..1]&#xD;
+• This attribute can contain a description of the version.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2KK4HEd-RkJJJ0t-iKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2Ka4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2Kq4HEd-RkJJJ0t-iKw" name="previousVersion" visibility="public" type="_JZu2HK4HEd-RkJJJ0t-iKw" isOrdered="true" association="_JZu2V64HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2K64HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Kq4HEd-RkJJJ0t-iKw">
+        <body>previousVersion, type = Version, [0..*], isReadOnly = true, inverse = nextVersion&#xD;
+• This refers to the immediately previous version (or versions, in case this Version resulted from a merge). Every&#xD;
+Version that is not the root version of a VersionHistory has at least one previousVersion.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2LK4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2La4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2Lq4HEd-RkJJJ0t-iKw" name="nextVersion" visibility="public" type="_JZu2HK4HEd-RkJJJ0t-iKw" association="_JZu2V64HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2L64HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Lq4HEd-RkJJJ0t-iKw">
+        <body>nextVersion, type = Version, [0..*], isReadOnly = true, inverse = previousVersion&#xD;
+• This refers to ordered subsequent versions.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2MK4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2Ma4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2Mq4HEd-RkJJJ0t-iKw" name="baseline" visibility="public" type="_JZvdaq4HEd-RkJJJ0t-iKw" association="_JZvdgK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2M64HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Mq4HEd-RkJJJ0t-iKw">
+        <body>baseline, type = Baseline, [0..*], isReadOnly = true, inverse = version&#xD;
+• This refers to the Baselines that reference this Version.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2NK4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2Na4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JZu2Nq4HEd-RkJJJ0t-iKw" name="addLabel" visibility="public">
+      <ownedComment xmi:id="_JZu2N64HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Nq4HEd-RkJJJ0t-iKw">
+        <body>addLabel (newLabel: Label) operation, return type = void&#xD;
+• Adds a label to the version. If that label currently appears on another version in the version history of this Version,&#xD;
+it is automatically removed from that other version. See the label attribute for further details.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZu2OK4HEd-RkJJJ0t-iKw" name="label">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZu2Oa4HEd-RkJJJ0t-iKw" name="removeLabel" visibility="public">
+      <ownedComment xmi:id="_JZu2Oq4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Oa4HEd-RkJJJ0t-iKw">
+        <body>removeLabel (oldLabel: Label) operation, return type = void&#xD;
+• Removes the indicated label from the version. See the label attribute for further details.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZu2O64HEd-RkJJJ0t-iKw" name="label" type="_JZu2Pq4HEd-RkJJJ0t-iKw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZu2PK4HEd-RkJJJ0t-iKw" name="delete" visibility="public">
+      <ownedComment xmi:id="_JZu2Pa4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2PK4HEd-RkJJJ0t-iKw">
+        <body>delete (), return type = void&#xD;
+• Removes the version object. This method also fixes up the links in the version graph so that it is still valid.</body>
+      </ownedComment>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZu2Pq4HEd-RkJJJ0t-iKw" name="Label"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZu2P64HEd-RkJJJ0t-iKw" name="VersionHistory">
+    <ownedComment xmi:id="_JZu2QK4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2P64HEd-RkJJJ0t-iKw">
+      <body>A VersionHistory contains all versions of a given VersionedExtent.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_JZu2Qa4HEd-RkJJJ0t-iKw" name="versions" visibility="public" type="_JZu2HK4HEd-RkJJJ0t-iKw" aggregation="composite" association="_JZu2WK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2Qq4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Qa4HEd-RkJJJ0t-iKw">
+        <body>versions, type = Version, [1..*], isReadOnly = true&#xD;
+• This refers to all versions in this VersionHistory, including the rootVersion. Ordering of the versions is defined by&#xD;
+the previousVersion/nextVersion relations.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2Q64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2RK4HEd-RkJJJ0t-iKw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2Ra4HEd-RkJJJ0t-iKw" name="rootVersion" visibility="public" type="_JZu2HK4HEd-RkJJJ0t-iKw" association="_JZu2W64HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2Rq4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Ra4HEd-RkJJJ0t-iKw">
+        <body>rootVersion, type = Version, isReadOnly = true&#xD;
+• This refers to the initial version of the VersionedExtent. The rootVersion has no previousVersion. All other&#xD;
+versions have at least one previousVersion.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2R64HEd-RkJJJ0t-iKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2SK4HEd-RkJJJ0t-iKw" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JZu2Sa4HEd-RkJJJ0t-iKw" name="delete" visibility="public">
+      <ownedComment xmi:id="_JZu2Sq4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Sa4HEd-RkJJJ0t-iKw">
+        <body>delete (), return type = void&#xD;
+• Removes the VersionHistory object. This method also deletes all Versions in the VersionHistory.</body>
+      </ownedComment>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZu2S64HEd-RkJJJ0t-iKw" name="lookupByLabel" visibility="public">
+      <ownedComment xmi:id="_JZu2TK4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2S64HEd-RkJJJ0t-iKw">
+        <body>lookupByLabel (label : Label), return type = Version, [0..1], isQuery = true&#xD;
+• Returns the version, if any, in this VersionedHistory having the specified label.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZu2Ta4HEd-RkJJJ0t-iKw" name="label">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_JZu2Tq4HEd-RkJJJ0t-iKw" name="version" type="_JZu2HK4HEd-RkJJJ0t-iKw" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2T64HEd-RkJJJ0t-iKw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2UK4HEd-RkJJJ0t-iKw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZu2Ua4HEd-RkJJJ0t-iKw" name="lookupByVersionId" visibility="public">
+      <ownedComment xmi:id="_JZu2Uq4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Ua4HEd-RkJJJ0t-iKw">
+        <body>lookupByVersionId (id : String), return type = Version, [0..1], isQuery = true&#xD;
+• Returns the Version, if any, in this VersionHistory having the specified id.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZu2U64HEd-RkJJJ0t-iKw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_JZu2VK4HEd-RkJJJ0t-iKw" name="version" type="_JZu2HK4HEd-RkJJJ0t-iKw" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2Va4HEd-RkJJJ0t-iKw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2Vq4HEd-RkJJJ0t-iKw"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZu2V64HEd-RkJJJ0t-iKw" name="versionHasLineage" memberEnd="_JZu2Kq4HEd-RkJJJ0t-iKw _JZu2Lq4HEd-RkJJJ0t-iKw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZu2WK4HEd-RkJJJ0t-iKw" memberEnd="_JZu2Qa4HEd-RkJJJ0t-iKw _JZu2Wa4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZu2Wa4HEd-RkJJJ0t-iKw" name="versionHistory" visibility="public" type="_JZu2P64HEd-RkJJJ0t-iKw" isReadOnly="true" association="_JZu2WK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2Wq4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2Wa4HEd-RkJJJ0t-iKw">
+        <body>versionHistory, type = VersionHistory, isReadOnly = true&#xD;
+• The VersionHistory for this Version.</body>
+      </ownedComment>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZu2W64HEd-RkJJJ0t-iKw" memberEnd="_JZu2Ra4HEd-RkJJJ0t-iKw _JZu2XK4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZu2XK4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZu2P64HEd-RkJJJ0t-iKw" association="_JZu2W64HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2Xa4HEd-RkJJJ0t-iKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2Xq4HEd-RkJJJ0t-iKw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZu2X64HEd-RkJJJ0t-iKw" memberEnd="_JZuPUa4HEd-RkJJJ0t-iKw _JZu2YK4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZu2YK4HEd-RkJJJ0t-iKw" name="versionedExtents" visibility="private" type="_JZuPSa4HEd-RkJJJ0t-iKw" association="_JZu2X64HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2Ya4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2YK4HEd-RkJJJ0t-iKw">
+        <body>versionedExtents, type = VersionedExtents, [0..*], isReadOnly = true, inverse = configuration&#xD;
+• The VersionedExtents that belong to this Configuration.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2Yq4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2Y64HEd-RkJJJ0t-iKw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZu2ZK4HEd-RkJJJ0t-iKw" memberEnd="_JZuPVa4HEd-RkJJJ0t-iKw _JZu2Za4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZu2Za4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPSa4HEd-RkJJJ0t-iKw" association="_JZu2ZK4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2Zq4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2Z64HEd-RkJJJ0t-iKw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZu2aK4HEd-RkJJJ0t-iKw" memberEnd="_JZuPWa4HEd-RkJJJ0t-iKw _JZu2aa4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZu2aa4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPSa4HEd-RkJJJ0t-iKw" association="_JZu2aK4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2aq4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2a64HEd-RkJJJ0t-iKw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZu2bK4HEd-RkJJJ0t-iKw" memberEnd="_JZuPXa4HEd-RkJJJ0t-iKw _JZu2ba4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZu2ba4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZuPSa4HEd-RkJJJ0t-iKw" association="_JZu2bK4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2bq4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2b64HEd-RkJJJ0t-iKw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZu2cK4HEd-RkJJJ0t-iKw" name="Configuration">
+    <ownedComment xmi:id="_JZu2ca4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2cK4HEd-RkJJJ0t-iKw">
+      <body>Selects a Baseline for the Workspace and determines the other Configurations that are the members of this Configuration.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_JZu2cq4HEd-RkJJJ0t-iKw" name="id" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2c64HEd-RkJJJ0t-iKw" name="member-of" visibility="public" type="_JZu2cK4HEd-RkJJJ0t-iKw" association="_JZvdKq4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2dK4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2c64HEd-RkJJJ0t-iKw">
+        <body>member-of, type = Configuration, [0..*], isReadOnly = false, inverse = member&#xD;
+• Configurations which logically include this Configuration.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2da4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2dq4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2d64HEd-RkJJJ0t-iKw" name="member" visibility="public" type="_JZu2cK4HEd-RkJJJ0t-iKw" association="_JZvdKq4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2eK4HEd-RkJJJ0t-iKw" annotatedElement="_JZu2d64HEd-RkJJJ0t-iKw">
+        <body>member, type = Configuration, [0..*], isReadOnly = true, inverse = member-of&#xD;
+• Configurations which are logically included in this Configuration.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2ea4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2eq4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2e64HEd-RkJJJ0t-iKw" name="versionedExtent" visibility="public" type="_JZuPSa4HEd-RkJJJ0t-iKw" association="_JZvdLq4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2fK4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZu2fa4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZu2fq4HEd-RkJJJ0t-iKw" name="previousBaseline" visibility="public" type="_JZvdaq4HEd-RkJJJ0t-iKw" association="_JZvdfa4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZu2f64HEd-RkJJJ0t-iKw" annotatedElement="_JZu2fq4HEd-RkJJJ0t-iKw">
+        <body>previousBaseline, type = Baseline, [1..*], isReadOnly = true&#xD;
+• This reference identifies the baselines that will be the previousVersion for the baseline that will be created when&#xD;
+makeBaseline is applied to this Configuration.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZu2gK4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdIK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZvdIa4HEd-RkJJJ0t-iKw" name="baseline" visibility="public" type="_JZvdaq4HEd-RkJJJ0t-iKw" association="_JZvdf64HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZvdIq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdIa4HEd-RkJJJ0t-iKw">
+        <body>baseline, type = Baseline, [1..1], isReadOnly = true&#xD;
+• The Baseline that is used by this Configuration to select a set of Versions.</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZvdI64HEd-RkJJJ0t-iKw" name="annotation" visibility="private">
+      <ownedComment xmi:id="_JZvdJK4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdI64HEd-RkJJJ0t-iKw">
+        <body>annotation, type = String&#xD;
+• The annotation of a new Configuration that is used for the annotation of a new Baseline that is created through the&#xD;
+makeBaseline operation.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JZvdJa4HEd-RkJJJ0t-iKw" name="makeBaseline" visibility="public">
+      <ownedComment xmi:id="_JZvdJq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdJa4HEd-RkJJJ0t-iKw">
+        <body>makeBaseline (), return type = void isQuery = true&#xD;
+• Creates a new Baseline based upon the Versions selected in the Workspace by the versionedExtents of this&#xD;
+Configuration. This also copies the annotation into the new Baseline and removes the annotation from the&#xD;
+Configuration.</body>
+      </ownedComment>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZvdJ64HEd-RkJJJ0t-iKw" name="getBaselineHistory" visibility="public">
+      <ownedComment xmi:id="_JZvdKK4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdJ64HEd-RkJJJ0t-iKw">
+        <body>getBaselineHistory (), return type = BaselineHistory isQuery = true&#xD;
+• Returns the BaselineHistory for this Configuration.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZvdKa4HEd-RkJJJ0t-iKw" name="baselineHistory" type="_JZvdK64HEd-RkJJJ0t-iKw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZvdKq4HEd-RkJJJ0t-iKw" memberEnd="_JZu2c64HEd-RkJJJ0t-iKw _JZu2d64HEd-RkJJJ0t-iKw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZvdK64HEd-RkJJJ0t-iKw" name="BaselineHistory">
+    <ownedComment xmi:id="_JZvdLK4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdK64HEd-RkJJJ0t-iKw">
+      <body>A BaselineHistory contains all the Baselines, just as a VersionHistory contains all Versions of a given Versioned Extent.&#xD;
+Superclasses VersionHistory</body>
+    </ownedComment>
+    <generalization xmi:id="_JZvdLa4HEd-RkJJJ0t-iKw" general="_JZu2P64HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZvdLq4HEd-RkJJJ0t-iKw" memberEnd="_JZuPYa4HEd-RkJJJ0t-iKw _JZu2e64HEd-RkJJJ0t-iKw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZvdL64HEd-RkJJJ0t-iKw" name="Workspace">
+    <ownedComment xmi:id="_JZvdMK4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdL64HEd-RkJJJ0t-iKw">
+      <body>This selects a set of versions that are accessed together for a Session or Sessions. Unlike Session this is a persistent&#xD;
+object.&#xD;
+A Workspace selects versions via VersionedExtent objects.&#xD;
+&#xD;
+An important constraint is that a Workspace may contain at most one VersionedExtent for a given VersionHistory and at&#xD;
+most one Configuration for a given BaselineHistory.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_JZvdMa4HEd-RkJJJ0t-iKw" name="id" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZvdMq4HEd-RkJJJ0t-iKw" name="annotation" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdM64HEd-RkJJJ0t-iKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdNK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZvdNa4HEd-RkJJJ0t-iKw" name="versionedExtent" visibility="public" type="_JZuPSa4HEd-RkJJJ0t-iKw" aggregation="composite" association="_JZvdXK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZvdNq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdNa4HEd-RkJJJ0t-iKw">
+        <body>versionedExtent, type = VersionedExtent, [0..*], isReadOnly = true&#xD;
+• This refers to all VersionedExtents in this Workspace (inclusive of checked out extents).</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdN64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdOK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZvdOa4HEd-RkJJJ0t-iKw" name="configuration" visibility="public" type="_JZu2cK4HEd-RkJJJ0t-iKw" aggregation="composite" association="_JZvdaK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZvdOq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdOa4HEd-RkJJJ0t-iKw">
+        <body>configuration, type = Configuration, [0..*], isReadOnly = true&#xD;
+• This refers to all Configurations in this Workspace.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdO64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdPK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_JZvdPa4HEd-RkJJJ0t-iKw" name="copy" visibility="public">
+      <ownedComment xmi:id="_JZvdPq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdPa4HEd-RkJJJ0t-iKw">
+        <body>copy (workspace : Workspace), return type = Workspace, isQuery = false&#xD;
+• Returns a new workspace that selects the same configuration of Versions and Baselines as the specified workspace.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZvdP64HEd-RkJJJ0t-iKw" name="workspace" type="_JZvdL64HEd-RkJJJ0t-iKw"/>
+      <ownedParameter xmi:id="_JZvdQK4HEd-RkJJJ0t-iKw" name="newWorkspace" type="_JZvdL64HEd-RkJJJ0t-iKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZvdQa4HEd-RkJJJ0t-iKw" name="restore" visibility="public">
+      <ownedComment xmi:id="_JZvdQq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdQa4HEd-RkJJJ0t-iKw">
+        <body>restore (version: Version), return type = VersionedExtent, isQuery = false&#xD;
+• Create a new VersionedExtent in this Workspace for the specified Version, or if the Version is a Baseline, a new&#xD;
+Configuration in this Workspace for the specified Baseline. This Workspace must not already select a Version for&#xD;
+the VersionHistory of the specified Version.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZvdQ64HEd-RkJJJ0t-iKw" name="version" type="_JZu2HK4HEd-RkJJJ0t-iKw"/>
+      <ownedParameter xmi:id="_JZvdRK4HEd-RkJJJ0t-iKw" name="versionExtent" type="_JZuPSa4HEd-RkJJJ0t-iKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZvdRa4HEd-RkJJJ0t-iKw" name="update" visibility="public">
+      <ownedComment xmi:id="_JZvdRq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdRa4HEd-RkJJJ0t-iKw">
+        <body>update (version : Version), return type = null, isQuery = false&#xD;
+• Updates the VersionedExtent in this Workspace for the VersionHistory of this Version to select the specified&#xD;
+Version, or if the Version is a Baseline, updates the Configuration in this Workspace for the BaselineHistory of&#xD;
+this Baseline to select the specified Baseline (which then updates the Workspace with each of the versions in that&#xD;
+Baseline).</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZvdR64HEd-RkJJJ0t-iKw" name="version" type="_JZu2HK4HEd-RkJJJ0t-iKw"/>
+      <ownedParameter xmi:id="_JZvdSK4HEd-RkJJJ0t-iKw" name="newVersion" type="_JZu2HK4HEd-RkJJJ0t-iKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZvdSa4HEd-RkJJJ0t-iKw" name="merge" visibility="public">
+      <ownedComment xmi:id="_JZvdSq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdSa4HEd-RkJJJ0t-iKw">
+        <body>merge (version : Version), return type = null, isQuery = false&#xD;
+• If the Version is not a Baseline, this merges the specified Version into the VersionedExtent in this Workspace for&#xD;
+the VersionHistory of this Version. If the version is a predecessor or equal to the baseVersion of the&#xD;
+VersionedExtent, the VersionedExtent is left unmodified. If the version is a successor of the baseVersion of the&#xD;
+VersionedExtent, the VersionedExtent is updated to select the version. If the version is not a predecessor of, equal&#xD;
+to, or a successor of the baseVersion of the VersionedExtent, the specified version is added to the conflict attribute&#xD;
+of the VersionedExtent.&#xD;
+• If the Version is a Baseline, this merges the specified Baseline into the Configuration in this Workspace for the&#xD;
+BaselineHistory of this Baseline. If the Baseline is a predecessor or equal to the +baseline of the Configuration, the&#xD;
+Configuration is left unmodified. If the Baseline is a successor of the +baseline of the Configuration, the&#xD;
+Configuration is updated to select the Baseline. If the Baseline is not a predecessor of, equal to, or a successor of&#xD;
+the +baseline of the Configuration, the specified Baseline is added to the previousBaseline property of the&#xD;
+Configuration, and each of the versions of the specified Baseline are merged into the Workspace.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZvdS64HEd-RkJJJ0t-iKw" name="version" type="_JZu2HK4HEd-RkJJJ0t-iKw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZvdTK4HEd-RkJJJ0t-iKw" name="lookupByVersionHistory" visibility="public">
+      <ownedComment xmi:id="_JZvdTa4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdTK4HEd-RkJJJ0t-iKw">
+        <body>lookupByVersionHistory (versionHistory : VersionHistory), return type = VersionedExtent, [0..1] isQuery = true&#xD;
+• Returns the VersionedExtent, if any, in this Workspace for the specified versionHistory.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZvdTq4HEd-RkJJJ0t-iKw" name="versionHistory" type="_JZu2P64HEd-RkJJJ0t-iKw"/>
+      <ownedParameter xmi:id="_JZvdT64HEd-RkJJJ0t-iKw" name="versionedExtent" type="_JZuPSa4HEd-RkJJJ0t-iKw" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdUK4HEd-RkJJJ0t-iKw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdUa4HEd-RkJJJ0t-iKw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZvdUq4HEd-RkJJJ0t-iKw" name="getVersionSet" visibility="public">
+      <ownedComment xmi:id="_JZvdU64HEd-RkJJJ0t-iKw" annotatedElement="_JZvdUq4HEd-RkJJJ0t-iKw">
+        <body>getVersionSet (), return type = VersionedExtent, [0..*] isQuery = true&#xD;
+• Returns the VersionedExtents, inclusive of those that are checked out, that are being referenced by this Workspace.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZvdVK4HEd-RkJJJ0t-iKw" name="versionedExtents" type="_JZuPSa4HEd-RkJJJ0t-iKw" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdVa4HEd-RkJJJ0t-iKw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdVq4HEd-RkJJJ0t-iKw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JZvdV64HEd-RkJJJ0t-iKw" name="getCheckedOutVersionSet" visibility="public">
+      <ownedComment xmi:id="_JZvdWK4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdV64HEd-RkJJJ0t-iKw">
+        <body>getCheckedOutVersionSet (), return type = VersionedExtent, [0..1] isQuery = true&#xD;
+• Returns only the VersionExtents referenced by this Workspace that have a status of checked out.</body>
+      </ownedComment>
+      <ownedParameter xmi:id="_JZvdWa4HEd-RkJJJ0t-iKw" name="versionSet" type="_JZuPSa4HEd-RkJJJ0t-iKw" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdWq4HEd-RkJJJ0t-iKw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdW64HEd-RkJJJ0t-iKw"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZvdXK4HEd-RkJJJ0t-iKw" memberEnd="_JZvdNa4HEd-RkJJJ0t-iKw _JZvdXa4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZvdXa4HEd-RkJJJ0t-iKw" name="workspace" visibility="public" type="_JZvdL64HEd-RkJJJ0t-iKw" association="_JZvdXK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZvdXq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdXa4HEd-RkJJJ0t-iKw">
+        <body>workspace, type = Workspace, [1], isReadOnly = true&#xD;
+• This reference identifies the Workspaces that contain this VersionedExtent.</body>
+      </ownedComment>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZvdX64HEd-RkJJJ0t-iKw" name="Session">
+    <ownedComment xmi:id="_JZvdYK4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdX64HEd-RkJJJ0t-iKw">
+      <body>This logically represents the client’s current session. By first attaching and selecting the Workspace through the Session,&#xD;
+the other MOF 2 APIs can transparently access specific versions without being aware of it.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_JZvdYa4HEd-RkJJJ0t-iKw" name="workspace" visibility="public" type="_JZvdL64HEd-RkJJJ0t-iKw" association="_JZvdZK4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdYq4HEd-RkJJJ0t-iKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdY64HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZvdZK4HEd-RkJJJ0t-iKw" memberEnd="_JZvdYa4HEd-RkJJJ0t-iKw _JZvdZa4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZvdZa4HEd-RkJJJ0t-iKw" name="session" visibility="private" type="_JZvdX64HEd-RkJJJ0t-iKw" association="_JZvdZK4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdZq4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdZ64HEd-RkJJJ0t-iKw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZvdaK4HEd-RkJJJ0t-iKw" memberEnd="_JZvdOa4HEd-RkJJJ0t-iKw _JZvdaa4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZvdaa4HEd-RkJJJ0t-iKw" name="workspace" visibility="private" type="_JZvdL64HEd-RkJJJ0t-iKw" association="_JZvdaK4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZvdaq4HEd-RkJJJ0t-iKw" name="Baseline">
+    <ownedComment xmi:id="_JZvda64HEd-RkJJJ0t-iKw" annotatedElement="_JZvdaq4HEd-RkJJJ0t-iKw">
+      <body>Selects a set of Versions, with no two versions from the same VersionHistory.&#xD;
+&#xD;
+Superclasses Version</body>
+    </ownedComment>
+    <generalization xmi:id="_JZvdbK4HEd-RkJJJ0t-iKw" general="_JZu2HK4HEd-RkJJJ0t-iKw"/>
+    <ownedAttribute xmi:id="_JZvdba4HEd-RkJJJ0t-iKw" name="member-of" visibility="public" type="_JZvdaq4HEd-RkJJJ0t-iKw" isReadOnly="true" association="_JZvdfK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZvdbq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdba4HEd-RkJJJ0t-iKw">
+        <body>member-of, type = Configuration, [0..*], isReadOnly = true, inverse = member&#xD;
+• Baselines which logically include this Baseline.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdb64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdcK4HEd-RkJJJ0t-iKw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZvdca4HEd-RkJJJ0t-iKw" name="member" visibility="public" type="_JZvdaq4HEd-RkJJJ0t-iKw" isReadOnly="true" association="_JZvdfK4HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZvdcq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdca4HEd-RkJJJ0t-iKw">
+        <body>member, type = Configuration, [0..*], isReadOnly = true, inverse = member-of&#xD;
+• Baselines which are logically included in this Baseline.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdc64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvddK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZvdda4HEd-RkJJJ0t-iKw" name="configuration" visibility="public" type="_JZu2cK4HEd-RkJJJ0t-iKw" association="_JZvdf64HEd-RkJJJ0t-iKw">
+      <ownedComment xmi:id="_JZvddq4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdda4HEd-RkJJJ0t-iKw">
+        <body>configuration, type = Configuration, [0..*], isReadOnly = true, inverse = baseline&#xD;
+• Configurations that refer to this Baseline.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdd64HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvdeK4HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZvdea4HEd-RkJJJ0t-iKw" name="version" visibility="public" type="_JZu2HK4HEd-RkJJJ0t-iKw" association="_JZvdgK4HEd-RkJJJ0t-iKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZvdeq4HEd-RkJJJ0t-iKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZvde64HEd-RkJJJ0t-iKw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZvdfK4HEd-RkJJJ0t-iKw" memberEnd="_JZvdba4HEd-RkJJJ0t-iKw _JZvdca4HEd-RkJJJ0t-iKw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZvdfa4HEd-RkJJJ0t-iKw" memberEnd="_JZu2fq4HEd-RkJJJ0t-iKw _JZvdfq4HEd-RkJJJ0t-iKw">
+    <ownedEnd xmi:id="_JZvdfq4HEd-RkJJJ0t-iKw" name="" visibility="private" type="_JZu2cK4HEd-RkJJJ0t-iKw" association="_JZvdfa4HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZvdf64HEd-RkJJJ0t-iKw" memberEnd="_JZvdIa4HEd-RkJJJ0t-iKw _JZvdda4HEd-RkJJJ0t-iKw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JZvdgK4HEd-RkJJJ0t-iKw" memberEnd="_JZvdea4HEd-RkJJJ0t-iKw _JZu2Mq4HEd-RkJJJ0t-iKw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZvdga4HEd-RkJJJ0t-iKw" name="FragmentDefinition" isAbstract="true">
+    <generalization xmi:id="_JZvdgq4HEd-RkJJJ0t-iKw" general="_JZvdg64HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZvdg64HEd-RkJJJ0t-iKw" name="WorkProductDefinition" isAbstract="true">
+    <ownedComment xmi:id="_JZvdhK4HEd-RkJJJ0t-iKw" annotatedElement="_JZvdg64HEd-RkJJJ0t-iKw">
+      <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>WorkProductDefinition&lt;/font> &lt;font&#xD;
+    face=&quot;Times New Roman&quot;>é uma metaclasse que representa os produtos de&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>trabalho (&lt;/font>&lt;i>&lt;font face=&quot;Times New Roman&quot;>Work Products&lt;/font>&lt;/i>&lt;font&#xD;
+    face=&quot;Times New Roman&quot;>) resultantes da execução de atividades ou tarefas de um PDS.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>WorkProductDefinitionRelationship&lt;/font> &lt;font&#xD;
+    face=&quot;Times New Roman&quot;>é uma metaclasse que estende&lt;/font> &lt;font face=&quot;Courier&quot;>Reuse&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Courier&quot;>Relationship&lt;/font> &lt;font face=&quot;Times New Roman&quot;>do SPEM v2, sendo então um relacionamento capaz&#xD;
+    de definir níveis&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>reuso.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Existem&#xD;
+    diversos produtos de trabalho que são construídos durante a execução&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>de alguma atividade ou tarefa do PDS. Tais produtos&#xD;
+    geralmente são tratados como artefatos,&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>entretanto, em nossa abordagem, pode ser qualquer fragmento&#xD;
+    de informação, tipo ou seção&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>que foi produzida. A metaclasse&lt;/font> &lt;font&#xD;
+    face=&quot;Courier&quot;>WorkProductDefinition&lt;/font> &lt;font face=&quot;Times New Roman&quot;>representa quaisquer tipos de&lt;/font>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>produtos de trabalho.&lt;/font>&lt;/font>&#xD;
+&lt;/p></body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZvdha4HEd-RkJJJ0t-iKw" name="ContainerDefinition">
+    <generalization xmi:id="_JZvdhq4HEd-RkJJJ0t-iKw" general="_JZvdg64HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZvdh64HEd-RkJJJ0t-iKw" name="ArtifactDefinition">
+    <generalization xmi:id="_JZvdiK4HEd-RkJJJ0t-iKw" general="_JZvdg64HEd-RkJJJ0t-iKw"/>
+  </packagedElement>
+  <profileApplication xmi:id="_JZvdia4HEd-RkJJJ0t-iKw">
+    <eAnnotations xmi:id="_JZwEMK4HEd-RkJJJ0t-iKw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>

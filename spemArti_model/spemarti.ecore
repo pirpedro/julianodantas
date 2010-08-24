@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="spemarti"
+    nsURI="http:///spemarti.ecore" nsPrefix="spemarti">
+  <eClassifiers xsi:type="ecore:EClass" name="Image" eSuperTypes="#//SimpleInformationElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleInformationElement" abstract="true"
+      eSuperTypes="#//VersionedExtent #//FragmentDefinition">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>Simple Information Element&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>é uma metaclasse abstrata para generalizar&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>qualquer elemento que modele o conceito de Tipo de Informação e que utilize apenas&#xD;&#xA;    os&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>tipos primitivos definidos através de&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>UML&#xD;&#xA;    DataType&lt;/font>&lt;/i> &lt;font face=&quot;Times New Roman&quot;>(Object Management Group, 2007b).&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Independente do Processo de Software&#xD;&#xA;    escolhido, algumas estruturas de informação&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>são genéricamente utilzados. Conforme existem diversos tipos de informações, o&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Courier&quot;>SimpleInformationElement&lt;/font> &lt;font face=&quot;Times New Roman&quot;>determina os tipos mais simples que&#xD;&#xA;    possam existir, desde&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>que sejam independentes de processo e utilizem apenas tipos de dados definidos&#xD;&#xA;    previamente&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>pela&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>UML DataType&lt;/font>&lt;/i> &lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>(i.e.&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>Boolean&lt;/font>&lt;/i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>,&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>Integer&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>,&lt;/font>&#xD;&#xA;    &lt;i>&lt;font face=&quot;Times New Roman&quot;>String&lt;/font>&lt;/i> &lt;font face=&quot;Times New Roman&quot;>e&lt;/font> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>UnlimitedNatural&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>).&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VersionedExtent">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Represents a MOF Extent for which versioning has been enabled.&#xD;&#xA;Superclasses MOF:Extent"/>
+    </eAnnotations>
+    <eOperations name="checkOut" ordered="false" lowerBound="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="checkOut () operation, return type = null, isQuery = false&#xD;&#xA;• Allows modifications to be performed on the content of this VersionedExtent."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="checkIn" ordered="false" lowerBound="1" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="checkIn (), return type = Version, isQuery = false&#xD;&#xA;• Creates a new Version object with the current content of this VersionedExtent, disallows modifications to be made&#xD;&#xA;to the content of this VersionedExtent until it is subsequently checked out. This Version is now available to other&#xD;&#xA;Workspaces."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="unCheckOut" ordered="false" lowerBound="1"/>
+    <eOperations name="lookupByVersionId" ordered="false" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="lookupByVersionId (id : String), return type = Version, [0..1] isQuery = true&#xD;&#xA;• Returns the version, if any, of this VersionedExtent having the specified id."/>
+      </eAnnotations>
+      <eParameters name="name" ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="lookupByLabel" ordered="false" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="lookupByLabel (label : String), return type = Version, [0..1], isQuery = true&#xD;&#xA;• Returns the version, if any, of this VersionedExtent having the specified label."/>
+      </eAnnotations>
+      <eParameters name="label" ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="delete" ordered="false" lowerBound="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="lookupByLabel (label : String), return type = Version, [0..1], isQuery = true&#xD;&#xA;• Returns the version, if any, of this VersionedExtent having the specified label."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="createExtent" ordered="false" lowerBound="1" eType="#//VersionedExtent"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isCheckedOut" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        changeable="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="isCheckedOut, type = Boolean, isReadOnly = true&#xD;&#xA;• A VersionedExtent is modifiable only if isCheckedOut is true."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="annotation" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="annotation, type = String, [0..1]&#xD;&#xA;• When isCheckedOut is true, this attribute contains the annotation attribute for the version that will be created when&#xD;&#xA;this VersionedExtent is checked in. If the isCheckedOut is false that attribute does not exist and cannot be written&#xD;&#xA;to."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="versionhistory" ordered="false"
+        lowerBound="1" eType="#//VersionHistory">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="versionHistory, type = VersionHistory, isReadOnly = true&#xD;&#xA;• The VersionHistory that contains the versions for this VersionedExtent."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" ordered="false"
+        lowerBound="1" eType="#//Configuration" eOpposite="#//Configuration/versionedExtent">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="configuration, type = Configuration, isReadOnly = true&#xD;&#xA;• The Configuration to which this VersionedExtent belongs."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conflict" ordered="false"
+        upperBound="-1" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="conflict reference, type = Version, [0..*], isReadOnly = false, composite&#xD;&#xA;• These are the conflicts created by a merge. After the client resolves the conflict (by appropriately modifying the&#xD;&#xA;content of the VersionedExtent), the client indicates that the conflict has been resolved by adding the version to the&#xD;&#xA;previousVersion list of the VersionedContext, and removing the version from the conflict list."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="previousVersion" ordered="false"
+        upperBound="-1" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="previousVersion, type = Version, [1..*], isReadOnly = false&#xD;&#xA;• When isCheckedOut is true, this reference identifies the versions that will be the previousVersion for the version&#xD;&#xA;that will be created when this VersionedExtent is checked in."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="baseVersion" ordered="false"
+        lowerBound="1" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="baseVersion, type = Version, isReadOnly = true&#xD;&#xA;• The currently selected version for this VersionedExtent. This is the version that this VersionedExtent is currently&#xD;&#xA;based on, but when checked-out, is not necessarily equal to. In particular, the base version of a checked-out&#xD;&#xA;VersionedExtent is the Version content that was started with (i.e., that the current checked-out content is ‘based&#xD;&#xA;on’)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VersionHistory">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A VersionHistory contains all versions of a given VersionedExtent."/>
+    </eAnnotations>
+    <eOperations name="delete" ordered="false" lowerBound="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="delete (), return type = void&#xD;&#xA;• Removes the VersionHistory object. This method also deletes all Versions in the VersionHistory."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="lookupByLabel" ordered="false" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="lookupByLabel (label : Label), return type = Version, [0..1], isQuery = true&#xD;&#xA;• Returns the version, if any, in this VersionedHistory having the specified label."/>
+      </eAnnotations>
+      <eParameters name="label" ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="lookupByVersionId" ordered="false" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="lookupByVersionId (id : String), return type = Version, [0..1], isQuery = true&#xD;&#xA;• Returns the Version, if any, in this VersionHistory having the specified id."/>
+      </eAnnotations>
+      <eParameters name="id" ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="versions" ordered="false"
+        lowerBound="1" upperBound="-1" eType="#//Version" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="versions, type = Version, [1..*], isReadOnly = true&#xD;&#xA;• This refers to all versions in this VersionHistory, including the rootVersion. Ordering of the versions is defined by&#xD;&#xA;the previousVersion/nextVersion relations."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rootVersion" ordered="false"
+        lowerBound="1" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="rootVersion, type = Version, isReadOnly = true&#xD;&#xA;• This refers to the initial version of the VersionedExtent. The rootVersion has no previousVersion. All other&#xD;&#xA;versions have at least one previousVersion."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Version">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Each instance of Version is a snapshot of a VersionedExtent."/>
+    </eAnnotations>
+    <eOperations name="addLabel" ordered="false" lowerBound="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="addLabel (newLabel: Label) operation, return type = void&#xD;&#xA;• Adds a label to the version. If that label currently appears on another version in the version history of this Version,&#xD;&#xA;it is automatically removed from that other version. See the label attribute for further details."/>
+      </eAnnotations>
+      <eParameters name="label" ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="removeLabel" ordered="false" lowerBound="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="removeLabel (oldLabel: Label) operation, return type = void&#xD;&#xA;• Removes the indicated label from the version. See the label attribute for further details."/>
+      </eAnnotations>
+      <eParameters name="label" ordered="false" lowerBound="1" eType="#//Label"/>
+    </eOperations>
+    <eOperations name="delete" ordered="false" lowerBound="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="delete (), return type = void&#xD;&#xA;• Removes the version object. This method also fixes up the links in the version graph so that it is still valid."/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" ordered="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="label, type = Label, multivalued [0..*], isReadOnly = true&#xD;&#xA;• A user assigned string that can be used to identify the version. Several can be applied to one version. Also, version&#xD;&#xA;labels must be unique among all the version labels within the VersionHistory of that version."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="id, type = String, isReadOnly = true&#xD;&#xA;• This attribute is an id for the version that is unique within the VersionHistory of that version.&#xD;&#xA;• The format of the string is implementation-defined."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="creationDate, type = Long, isReadOnly = true&#xD;&#xA;• Used to record the timestamp when the Version object was created."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="annotation" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="annotation, type = String, [0..1]&#xD;&#xA;• This attribute can contain a description of the version."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="previousVersion" upperBound="-1"
+        eType="#//Version" eOpposite="#//Version/nextVersion">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="previousVersion, type = Version, [0..*], isReadOnly = true, inverse = nextVersion&#xD;&#xA;• This refers to the immediately previous version (or versions, in case this Version resulted from a merge). Every&#xD;&#xA;Version that is not the root version of a VersionHistory has at least one previousVersion."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nextVersion" ordered="false"
+        upperBound="-1" eType="#//Version" eOpposite="#//Version/previousVersion">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="nextVersion, type = Version, [0..*], isReadOnly = true, inverse = previousVersion&#xD;&#xA;• This refers to ordered subsequent versions."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="baseline" ordered="false"
+        upperBound="-1" eType="#//Baseline" eOpposite="#//Baseline/version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="baseline, type = Baseline, [0..*], isReadOnly = true, inverse = version&#xD;&#xA;• This refers to the Baselines that reference this Version."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Baseline" eSuperTypes="#//Version">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Selects a set of Versions, with no two versions from the same VersionHistory.&#xD;&#xA;&#xD;&#xA;Superclasses Version"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="memberof" ordered="false"
+        lowerBound="1" upperBound="-1" eType="#//Baseline" changeable="false" eOpposite="#//Baseline/member">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="member-of, type = Configuration, [0..*], isReadOnly = true, inverse = member&#xD;&#xA;• Baselines which logically include this Baseline."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="member" ordered="false"
+        upperBound="-1" eType="#//Baseline" changeable="false" eOpposite="#//Baseline/memberof">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="member, type = Configuration, [0..*], isReadOnly = true, inverse = member-of&#xD;&#xA;• Baselines which are logically included in this Baseline."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" ordered="false"
+        upperBound="-1" eType="#//Configuration" eOpposite="#//Configuration/baseline">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="configuration, type = Configuration, [0..*], isReadOnly = true, inverse = baseline&#xD;&#xA;• Configurations that refer to this Baseline."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="version" ordered="false"
+        upperBound="-1" eType="#//Version" eOpposite="#//Version/baseline"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Selects a Baseline for the Workspace and determines the other Configurations that are the members of this Configuration."/>
+    </eAnnotations>
+    <eOperations name="makeBaseline" ordered="false" lowerBound="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="makeBaseline (), return type = void isQuery = true&#xD;&#xA;• Creates a new Baseline based upon the Versions selected in the Workspace by the versionedExtents of this&#xD;&#xA;Configuration. This also copies the annotation into the new Baseline and removes the annotation from the&#xD;&#xA;Configuration."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getBaselineHistory" ordered="false" lowerBound="1" eType="#//BaselineHistory">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="getBaselineHistory (), return type = BaselineHistory isQuery = true&#xD;&#xA;• Returns the BaselineHistory for this Configuration."/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="memberof" ordered="false"
+        upperBound="-1" eType="#//Configuration" eOpposite="#//Configuration/member">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="member-of, type = Configuration, [0..*], isReadOnly = false, inverse = member&#xD;&#xA;• Configurations which logically include this Configuration."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="member" ordered="false"
+        upperBound="-1" eType="#//Configuration" eOpposite="#//Configuration/memberof">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="member, type = Configuration, [0..*], isReadOnly = true, inverse = member-of&#xD;&#xA;• Configurations which are logically included in this Configuration."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="versionedExtent" ordered="false"
+        upperBound="-1" eType="#//VersionedExtent" eOpposite="#//VersionedExtent/configuration"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="previousBaseline" ordered="false"
+        upperBound="-1" eType="#//Baseline">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="previousBaseline, type = Baseline, [1..*], isReadOnly = true&#xD;&#xA;• This reference identifies the baselines that will be the previousVersion for the baseline that will be created when&#xD;&#xA;makeBaseline is applied to this Configuration."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="annotation" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="annotation, type = String&#xD;&#xA;• The annotation of a new Configuration that is used for the annotation of a new Baseline that is created through the&#xD;&#xA;makeBaseline operation."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="baseline" ordered="false"
+        lowerBound="1" eType="#//Baseline" eOpposite="#//Baseline/configuration">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="baseline, type = Baseline, [1..1], isReadOnly = true&#xD;&#xA;• The Baseline that is used by this Configuration to select a set of Versions."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BaselineHistory" eSuperTypes="#//VersionHistory">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A BaselineHistory contains all the Baselines, just as a VersionHistory contains all Versions of a given Versioned Extent.&#xD;&#xA;Superclasses VersionHistory"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Label"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FragmentDefinition" abstract="true"
+      eSuperTypes="#//WorkProductDefinition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="WorkProductDefinition" abstract="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>WorkProductDefinition&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>é uma metaclasse que representa os produtos de&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>trabalho (&lt;/font>&lt;i>&lt;font face=&quot;Times New Roman&quot;>Work Products&lt;/font>&lt;/i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>) resultantes da execução de atividades ou tarefas de um PDS.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>WorkProductDefinitionRelationship&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>é uma metaclasse que estende&lt;/font> &lt;font face=&quot;Courier&quot;>Reuse&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Courier&quot;>Relationship&lt;/font> &lt;font face=&quot;Times New Roman&quot;>do SPEM v2, sendo então um relacionamento capaz&#xD;&#xA;    de definir níveis&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>reuso.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Existem&#xD;&#xA;    diversos produtos de trabalho que são construídos durante a execução&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>de alguma atividade ou tarefa do PDS. Tais produtos&#xD;&#xA;    geralmente são tratados como artefatos,&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>entretanto, em nossa abordagem, pode ser qualquer fragmento&#xD;&#xA;    de informação, tipo ou seção&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>que foi produzida. A metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>WorkProductDefinition&lt;/font> &lt;font face=&quot;Times New Roman&quot;>representa quaisquer tipos de&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>produtos de trabalho.&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Diagram" eSuperTypes="#//ComplexInformationElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Diagram&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>Diagram&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação Diagrama.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Diagram&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de diagrama&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>como um tipo complexo de informação no metamodelo.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>image:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>Image&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, esta associação representa a ligação entre um&#xD;&#xA;    diagrama e sua imagem.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Artefatos de Software possuem formas&#xD;&#xA;    de representação de conteúdo através&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>de diagramas. Estes diagramas servem para representar o conhecimento necessários&#xD;&#xA;    através&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>de imagens, muitas vezes exemplificado algo que foi descrito anteriormente. O conceito&#xD;&#xA;    de&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>diagrama foi modelado através da metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>Diagram&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, que define um relacionamento para&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>armazenar a imagem que ele representa.&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="image" ordered="false"
+        upperBound="-1" eType="#//Image"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComplexInformationElement" abstract="true"
+      eSuperTypes="#//SimpleInformationElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>ComplexInformationElement&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>é uma metaclasse abstrata para generalizar&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>qualquer elemento que modele o conceito de Tipo de Informação e que utilize os&#xD;&#xA;    tipos&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>primitivos definidos através de&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>UML&#xD;&#xA;    DataType&lt;/font>&lt;/i> &lt;font face=&quot;Times New Roman&quot;>e também os tipos simples modelads através da&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>metaclasse&lt;/font> &lt;font face=&quot;Courier&quot;>SimpleInformation Element&lt;/font>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;strong>Generalização:&lt;/strong>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;CMSY10&quot;>&lt;strong>•&lt;/strong>&lt;/font> &lt;strong>&lt;font&#xD;&#xA;    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>SimpleInformationElement&lt;/font>&lt;/strong> &lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>&lt;strong>especializando&lt;/strong>&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>o conceito de tipo simples de informação para tipos&#xD;&#xA;    complexos no metamodelo.&lt;/strong>&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;br />&#xD;&#xA;&lt;/font>&lt;/font>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>&lt;strong>Semântica:&lt;/strong>&lt;/font> &lt;font face=&quot;Times New Roman&quot;>Conforme a necessidade de&#xD;&#xA;    divisão entre os diversos tipos de estruturas de&lt;/font>&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>informação existentes, a&#xD;&#xA;    metaclasse&lt;/strong>&lt;/font> &lt;font face=&quot;Courier&quot;>&lt;strong>ComplexInformationElement&lt;/strong>&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>&lt;strong>serve como superclasse&lt;/strong>&lt;/font>&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>genérica dos tipos&#xD;&#xA;    complexos. Esta metaclasse torna os conceitos definidos em C.3.4&lt;/strong>&lt;/font>&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>mais especializados,&#xD;&#xA;    permitindo que haja relacionamento entre os tipos simples, formando assim&lt;/strong>&lt;/font>&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>&lt;strong>estruturas complexas de&#xD;&#xA;    informação.&lt;/strong>&lt;/font>&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Question" eSuperTypes="#//ComplexInformationElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Question&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>Question&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação “pergunta x&#xD;&#xA;    respostas”,&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>ou seja, define questões.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Question&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito questão&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>como um tipo complexo de informação no metamodelo.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>asks:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>Text&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, utilizado para criar as perguntas a serem&#xD;&#xA;    feitas;&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>answers:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>Text&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, utilizado para incluir as respostas&#xD;&#xA;    recebidas.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Informações primodiais para a&#xD;&#xA;    construção de aplicações são geralmente adquiridas&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>no momento em que se entrevista um&lt;/font> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>stakeholder&lt;/font>&lt;/i> &lt;font face=&quot;Times New Roman&quot;>ou se questiona um cliente&#xD;&#xA;    específico.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>Tais informações são encontradas a medida que se obtem as respostas a alguma pergunta&#xD;&#xA;    feita.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>De um modo geral, é possível observar que um fato bastante comum é documentar&#xD;&#xA;    perguntas&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>importantes, assim como dúvidas existentes durante o desenvolvimento, assim como as&#xD;&#xA;    respostas&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>obtidas. Diante da necessidade de possuir este tipo de informação, em nosso&#xD;&#xA;    metamodelo,&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>este conceito é definido pela metaclasse&lt;/font> &lt;font face=&quot;Courier&quot;>Question&lt;/font>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="asks" ordered="false" upperBound="-1"
+        eType="#//Text" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answers" ordered="false"
+        lowerBound="1" upperBound="-1" eType="#//Text" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Text" eSuperTypes="#//SimpleInformationElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Text&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>Text&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação Texto.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Text&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>SimpleInformationElement&lt;/font> &lt;font face=&quot;Times New Roman&quot;>definindo o conceito de texto a um&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>tipo simples de informação no metamodelo.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Atributos:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>value&lt;/font>&lt;/b>&lt;font face=&quot;Times New Roman&quot;>:&lt;/font>&#xD;&#xA;    &lt;i>&lt;font face=&quot;Times New Roman&quot;>String&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, conteúdo do texto a ser&#xD;&#xA;    preenchido.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Artefatos de Software possuem textos&#xD;&#xA;    para representar o conhecimento necessários&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>através de palavras. O conceito de texto foimodelado simplesmente através&#xD;&#xA;    dametaclasse&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Courier&quot;>Text&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, que define um atributo para armazenar o conteúdo a ser&#xD;&#xA;    preenchido.&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="List" eSuperTypes="#//ComplexInformationElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>List&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação Lista, reponsável por&#xD;&#xA;    agrupar&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>os elementos sequencialmente.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>List&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de lista como&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>um tipo complexo de informação no metamodelo.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Atributos:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>isLabeled&lt;/font>&lt;/b>&lt;font face=&quot;Times New Roman&quot;>:&lt;/font>&#xD;&#xA;    &lt;i>&lt;font face=&quot;Times New Roman&quot;>Boolean&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, define se os elementos da lista&#xD;&#xA;    possuirão rótulos adicionais;&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>isOrderer&lt;/font>&lt;/b>&lt;font face=&quot;Times New Roman&quot;>:&lt;/font>&#xD;&#xA;    &lt;i>&lt;font face=&quot;Times New Roman&quot;>Boolean&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, define se os elementos da lista serão&#xD;&#xA;    ordenados;&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>isEnumerated&lt;/font>&lt;/b>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>:&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>Boolean&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, define&#xD;&#xA;    se os elementos da lista possuirão numeração identificadora&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>com início em 1;&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>contents:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>SimpleInformationElement&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, conforme a necessidade de&#xD;&#xA;    agrupar outros tipos de&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>informação, essa associação permite inserir tipos de informação na lista.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Operações:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Times New Roman&quot;>orderByAZ(), ordena todos os elementos do conteúdo da lista,&#xD;&#xA;    do menor para o maior&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>elemento. Caso sejam do tipo&lt;/font> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>Integer&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, será respeitada a ordem numérica. Caso&#xD;&#xA;    sejam&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;i>&lt;font face=&quot;Times New Roman&quot;>String&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, será respeitada a ordem&#xD;&#xA;    alfabética.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Times New Roman&quot;>orderByZA(), ordena todos os elementos do conteúdo da lista,&#xD;&#xA;    do maior para o menor&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>elemento. Caso sejam do tipo&lt;/font> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>Integer&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, será respeitada a ordem numérica invertida.&#xD;&#xA;    Caso&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>sejam&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>String&lt;/font>&lt;/i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>, será respeitada a ordem alfabética invertida.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Algumas&#xD;&#xA;    informações são organizadas em forma de listas. Num contexto geral,&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>listas são bastante utilizadas, pode-se perceber seu uso em:&#xD;&#xA;    aplicações bancárias, onde são&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>utilizadas para expressar itens de forma organizada,&#xD;&#xA;    geralmente com base em alguma ordem;&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>e na própria lingua portuguesa, que utiliza listas para&#xD;&#xA;    permitir enumerações e itenizações de&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>descrições ou elementos existentes, geralmente destacados&#xD;&#xA;    através de rótulos e enumerações.&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>Nesse sentido, a metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>List&lt;/font> &lt;font face=&quot;Times New Roman&quot;>é responsável por permitir a criação de conjuntos de tipos&#xD;&#xA;    de&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>informação para uma melhor organização desse tipos, atuando&#xD;&#xA;    como um agrupador sequencial.&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+    <eOperations name="orderByAZ" ordered="false" lowerBound="1"/>
+    <eOperations name="orderByZA" ordered="false" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isLabeled" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isOrdered" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isEnumerated" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contents" ordered="false"
+        upperBound="-1" eType="#//SimpleInformationElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Matrix" eSuperTypes="#//ComplexInformationElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Matrix&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>Matrix&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação com base em matrizes e&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>tabulação.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Matrix&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>ComplexInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de matrizes&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>como um tipo complexo de informação no metamodelo.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>header:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>List&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, utilizado para criar o cabeçalho da matriz caso&#xD;&#xA;    necessário;&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>lines:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>List&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, utilizado para incluir as linhas da matriz ou&#xD;&#xA;    tabulação.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Algumas informações são organizadas&#xD;&#xA;    em forma de matrizes, conforme necessidade&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>de organizá-las em formatos tabulares. Num contexto mais específico podemos citar&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>seu uso em situações como por exemplo do RUP, que define algumas das suas&#xD;&#xA;    informações&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>em forma de tabela, tais como: perfil do&lt;/font> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>stakeholder&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, levantamento de riscos e problemas a&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>serem enfrentados. De um modo geral, podemos também inserir neste mesmo contexto,&#xD;&#xA;    documentos&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>feitos através do&lt;/font> &lt;i>&lt;font face=&quot;Times New Roman&quot;>Microsoft Excel&lt;/font>&lt;/i> &lt;font&#xD;&#xA;    size=&quot;1&quot; face=&quot;Times New Roman&quot;>&lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;>TM&lt;/font>&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, o&#xD;&#xA;    qual se caracteriza por ter uma planilha que se&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>constitui em um matrizes. Diante da necessidade de possuir este tipo de informação, em&#xD;&#xA;    nosso&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>metamodelo, este conceito é definido pela metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>Matrix&lt;/font>&lt;font face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="header" ordered="false"
+        lowerBound="1" eType="#//List"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lines" ordered="false"
+        upperBound="-1" eType="#//List"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="#//Matrix">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Table&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>Table&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação Tabela.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Table&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>Matrix&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de tabela como um tipo de Matrix,&#xD;&#xA;    sendo&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>um tipo complexo no metamodelo.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>matrixes:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>Matrix&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, define o conjunto de matrizes existentes em uma&#xD;&#xA;    tabela;&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Assim como existem informações que&#xD;&#xA;    são organizadas em matrizes, num contexto&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>mais específico existem também informações organizadas de tal forma, que se parecem&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>com um conjunto de matrizes. Documentos feitos através do&lt;/font> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>Microsoft Excel&lt;/font>&lt;/i> &lt;font size=&quot;1&quot; face=&quot;Times New Roman&quot;>&lt;font size=&quot;1&quot;&#xD;&#xA;    face=&quot;Times New Roman&quot;>TM&lt;/font>&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, o qual se&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>caracteriza por ter uma planilha que se constitui em um matrizes, desta forma, nota-se que&#xD;&#xA;    um&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>conjunto de matrizes pode permitir a formação de uma tabela. Diante da necessidade de&#xD;&#xA;    possuir&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>este tipo de informação, em nosso metamodelo, este conceito é definido pela&#xD;&#xA;    metaclasse&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Courier&quot;>Tabela&lt;/font>&lt;font face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="matrixes" ordered="false"
+        upperBound="-1" eType="#//Matrix"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Group" eSuperTypes="#//List">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Group&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>Group&lt;/font> &lt;font face=&quot;Times New Roman&quot;>organiza outros tipos de informação existente, agindo&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>como um agrupador.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>Group&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estende&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>List&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, definindo o conceito de agrupador como um tipo especial de&#xD;&#xA;    lista,&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>sendo um tipo complexo de informação no metamodelo.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Associações:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>childs:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>Group&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, esta associação define a existência de um&#xD;&#xA;    conjunto sub agrupadores de&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>um agrupador a ser utilizado. Isto permite a criação de agrupadores em árvore, ou&#xD;&#xA;    seja,&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>permite a criação de estruturas de informação agrupadas de forma hierárquica. Desta&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>forma, cada agrupador, ou grupo de informações, pode sempre ser aninhado por outro&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>grupo. Esta associação possui uma restrição em relação aos grupos possíveis, não&#xD;&#xA;    permitindo&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>que um grupo seja filho dele mesmo. Além disso, este atributo não pode agrupar a&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>mesma informação mais de uma vez.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>internalContents:&lt;/font>&lt;/b> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>SimpleInformationElement&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, conforme a necessidade de agrupar&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>outros tipos de informação, essa associação permite criar estruturas mais&#xD;&#xA;    complexas,&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>agrupando-as.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;b>&lt;font face=&quot;Times New Roman&quot;>parent:&lt;/font>&lt;/b> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>Group&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, assim como foi definida a existência de uma&#xD;&#xA;    hierarquia de grupos, ou&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>agrupadores, a partir do atributo&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>childs&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, esta associação permite a identificação de um&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>pai para um conjunto de sub agrupadores. Desta forma, os&#xD;&#xA;    grupos inseridos no conjunto&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>definido pela associação&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>childs&lt;/font> &lt;font face=&quot;Times New Roman&quot;>conseguem identificar a qual grupo estão&#xD;&#xA;    agrupados.&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>Esta associação possui uma restrição em relação a um pai&#xD;&#xA;    possíveis, não permitindo que&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>um grupo seja pai dele própaio.&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Algumas&#xD;&#xA;    informações relevantes são agrupadas através de agrupadores de informações&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>para que o Artefato de Software esteja melhor organizado.&#xD;&#xA;    Essas informações são,&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>em sua maioria, informações relacionadas, que juntas podem&#xD;&#xA;    representam alguma outra informação&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>ainda mais importante, de forma&lt;/font> &lt;i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>ad hoc&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>. Além disso, no contexto de organização&#xD;&#xA;    da&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>informação, muitas vezes a utilização de agrupamentos&#xD;&#xA;    facilita a visualização ou até mesmo&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>o acesso a informação pretendida. O conceito de agrupamento&#xD;&#xA;    foi modelado através da metaclasse&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Courier&quot;>Group&lt;/font>&lt;font face=&quot;Times New Roman&quot;>, que possui relacionamentos&#xD;&#xA;    para armazenar informações tanto internamente, em&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>se tratando de composição de informações, quanto&#xD;&#xA;    externamente, no tocante a agrupamento de&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>diferentes informações relacionadas.&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="group" ordered="false"
+        lowerBound="1" eType="#//Group" eOpposite="#//Group/group2"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="group2" ordered="false"
+        lowerBound="1" eType="#//Group" eOpposite="#//Group/group"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="childs" ordered="false"
+        upperBound="-1" eType="#//Group"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internalContents" ordered="false"
+        upperBound="-1" eType="#//SimpleInformationElement" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Workspace">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="This selects a set of versions that are accessed together for a Session or Sessions. Unlike Session this is a persistent&#xD;&#xA;object.&#xD;&#xA;A Workspace selects versions via VersionedExtent objects.&#xD;&#xA;&#xD;&#xA;An important constraint is that a Workspace may contain at most one VersionedExtent for a given VersionHistory and at&#xD;&#xA;most one Configuration for a given BaselineHistory."/>
+    </eAnnotations>
+    <eOperations name="copy" ordered="false" lowerBound="1" eType="#//Workspace">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="copy (workspace : Workspace), return type = Workspace, isQuery = false&#xD;&#xA;• Returns a new workspace that selects the same configuration of Versions and Baselines as the specified workspace."/>
+      </eAnnotations>
+      <eParameters name="workspace" ordered="false" lowerBound="1" eType="#//Workspace"/>
+    </eOperations>
+    <eOperations name="restore" ordered="false" lowerBound="1" eType="#//VersionedExtent">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="restore (version: Version), return type = VersionedExtent, isQuery = false&#xD;&#xA;• Create a new VersionedExtent in this Workspace for the specified Version, or if the Version is a Baseline, a new&#xD;&#xA;Configuration in this Workspace for the specified Baseline. This Workspace must not already select a Version for&#xD;&#xA;the VersionHistory of the specified Version."/>
+      </eAnnotations>
+      <eParameters name="version" ordered="false" lowerBound="1" eType="#//Version"/>
+    </eOperations>
+    <eOperations name="update" ordered="false" lowerBound="1" eType="#//Version">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="update (version : Version), return type = null, isQuery = false&#xD;&#xA;• Updates the VersionedExtent in this Workspace for the VersionHistory of this Version to select the specified&#xD;&#xA;Version, or if the Version is a Baseline, updates the Configuration in this Workspace for the BaselineHistory of&#xD;&#xA;this Baseline to select the specified Baseline (which then updates the Workspace with each of the versions in that&#xD;&#xA;Baseline)."/>
+      </eAnnotations>
+      <eParameters name="version" ordered="false" lowerBound="1" eType="#//Version"/>
+    </eOperations>
+    <eOperations name="merge" ordered="false" lowerBound="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="merge (version : Version), return type = null, isQuery = false&#xD;&#xA;• If the Version is not a Baseline, this merges the specified Version into the VersionedExtent in this Workspace for&#xD;&#xA;the VersionHistory of this Version. If the version is a predecessor or equal to the baseVersion of the&#xD;&#xA;VersionedExtent, the VersionedExtent is left unmodified. If the version is a successor of the baseVersion of the&#xD;&#xA;VersionedExtent, the VersionedExtent is updated to select the version. If the version is not a predecessor of, equal&#xD;&#xA;to, or a successor of the baseVersion of the VersionedExtent, the specified version is added to the conflict attribute&#xD;&#xA;of the VersionedExtent.&#xD;&#xA;• If the Version is a Baseline, this merges the specified Baseline into the Configuration in this Workspace for the&#xD;&#xA;BaselineHistory of this Baseline. If the Baseline is a predecessor or equal to the +baseline of the Configuration, the&#xD;&#xA;Configuration is left unmodified. If the Baseline is a successor of the +baseline of the Configuration, the&#xD;&#xA;Configuration is updated to select the Baseline. If the Baseline is not a predecessor of, equal to, or a successor of&#xD;&#xA;the +baseline of the Configuration, the specified Baseline is added to the previousBaseline property of the&#xD;&#xA;Configuration, and each of the versions of the specified Baseline are merged into the Workspace."/>
+      </eAnnotations>
+      <eParameters name="version" ordered="false" lowerBound="1" eType="#//Version"/>
+    </eOperations>
+    <eOperations name="lookupByVersionHistory" ordered="false" eType="#//VersionedExtent">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="lookupByVersionHistory (versionHistory : VersionHistory), return type = VersionedExtent, [0..1] isQuery = true&#xD;&#xA;• Returns the VersionedExtent, if any, in this Workspace for the specified versionHistory."/>
+      </eAnnotations>
+      <eParameters name="versionHistory" ordered="false" lowerBound="1" eType="#//VersionHistory"/>
+    </eOperations>
+    <eOperations name="getVersionSet" ordered="false" upperBound="-1" eType="#//VersionedExtent">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="getVersionSet (), return type = VersionedExtent, [0..*] isQuery = true&#xD;&#xA;• Returns the VersionedExtents, inclusive of those that are checked out, that are being referenced by this Workspace."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getCheckedOutVersionSet" ordered="false" upperBound="-1" eType="#//VersionedExtent">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="getCheckedOutVersionSet (), return type = VersionedExtent, [0..1] isQuery = true&#xD;&#xA;• Returns only the VersionExtents referenced by this Workspace that have a status of checked out."/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="annotation" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="versionedExtent" ordered="false"
+        upperBound="-1" eType="#//VersionedExtent" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="versionedExtent, type = VersionedExtent, [0..*], isReadOnly = true&#xD;&#xA;• This refers to all VersionedExtents in this Workspace (inclusive of checked out extents)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" ordered="false"
+        upperBound="-1" eType="#//Configuration" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="configuration, type = Configuration, [0..*], isReadOnly = true&#xD;&#xA;• This refers to all Configurations in this Workspace."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Session">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="This logically represents the client’s current session. By first attaching and selecting the Workspace through the Session,&#xD;&#xA;the other MOF 2 APIs can transparently access specific versions without being aware of it."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="workspace" ordered="false"
+        eType="#//Workspace"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContainerDefinition" eSuperTypes="#//WorkProductDefinition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ArtifactDefinition" eSuperTypes="#//WorkProductDefinition"/>
+</ecore:EPackage>
