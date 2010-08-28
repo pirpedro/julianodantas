@@ -73,12 +73,12 @@ public class Test {
 		// versionedExtent.setVersionhistory(versionHistory);
 		// session.save(versionedExtent);
 
-		Workspace workspace = spemartiFactory.createWorkspace();
-		workspace.setAnnotation("anotação");
-		workspace.setId("0113");
-		// workspace.getConfiguration().add(configuration);
-		// workspace.getVersionedExtent().add(versionedExtent);
-		session.save(workspace);
+//		Workspace workspace = spemartiFactory.createWorkspace();
+//		workspace.setAnnotation("anotação");
+//		workspace.setId("0113");
+//		// workspace.getConfiguration().add(configuration);
+//		// workspace.getVersionedExtent().add(versionedExtent);
+//		session.save(workspace);
 
 		// Text text = spemartiFactory.createText();
 		// text.setBaseVersion(version);

@@ -234,7 +234,7 @@ public interface SpemartiPackage extends EPackage {
 	int SIMPLE_INFORMATION_ELEMENT__DESCRIPTION = VERSIONED_EXTENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -343,7 +343,7 @@ public interface SpemartiPackage extends EPackage {
 	int IMAGE__DESCRIPTION = SIMPLE_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -782,7 +782,7 @@ public interface SpemartiPackage extends EPackage {
 	int FRAGMENT_DEFINITION__DESCRIPTION = WORK_PRODUCT_DEFINITION__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -919,7 +919,7 @@ public interface SpemartiPackage extends EPackage {
 	int COMPLEX_INFORMATION_ELEMENT__DESCRIPTION = SIMPLE_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1028,7 +1028,7 @@ public interface SpemartiPackage extends EPackage {
 	int DIAGRAM__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1146,7 +1146,7 @@ public interface SpemartiPackage extends EPackage {
 	int QUESTION__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1273,7 +1273,7 @@ public interface SpemartiPackage extends EPackage {
 	int TEXT__DESCRIPTION = SIMPLE_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1391,7 +1391,7 @@ public interface SpemartiPackage extends EPackage {
 	int LIST__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1536,7 +1536,7 @@ public interface SpemartiPackage extends EPackage {
 	int MATRIX__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1663,7 +1663,7 @@ public interface SpemartiPackage extends EPackage {
 	int TABLE__DESCRIPTION = MATRIX__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1799,7 +1799,7 @@ public interface SpemartiPackage extends EPackage {
 	int ELEMENT_GROUP__DESCRIPTION = LIST__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2339,7 +2339,7 @@ public interface SpemartiPackage extends EPackage {
 	int LABELED_TEXT__DESCRIPTION = TEXT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference list.
+	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2773,10 +2773,10 @@ public interface SpemartiPackage extends EPackage {
 	EClass getFragmentDefinition();
 
 	/**
-	 * Returns the meta object for the reference list '{@link spemarti.FragmentDefinition#getFragment_Relationship <em>Fragment Relationship</em>}'.
+	 * Returns the meta object for the reference '{@link spemarti.FragmentDefinition#getFragment_Relationship <em>Fragment Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Fragment Relationship</em>'.
+	 * @return the meta object for the reference '<em>Fragment Relationship</em>'.
 	 * @see spemarti.FragmentDefinition#getFragment_Relationship()
 	 * @see #getFragmentDefinition()
 	 * @generated
@@ -3708,7 +3708,7 @@ public interface SpemartiPackage extends EPackage {
 		EClass FRAGMENT_DEFINITION = eINSTANCE.getFragmentDefinition();
 
 		/**
-		 * The meta object literal for the '<em><b>Fragment Relationship</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Fragment Relationship</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
