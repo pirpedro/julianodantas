@@ -268,7 +268,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="FragmentDefinition" abstract="true"
       eSuperTypes="#//WorkProductDefinition">
     <eStructuralFeatures xsi:type="ecore:EReference" name="fragment_Relationship"
-        ordered="false" upperBound="-1" eType="#//Fragment_Relationship" volatile="true"
+        ordered="false" lowerBound="1" eType="#//Fragment_Relationship" volatile="true"
         derived="true" eOpposite="#//Fragment_Relationship/containers"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="WorkProductDefinition" abstract="true">
