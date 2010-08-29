@@ -13,6 +13,7 @@ public class ArtifactDefinitionDaoImpl extends TOBaseHibernateDao<ArtifactDefini
 	 */
 	private static final long serialVersionUID = 7734633507411279544L;
 
+	@SuppressWarnings("rawtypes")
 	private ArtifactDefinitionDaoImpl(Class objectClass, SessionFactory sessionFactory) {
 		super(ArtifactDefinition.class, sessionFactory);
 	}

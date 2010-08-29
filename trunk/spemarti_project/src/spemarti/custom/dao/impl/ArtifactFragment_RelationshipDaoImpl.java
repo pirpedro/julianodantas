@@ -13,6 +13,7 @@ public class ArtifactFragment_RelationshipDaoImpl extends TOBaseHibernateDao<Art
 	 */
 	private static final long serialVersionUID = -8834258233560477874L;
 
+	@SuppressWarnings("rawtypes")
 	private ArtifactFragment_RelationshipDaoImpl(Class objectClass, SessionFactory sessionFactory) {
 		super(ArtifactFragment_Relationship.class, sessionFactory);
 	}

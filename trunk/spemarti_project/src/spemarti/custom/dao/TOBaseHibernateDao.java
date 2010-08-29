@@ -19,6 +19,7 @@ public abstract class TOBaseHibernateDao<T, PK extends Serializable> implements
 		TOBaseDao<T, PK>, PropertySelector {
 	private static final Log logger = LogFactory
 			.getLog(TOBaseHibernateDao.class);
+	@SuppressWarnings("rawtypes")
 	private final Class objectClass;
 
 	private final SessionFactory sessionFactory;
@@ -179,7 +180,7 @@ public abstract class TOBaseHibernateDao<T, PK extends Serializable> implements
 		}
 	}
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List listAll() {
 		Session session = null;
 		Transaction tx = null;

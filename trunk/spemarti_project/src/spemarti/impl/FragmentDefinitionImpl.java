@@ -7,10 +7,7 @@
 package spemarti.impl;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
 import spemarti.FragmentDefinition;
-import spemarti.Fragment_Relationship;
 import spemarti.SpemartiPackage;
 
 /**

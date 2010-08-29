@@ -4,9 +4,7 @@ import java.util.Properties;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.teneo.hibernate.HbDataStore;
 import org.eclipse.emf.teneo.hibernate.HbHelper;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.hibernate.cfg.Environment;
 
 import spemarti.SpemartiFactory;
@@ -17,6 +15,7 @@ import spemarti.custom.dao.impl.WorkspaceDaoImpl;
 
 public class Main {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		HbDataStore hbds = initialize();
@@ -67,7 +66,7 @@ public class Main {
 		// session.save(workspace);
 		WorkspaceDao workspaceDao = new WorkspaceDaoImpl(sessionFactory);
 		workspaceDao.save(workspace);
-		List findByExample = workspaceDao.findByExample(workspace);
+		List<?> findByExample = workspaceDao.findByExample(workspace);
 
 		// Text text = spemartiFactory.createText();
 		// text.setBaseVersion(version);
