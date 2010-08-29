@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Properties;
 
 import org.eclipse.emf.ecore.EPackage;
@@ -10,32 +11,19 @@ import org.hibernate.cfg.Environment;
 
 import spemarti.SpemartiFactory;
 import spemarti.SpemartiPackage;
-
-
+import spemarti.Workspace;
+import spemarti.custom.dao.WorkspaceDao;
+import spemarti.custom.dao.impl.WorkspaceDaoImpl;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		HbDataStore hbds = (HbDataStore) HbHelper.INSTANCE
-				.createRegisterDataStore("MyDb");
-
-		final Properties props = new Properties();
-		props.setProperty(Environment.DRIVER, "com.mysql.jdbc.Driver");
-		props.setProperty(Environment.URL, "jdbc:mysql://127.0.0.1:3306/test");
-		props.setProperty(Environment.USER, "root");
-		props.setProperty(Environment.PASS, "admin");
-		props.setProperty(Environment.DIALECT,
-				org.hibernate.dialect.MySQLInnoDBDialect.class.getName());
-		props.setProperty(Environment.SHOW_SQL, "true");
-		hbds.setProperties(props);
-
-		hbds.setEPackages(new EPackage[] { SpemartiPackage.eINSTANCE });
-		hbds.initialize();
+		HbDataStore hbds = initialize();
 		SessionFactory sessionFactory = hbds.getSessionFactory();
-		Session session = sessionFactory.openSession();
-		Transaction tx = session.getTransaction();
-		tx.begin();
+//		Session session = sessionFactory.openSession();
+//		Transaction tx = session.getTransaction();
+//		tx.begin();
 		SpemartiFactory spemartiFactory = SpemartiPackage.eINSTANCE
 				.getSpemartiFactory();
 
@@ -71,12 +59,15 @@ public class Main {
 		// versionedExtent.setVersionhistory(versionHistory);
 		// session.save(versionedExtent);
 
-		// Workspace workspace = spemartiFactory.createWorkspace();
-		// workspace.setAnnotation("anotação");
-		// workspace.setId("0113");
+		 Workspace workspace = spemartiFactory.createWorkspace();
+		 workspace.setAnnotation("anotação");
+		 workspace.setId("0113");
 		// // workspace.getConfiguration().add(configuration);
 		// // workspace.getVersionedExtent().add(versionedExtent);
 		// session.save(workspace);
+		WorkspaceDao workspaceDao = new WorkspaceDaoImpl(sessionFactory);
+		workspaceDao.save(workspace);
+		List findByExample = workspaceDao.findByExample(workspace);
 
 		// Text text = spemartiFactory.createText();
 		// text.setBaseVersion(version);
@@ -109,8 +100,27 @@ public class Main {
 		// // System.out.println(cust.getCode() + " " + cust.getName());
 		// // }
 
-		tx.commit();
-		session.close();
+//		tx.commit();
+//		session.close();
+	}
+
+	private static HbDataStore initialize() {
+		HbDataStore hbds = (HbDataStore) HbHelper.INSTANCE
+				.createRegisterDataStore("MyDb");
+
+		final Properties props = new Properties();
+		props.setProperty(Environment.DRIVER, "com.mysql.jdbc.Driver");
+		props.setProperty(Environment.URL, "jdbc:mysql://127.0.0.1:3306/test");
+		props.setProperty(Environment.USER, "root");
+		props.setProperty(Environment.PASS, "admin");
+		props.setProperty(Environment.DIALECT,
+				org.hibernate.dialect.MySQLInnoDBDialect.class.getName());
+		props.setProperty(Environment.SHOW_SQL, "true");
+		hbds.setProperties(props);
+
+		hbds.setEPackages(new EPackage[] { SpemartiPackage.eINSTANCE });
+		hbds.initialize();
+		return hbds;
 	}
 
 }
