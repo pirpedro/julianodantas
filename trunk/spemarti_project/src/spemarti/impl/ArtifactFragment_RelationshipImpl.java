@@ -27,6 +27,8 @@ import spemarti.SpemartiPackage;
  * @generated
  */
 public class ArtifactFragment_RelationshipImpl extends Fragment_RelationshipImpl implements ArtifactFragment_Relationship {
+	protected ArtifactDefinition artifactDefinition;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -62,10 +64,7 @@ public class ArtifactFragment_RelationshipImpl extends Fragment_RelationshipImpl
 	 * @generated
 	 */
 	public ArtifactDefinition basicGetArtifact() {
-		// TODO: implement this method to return the 'Artifact' reference
-		// -> do not perform proxy resolution
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		return artifactDefinition;
 	}
 
 	/**
@@ -74,9 +73,7 @@ public class ArtifactFragment_RelationshipImpl extends Fragment_RelationshipImpl
 	 * @generated
 	 */
 	public void setArtifact(ArtifactDefinition newArtifact) {
-		// TODO: implement this method to set the 'Artifact' reference
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		this.artifactDefinition = newArtifact;
 	}
 
 	/**

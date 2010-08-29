@@ -35,6 +35,9 @@ import spemarti.SpemartiPackage;
  * @generated
  */
 public class ArtifactContainer_RelationshipImpl extends EObjectImpl implements ArtifactContainer_Relationship {
+	protected ArtifactDefinition artifactDefinition;
+	protected EList<ContainerDefinition> containers;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,37 +70,25 @@ public class ArtifactContainer_RelationshipImpl extends EObjectImpl implements A
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public ArtifactDefinition basicGetArtifact() {
-		// TODO: implement this method to return the 'Artifact' reference
-		// -> do not perform proxy resolution
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		return artifactDefinition;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public void setArtifact(ArtifactDefinition newArtifact) {
-		// TODO: implement this method to set the 'Artifact' reference
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		this.artifactDefinition = newArtifact;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public EList<ContainerDefinition> getContainers() {
-		// TODO: implement this method to return the 'Containers' reference list
-		// Ensure that you remove @generated or mark it @generated NOT
-		// The list is expected to implement org.eclipse.emf.ecore.util.InternalEList and org.eclipse.emf.ecore.EStructuralFeature.Setting
-		// so it's likely that an appropriate subclass of org.eclipse.emf.ecore.util.EcoreEList should be used.
-		throw new UnsupportedOperationException();
+		return containers;
 	}
 
 	/**

@@ -9,11 +9,8 @@ package spemarti.impl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import spemarti.ArtifactContainer_Relationship;
@@ -79,6 +76,10 @@ public class ArtifactDefinitionImpl extends WorkProductDefinitionImpl implements
 	 */
 	protected ArtifactKinds aKind = AKIND_EDEFAULT;
 
+	protected EList<ArtifactFragment_Relationship> artifactFragment_Relationship;
+
+	protected EList<ArtifactContainer_Relationship> artifactContainer_Relationship;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -143,14 +144,9 @@ public class ArtifactDefinitionImpl extends WorkProductDefinitionImpl implements
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public EList<ArtifactFragment_Relationship> getArtifactFragment_Relationship() {
-		// TODO: implement this method to return the 'Artifact Fragment Relationship' reference list
-		// Ensure that you remove @generated or mark it @generated NOT
-		// The list is expected to implement org.eclipse.emf.ecore.util.InternalEList and org.eclipse.emf.ecore.EStructuralFeature.Setting
-		// so it's likely that an appropriate subclass of org.eclipse.emf.ecore.util.EcoreEList should be used.
-		throw new UnsupportedOperationException();
+		return artifactFragment_Relationship;
 	}
 
 	/**
@@ -159,11 +155,7 @@ public class ArtifactDefinitionImpl extends WorkProductDefinitionImpl implements
 	 * @generated
 	 */
 	public EList<ArtifactContainer_Relationship> getArtifactContainer_Relationship() {
-		// TODO: implement this method to return the 'Artifact Container Relationship' reference list
-		// Ensure that you remove @generated or mark it @generated NOT
-		// The list is expected to implement org.eclipse.emf.ecore.util.InternalEList and org.eclipse.emf.ecore.EStructuralFeature.Setting
-		// so it's likely that an appropriate subclass of org.eclipse.emf.ecore.util.EcoreEList should be used.
-		throw new UnsupportedOperationException();
+		return artifactContainer_Relationship;
 	}
 
 	/**

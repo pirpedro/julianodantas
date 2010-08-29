@@ -30,6 +30,8 @@ import spemarti.SpemartiPackage;
  * @generated
  */
 public class ContainerFragment_RelationshipImpl extends Fragment_RelationshipImpl implements ContainerFragment_Relationship {
+	protected EList<ContainerDefinition> containers;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,14 +54,9 @@ public class ContainerFragment_RelationshipImpl extends Fragment_RelationshipImp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public EList<ContainerDefinition> getContainer() {
-		// TODO: implement this method to return the 'Container' reference list
-		// Ensure that you remove @generated or mark it @generated NOT
-		// The list is expected to implement org.eclipse.emf.ecore.util.InternalEList and org.eclipse.emf.ecore.EStructuralFeature.Setting
-		// so it's likely that an appropriate subclass of org.eclipse.emf.ecore.util.EcoreEList should be used.
-		throw new UnsupportedOperationException();
+		return containers;
 	}
 
 	/**
