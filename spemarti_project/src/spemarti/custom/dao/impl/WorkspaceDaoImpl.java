@@ -8,7 +8,7 @@ import spemarti.custom.dao.WorkspaceDao;
 
 public class WorkspaceDaoImpl extends TOBaseHibernateDao<Workspace, String> implements WorkspaceDao {
 
-	private WorkspaceDaoImpl(Class objectClass, SessionFactory sessionFactory) {
+	private WorkspaceDaoImpl(Class<?> objectClass, SessionFactory sessionFactory) {
 		super(Workspace.class, sessionFactory);
 	}
 	

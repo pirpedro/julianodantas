@@ -9,12 +9,9 @@ package spemarti.impl;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import spemarti.FragmentDefinition;
-import spemarti.Fragment_Relationship;
 import spemarti.SimpleInformationElement;
 import spemarti.SpemartiPackage;
 import spemarti.WorkProductDefinition;

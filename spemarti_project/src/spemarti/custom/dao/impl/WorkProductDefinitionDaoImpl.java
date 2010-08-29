@@ -13,7 +13,7 @@ public class WorkProductDefinitionDaoImpl extends TOBaseHibernateDao<WorkProduct
 	 */
 	private static final long serialVersionUID = -2512545725595017587L;
 
-	private WorkProductDefinitionDaoImpl(Class objectClass, SessionFactory sessionFactory) {
+	private WorkProductDefinitionDaoImpl(Class<?> objectClass, SessionFactory sessionFactory) {
 		super(WorkProductDefinition.class, sessionFactory);
 	}
 	
