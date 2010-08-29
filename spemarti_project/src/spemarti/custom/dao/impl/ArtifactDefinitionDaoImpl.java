@@ -6,6 +6,7 @@ import spemarti.ArtifactDefinition;
 import spemarti.custom.dao.ArtifactDefinitionDao;
 import spemarti.custom.dao.TOBaseHibernateDao;
 
+@SuppressWarnings("unchecked")
 public class ArtifactDefinitionDaoImpl extends TOBaseHibernateDao<ArtifactDefinition, String> implements ArtifactDefinitionDao {
 
 	/**

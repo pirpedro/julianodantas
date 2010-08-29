@@ -6,6 +6,7 @@ import spemarti.Workspace;
 import spemarti.custom.dao.TOBaseHibernateDao;
 import spemarti.custom.dao.WorkspaceDao;
 
+@SuppressWarnings("unchecked")
 public class WorkspaceDaoImpl extends TOBaseHibernateDao<Workspace, String> implements WorkspaceDao {
 
 	private WorkspaceDaoImpl(Class<?> objectClass, SessionFactory sessionFactory) {

@@ -1,4 +1,3 @@
-<<<<<<< .mine
 package spemarti.custom.dao.impl;
 
 import org.hibernate.SessionFactory;
@@ -16,31 +15,7 @@ public class ListDaoImpl extends TOBaseHibernateDao<List, String> implements
 	 */
 	private static final long serialVersionUID = 3334089954996496632L;
 
-	private ListDaoImpl(Class<?> objectClass, SessionFactory sessionFactory) {
-		super(List.class, sessionFactory);
-	}
-
-	public ListDaoImpl(SessionFactory sessionFactory) {
-		super(List.class, sessionFactory);
-	}
-}
-=======
-package spemarti.custom.dao.impl;
-
-import org.hibernate.SessionFactory;
-
-import spemarti.List;
-import spemarti.custom.dao.ListDao;
-import spemarti.custom.dao.TOBaseHibernateDao;
-
-public class ListDaoImpl extends TOBaseHibernateDao<List, String> implements
-		ListDao {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 3334089954996496632L;
-
+	@SuppressWarnings("rawtypes")
 	private ListDaoImpl(Class objectClass, SessionFactory sessionFactory) {
 		super(List.class, sessionFactory);
 	}
@@ -49,4 +24,3 @@ public class ListDaoImpl extends TOBaseHibernateDao<List, String> implements
 		super(List.class, sessionFactory);
 	}
 }
->>>>>>> .r19

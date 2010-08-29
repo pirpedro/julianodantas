@@ -6,6 +6,7 @@ import spemarti.ArtifactFragment_Relationship;
 import spemarti.custom.dao.ArtifactFragment_RelationshipDao;
 import spemarti.custom.dao.TOBaseHibernateDao;
 
+@SuppressWarnings("unchecked")
 public class ArtifactFragment_RelationshipDaoImpl extends TOBaseHibernateDao<ArtifactFragment_Relationship, String> implements ArtifactFragment_RelationshipDao {
 
 	/**
