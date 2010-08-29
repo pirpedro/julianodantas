@@ -266,11 +266,7 @@
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FragmentDefinition" abstract="true"
-      eSuperTypes="#//WorkProductDefinition">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="fragment_Relationship"
-        ordered="false" lowerBound="1" eType="#//Fragment_Relationship" volatile="true"
-        derived="true" eOpposite="#//Fragment_Relationship/containers"/>
-  </eClassifiers>
+      eSuperTypes="#//WorkProductDefinition"/>
   <eClassifiers xsi:type="ecore:EClass" name="WorkProductDefinition" abstract="true">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>WorkProductDefinition&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>é uma metaclasse que representa os produtos de&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>trabalho (&lt;/font>&lt;i>&lt;font face=&quot;Times New Roman&quot;>Work Products&lt;/font>&lt;/i>&lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>) resultantes da execução de atividades ou tarefas de um PDS.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;b>&lt;font face=&quot;Times New Roman&quot;>Generalização:&lt;/font>&lt;/b>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;CMSY10&quot;>•&lt;/font> &lt;font face=&quot;Courier&quot;>WorkProductDefinitionRelationship&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Times New Roman&quot;>é uma metaclasse que estende&lt;/font> &lt;font face=&quot;Courier&quot;>Reuse&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Courier&quot;>Relationship&lt;/font> &lt;font face=&quot;Times New Roman&quot;>do SPEM v2, sendo então um relacionamento capaz&#xD;&#xA;    de definir níveis&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>reuso.&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;b>&lt;font face=&quot;Times New Roman&quot;>Semântica:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>Existem&#xD;&#xA;    diversos produtos de trabalho que são construídos durante a execução&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>de alguma atividade ou tarefa do PDS. Tais produtos&#xD;&#xA;    geralmente são tratados como artefatos,&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>entretanto, em nossa abordagem, pode ser qualquer fragmento&#xD;&#xA;    de informação, tipo ou seção&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p align=&quot;left&quot;>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>que foi produzida. A metaclasse&lt;/font> &lt;font&#xD;&#xA;    face=&quot;Courier&quot;>WorkProductDefinition&lt;/font> &lt;font face=&quot;Times New Roman&quot;>representa quaisquer tipos de&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>produtos de trabalho.&lt;/font>&lt;/font>&#xD;&#xA;&lt;/p>"/>
@@ -279,11 +275,6 @@
         lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
         lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Fragment_Relationship">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="containers" ordered="false"
-        lowerBound="1" upperBound="-1" eType="#//FragmentDefinition" volatile="true"
-        derived="true" eOpposite="#//FragmentDefinition/fragment_Relationship"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Diagram" eSuperTypes="#//ComplexInformationElement">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -470,6 +461,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="artifact" ordered="false"
         lowerBound="1" eType="#//ArtifactDefinition" volatile="true" derived="true"
         eOpposite="#//ArtifactDefinition/artifactFragment_Relationship"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fragment_Relationship">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containers" ordered="false"
+        lowerBound="1" upperBound="-1" eType="#//FragmentDefinition" volatile="true"
+        derived="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ContainerDefinition_Relationship">
     <eStructuralFeatures xsi:type="ecore:EReference" name="children" ordered="false"

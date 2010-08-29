@@ -83,15 +83,10 @@
       <genOperations ecoreOperation="spemarti.ecore#//Configuration/getBaselineHistory"/>
     </genClasses>
     <genClasses ecoreClass="spemarti.ecore#//BaselineHistory"/>
-    <genClasses image="false" ecoreClass="spemarti.ecore#//FragmentDefinition">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//FragmentDefinition/fragment_Relationship"/>
-    </genClasses>
+    <genClasses image="false" ecoreClass="spemarti.ecore#//FragmentDefinition"/>
     <genClasses image="false" ecoreClass="spemarti.ecore#//WorkProductDefinition">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//WorkProductDefinition/presentationName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//WorkProductDefinition/description"/>
-    </genClasses>
-    <genClasses ecoreClass="spemarti.ecore#//Fragment_Relationship">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Fragment_Relationship/containers"/>
     </genClasses>
     <genClasses ecoreClass="spemarti.ecore#//Diagram">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Diagram/image"/>
@@ -167,6 +162,9 @@
     </genClasses>
     <genClasses ecoreClass="spemarti.ecore#//ArtifactFragment_Relationship">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//ArtifactFragment_Relationship/artifact"/>
+    </genClasses>
+    <genClasses ecoreClass="spemarti.ecore#//Fragment_Relationship">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//Fragment_Relationship/containers"/>
     </genClasses>
     <genClasses ecoreClass="spemarti.ecore#//ContainerDefinition_Relationship">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//ContainerDefinition_Relationship/children"/>
