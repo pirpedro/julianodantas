@@ -112,10 +112,6 @@ public class SpemartiAdapterFactory extends AdapterFactoryImpl {
 				return createWorkProductDefinitionAdapter();
 			}
 			@Override
-			public Adapter caseFragment_Relationship(Fragment_Relationship object) {
-				return createFragment_RelationshipAdapter();
-			}
-			@Override
 			public Adapter caseDiagram(Diagram object) {
 				return createDiagramAdapter();
 			}
@@ -170,6 +166,10 @@ public class SpemartiAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseArtifactFragment_Relationship(ArtifactFragment_Relationship object) {
 				return createArtifactFragment_RelationshipAdapter();
+			}
+			@Override
+			public Adapter caseFragment_Relationship(Fragment_Relationship object) {
+				return createFragment_RelationshipAdapter();
 			}
 			@Override
 			public Adapter caseContainerDefinition_Relationship(ContainerDefinition_Relationship object) {

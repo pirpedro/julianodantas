@@ -157,12 +157,6 @@ public class SpemartiSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case SpemartiPackage.FRAGMENT_RELATIONSHIP: {
-				Fragment_Relationship fragment_Relationship = (Fragment_Relationship)theEObject;
-				T result = caseFragment_Relationship(fragment_Relationship);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case SpemartiPackage.DIAGRAM: {
 				Diagram diagram = (Diagram)theEObject;
 				T result = caseDiagram(diagram);
@@ -287,6 +281,12 @@ public class SpemartiSwitch<T> {
 				ArtifactFragment_Relationship artifactFragment_Relationship = (ArtifactFragment_Relationship)theEObject;
 				T result = caseArtifactFragment_Relationship(artifactFragment_Relationship);
 				if (result == null) result = caseFragment_Relationship(artifactFragment_Relationship);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SpemartiPackage.FRAGMENT_RELATIONSHIP: {
+				Fragment_Relationship fragment_Relationship = (Fragment_Relationship)theEObject;
+				T result = caseFragment_Relationship(fragment_Relationship);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

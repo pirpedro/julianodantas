@@ -234,22 +234,13 @@ public interface SpemartiPackage extends EPackage {
 	int SIMPLE_INFORMATION_ELEMENT__DESCRIPTION = VERSIONED_EXTENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP = VERSIONED_EXTENT_FEATURE_COUNT + 2;
-
-	/**
 	 * The number of structural features of the '<em>Simple Information Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SIMPLE_INFORMATION_ELEMENT_FEATURE_COUNT = VERSIONED_EXTENT_FEATURE_COUNT + 3;
+	int SIMPLE_INFORMATION_ELEMENT_FEATURE_COUNT = VERSIONED_EXTENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link spemarti.impl.ImageImpl <em>Image</em>}' class.
@@ -341,15 +332,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMAGE__DESCRIPTION = SIMPLE_INFORMATION_ELEMENT__DESCRIPTION;
-
-	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMAGE__FRAGMENT_RELATIONSHIP = SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP;
 
 	/**
 	 * The number of structural features of the '<em>Image</em>' class.
@@ -782,22 +764,13 @@ public interface SpemartiPackage extends EPackage {
 	int FRAGMENT_DEFINITION__DESCRIPTION = WORK_PRODUCT_DEFINITION__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAGMENT_DEFINITION__FRAGMENT_RELATIONSHIP = WORK_PRODUCT_DEFINITION_FEATURE_COUNT + 0;
-
-	/**
 	 * The number of structural features of the '<em>Fragment Definition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRAGMENT_DEFINITION_FEATURE_COUNT = WORK_PRODUCT_DEFINITION_FEATURE_COUNT + 1;
+	int FRAGMENT_DEFINITION_FEATURE_COUNT = WORK_PRODUCT_DEFINITION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link spemarti.impl.Fragment_RelationshipImpl <em>Fragment Relationship</em>}' class.
@@ -807,25 +780,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getFragment_Relationship()
 	 * @generated
 	 */
-	int FRAGMENT_RELATIONSHIP = 10;
-
-	/**
-	 * The feature id for the '<em><b>Containers</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAGMENT_RELATIONSHIP__CONTAINERS = 0;
-
-	/**
-	 * The number of structural features of the '<em>Fragment Relationship</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAGMENT_RELATIONSHIP_FEATURE_COUNT = 1;
+	int FRAGMENT_RELATIONSHIP = 24;
 
 	/**
 	 * The meta object id for the '{@link spemarti.impl.ComplexInformationElementImpl <em>Complex Information Element</em>}' class.
@@ -835,7 +790,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getComplexInformationElement()
 	 * @generated
 	 */
-	int COMPLEX_INFORMATION_ELEMENT = 12;
+	int COMPLEX_INFORMATION_ELEMENT = 11;
 
 	/**
 	 * The feature id for the '<em><b>Is Checked Out</b></em>' attribute.
@@ -919,15 +874,6 @@ public interface SpemartiPackage extends EPackage {
 	int COMPLEX_INFORMATION_ELEMENT__DESCRIPTION = SIMPLE_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPLEX_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP = SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP;
-
-	/**
 	 * The number of structural features of the '<em>Complex Information Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -944,7 +890,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getDiagram()
 	 * @generated
 	 */
-	int DIAGRAM = 11;
+	int DIAGRAM = 10;
 
 	/**
 	 * The feature id for the '<em><b>Is Checked Out</b></em>' attribute.
@@ -1028,15 +974,6 @@ public interface SpemartiPackage extends EPackage {
 	int DIAGRAM__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGRAM__FRAGMENT_RELATIONSHIP = COMPLEX_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP;
-
-	/**
 	 * The feature id for the '<em><b>Image</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1062,7 +999,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getQuestion()
 	 * @generated
 	 */
-	int QUESTION = 13;
+	int QUESTION = 12;
 
 	/**
 	 * The feature id for the '<em><b>Is Checked Out</b></em>' attribute.
@@ -1146,15 +1083,6 @@ public interface SpemartiPackage extends EPackage {
 	int QUESTION__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUESTION__FRAGMENT_RELATIONSHIP = COMPLEX_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP;
-
-	/**
 	 * The feature id for the '<em><b>Asks</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1189,7 +1117,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getText()
 	 * @generated
 	 */
-	int TEXT = 14;
+	int TEXT = 13;
 
 	/**
 	 * The feature id for the '<em><b>Is Checked Out</b></em>' attribute.
@@ -1273,15 +1201,6 @@ public interface SpemartiPackage extends EPackage {
 	int TEXT__DESCRIPTION = SIMPLE_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TEXT__FRAGMENT_RELATIONSHIP = SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP;
-
-	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1307,7 +1226,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getList()
 	 * @generated
 	 */
-	int LIST = 15;
+	int LIST = 14;
 
 	/**
 	 * The feature id for the '<em><b>Is Checked Out</b></em>' attribute.
@@ -1391,15 +1310,6 @@ public interface SpemartiPackage extends EPackage {
 	int LIST__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LIST__FRAGMENT_RELATIONSHIP = COMPLEX_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP;
-
-	/**
 	 * The feature id for the '<em><b>Is Labeled</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1452,7 +1362,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getMatrix()
 	 * @generated
 	 */
-	int MATRIX = 16;
+	int MATRIX = 15;
 
 	/**
 	 * The feature id for the '<em><b>Is Checked Out</b></em>' attribute.
@@ -1536,15 +1446,6 @@ public interface SpemartiPackage extends EPackage {
 	int MATRIX__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MATRIX__FRAGMENT_RELATIONSHIP = COMPLEX_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP;
-
-	/**
 	 * The feature id for the '<em><b>Header</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1579,7 +1480,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getTable()
 	 * @generated
 	 */
-	int TABLE = 17;
+	int TABLE = 16;
 
 	/**
 	 * The feature id for the '<em><b>Is Checked Out</b></em>' attribute.
@@ -1663,15 +1564,6 @@ public interface SpemartiPackage extends EPackage {
 	int TABLE__DESCRIPTION = MATRIX__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TABLE__FRAGMENT_RELATIONSHIP = MATRIX__FRAGMENT_RELATIONSHIP;
-
-	/**
 	 * The feature id for the '<em><b>Header</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1715,7 +1607,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getElementGroup()
 	 * @generated
 	 */
-	int ELEMENT_GROUP = 18;
+	int ELEMENT_GROUP = 17;
 
 	/**
 	 * The feature id for the '<em><b>Is Checked Out</b></em>' attribute.
@@ -1799,15 +1691,6 @@ public interface SpemartiPackage extends EPackage {
 	int ELEMENT_GROUP__DESCRIPTION = LIST__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ELEMENT_GROUP__FRAGMENT_RELATIONSHIP = LIST__FRAGMENT_RELATIONSHIP;
-
-	/**
 	 * The feature id for the '<em><b>Is Labeled</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1878,7 +1761,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getWorkspace()
 	 * @generated
 	 */
-	int WORKSPACE = 19;
+	int WORKSPACE = 18;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1933,7 +1816,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getSession()
 	 * @generated
 	 */
-	int SESSION = 20;
+	int SESSION = 19;
 
 	/**
 	 * The feature id for the '<em><b>Workspace</b></em>' reference.
@@ -1961,7 +1844,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getContainerDefinition()
 	 * @generated
 	 */
-	int CONTAINER_DEFINITION = 21;
+	int CONTAINER_DEFINITION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Presentation Name</b></em>' attribute.
@@ -2034,7 +1917,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getArtifactContainer_Relationship()
 	 * @generated
 	 */
-	int ARTIFACT_CONTAINER_RELATIONSHIP = 22;
+	int ARTIFACT_CONTAINER_RELATIONSHIP = 21;
 
 	/**
 	 * The feature id for the '<em><b>Artifact</b></em>' reference.
@@ -2071,7 +1954,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getArtifactDefinition()
 	 * @generated
 	 */
-	int ARTIFACT_DEFINITION = 23;
+	int ARTIFACT_DEFINITION = 22;
 
 	/**
 	 * The feature id for the '<em><b>Presentation Name</b></em>' attribute.
@@ -2137,6 +2020,24 @@ public interface SpemartiPackage extends EPackage {
 	int ARTIFACT_DEFINITION_FEATURE_COUNT = WORK_PRODUCT_DEFINITION_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Containers</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAGMENT_RELATIONSHIP__CONTAINERS = 0;
+
+	/**
+	 * The number of structural features of the '<em>Fragment Relationship</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAGMENT_RELATIONSHIP_FEATURE_COUNT = 1;
+
+	/**
 	 * The meta object id for the '{@link spemarti.impl.ArtifactFragment_RelationshipImpl <em>Artifact Fragment Relationship</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2144,7 +2045,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @see spemarti.impl.SpemartiPackageImpl#getArtifactFragment_Relationship()
 	 * @generated
 	 */
-	int ARTIFACT_FRAGMENT_RELATIONSHIP = 24;
+	int ARTIFACT_FRAGMENT_RELATIONSHIP = 23;
 
 	/**
 	 * The feature id for the '<em><b>Containers</b></em>' reference list.
@@ -2337,15 +2238,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int LABELED_TEXT__DESCRIPTION = TEXT__DESCRIPTION;
-
-	/**
-	 * The feature id for the '<em><b>Fragment Relationship</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABELED_TEXT__FRAGMENT_RELATIONSHIP = TEXT__FRAGMENT_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -2771,17 +2663,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFragmentDefinition();
-
-	/**
-	 * Returns the meta object for the reference '{@link spemarti.FragmentDefinition#getFragment_Relationship <em>Fragment Relationship</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fragment Relationship</em>'.
-	 * @see spemarti.FragmentDefinition#getFragment_Relationship()
-	 * @see #getFragmentDefinition()
-	 * @generated
-	 */
-	EReference getFragmentDefinition_Fragment_Relationship();
 
 	/**
 	 * Returns the meta object for class '{@link spemarti.WorkProductDefinition <em>Work Product Definition</em>}'.
@@ -3706,14 +3587,6 @@ public interface SpemartiPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FRAGMENT_DEFINITION = eINSTANCE.getFragmentDefinition();
-
-		/**
-		 * The meta object literal for the '<em><b>Fragment Relationship</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FRAGMENT_DEFINITION__FRAGMENT_RELATIONSHIP = eINSTANCE.getFragmentDefinition_Fragment_Relationship();
 
 		/**
 		 * The meta object literal for the '{@link spemarti.impl.WorkProductDefinitionImpl <em>Work Product Definition</em>}' class.
