@@ -34,6 +34,9 @@ import spemarti.SpemartiPackage;
  * @generated
  */
 public class ContainerDefinition_RelationshipImpl extends EObjectImpl implements ContainerDefinition_Relationship {
+	protected EList<ContainerDefinition> children;
+	protected ContainerDefinition parent;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56,14 +59,9 @@ public class ContainerDefinition_RelationshipImpl extends EObjectImpl implements
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public EList<ContainerDefinition> getChildren() {
-		// TODO: implement this method to return the 'Children' reference list
-		// Ensure that you remove @generated or mark it @generated NOT
-		// The list is expected to implement org.eclipse.emf.ecore.util.InternalEList and org.eclipse.emf.ecore.EStructuralFeature.Setting
-		// so it's likely that an appropriate subclass of org.eclipse.emf.ecore.util.EcoreEList should be used.
-		throw new UnsupportedOperationException();
+		return children;
 	}
 
 	/**
@@ -79,24 +77,17 @@ public class ContainerDefinition_RelationshipImpl extends EObjectImpl implements
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public ContainerDefinition basicGetParent() {
-		// TODO: implement this method to return the 'Parent' reference
-		// -> do not perform proxy resolution
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		return parent;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public void setParent(ContainerDefinition newParent) {
-		// TODO: implement this method to set the 'Parent' reference
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		this.parent = newParent;
 	}
 
 	/**

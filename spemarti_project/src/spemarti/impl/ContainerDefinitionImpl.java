@@ -35,6 +35,11 @@ import spemarti.SpemartiPackage;
  * @generated
  */
 public class ContainerDefinitionImpl extends WorkProductDefinitionImpl implements ContainerDefinition {
+	protected EList<ArtifactContainer_Relationship> artifactContainer_Relationship;
+	protected EList<ContainerDefinition_Relationship> containerDefinition_Relationship;
+	protected EList<ContainerDefinition_Relationship> containerDefinition_Relationship2;
+	protected EList<ContainerFragment_Relationship> containerFragment_Relationship;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,53 +62,33 @@ public class ContainerDefinitionImpl extends WorkProductDefinitionImpl implement
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public EList<ArtifactContainer_Relationship> getArtifactContainer_Relationship() {
-		// TODO: implement this method to return the 'Artifact Container Relationship' reference list
-		// Ensure that you remove @generated or mark it @generated NOT
-		// The list is expected to implement org.eclipse.emf.ecore.util.InternalEList and org.eclipse.emf.ecore.EStructuralFeature.Setting
-		// so it's likely that an appropriate subclass of org.eclipse.emf.ecore.util.EcoreEList should be used.
-		throw new UnsupportedOperationException();
+		return artifactContainer_Relationship;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public EList<ContainerDefinition_Relationship> getContainerDefinition_Relationship() {
-		// TODO: implement this method to return the 'Container Definition Relationship' reference list
-		// Ensure that you remove @generated or mark it @generated NOT
-		// The list is expected to implement org.eclipse.emf.ecore.util.InternalEList and org.eclipse.emf.ecore.EStructuralFeature.Setting
-		// so it's likely that an appropriate subclass of org.eclipse.emf.ecore.util.EcoreEList should be used.
-		throw new UnsupportedOperationException();
+		return containerDefinition_Relationship;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public EList<ContainerDefinition_Relationship> getContainerDefinition_Relationship2() {
-		// TODO: implement this method to return the 'Container Definition Relationship2' reference list
-		// Ensure that you remove @generated or mark it @generated NOT
-		// The list is expected to implement org.eclipse.emf.ecore.util.InternalEList and org.eclipse.emf.ecore.EStructuralFeature.Setting
-		// so it's likely that an appropriate subclass of org.eclipse.emf.ecore.util.EcoreEList should be used.
-		throw new UnsupportedOperationException();
+		return containerDefinition_Relationship2;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
 	 */
 	public EList<ContainerFragment_Relationship> getContainerFragment_Relationship() {
-		// TODO: implement this method to return the 'Container Fragment Relationship' reference list
-		// Ensure that you remove @generated or mark it @generated NOT
-		// The list is expected to implement org.eclipse.emf.ecore.util.InternalEList and org.eclipse.emf.ecore.EStructuralFeature.Setting
-		// so it's likely that an appropriate subclass of org.eclipse.emf.ecore.util.EcoreEList should be used.
-		throw new UnsupportedOperationException();
+		return containerFragment_Relationship;
 	}
 
 	/**
