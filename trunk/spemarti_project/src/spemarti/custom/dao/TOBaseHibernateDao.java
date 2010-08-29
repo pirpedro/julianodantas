@@ -17,6 +17,10 @@ import org.hibernate.type.Type;
 
 public abstract class TOBaseHibernateDao<T, PK extends Serializable> implements
 		TOBaseDao<T, PK>, PropertySelector {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6284325510416131727L;
 	private static final Log logger = LogFactory
 			.getLog(TOBaseHibernateDao.class);
 	@SuppressWarnings("rawtypes")
@@ -24,6 +28,7 @@ public abstract class TOBaseHibernateDao<T, PK extends Serializable> implements
 
 	private final SessionFactory sessionFactory;
 
+	@SuppressWarnings("rawtypes")
 	protected TOBaseHibernateDao(final Class objectClass,
 			final SessionFactory sessionFactory) {
 		this.objectClass = objectClass;
@@ -200,7 +205,7 @@ public abstract class TOBaseHibernateDao<T, PK extends Serializable> implements
 		}
 	}
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List findByExample(final T example) {
 		Session session = null;
 		Transaction tx = null;
@@ -226,7 +231,7 @@ public abstract class TOBaseHibernateDao<T, PK extends Serializable> implements
 	protected void addPropertiedToCriteria(final Criteria c, final T example) {
 	}
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List findByExample(final T example, final int first, final int max) {
 		Session session = null;
     	Transaction tx = null;
@@ -255,7 +260,7 @@ public abstract class TOBaseHibernateDao<T, PK extends Serializable> implements
 		}
 	}
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List listAll(final int first, final int max) {
 		Session session = null;
     	Transaction tx = null;

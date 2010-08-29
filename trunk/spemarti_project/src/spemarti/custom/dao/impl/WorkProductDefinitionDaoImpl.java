@@ -6,6 +6,7 @@ import spemarti.WorkProductDefinition;
 import spemarti.custom.dao.TOBaseHibernateDao;
 import spemarti.custom.dao.WorkProductDefinitionDao;
 
+@SuppressWarnings("unchecked")
 public class WorkProductDefinitionDaoImpl extends TOBaseHibernateDao<WorkProductDefinition, String> implements WorkProductDefinitionDao {
 
 	/**

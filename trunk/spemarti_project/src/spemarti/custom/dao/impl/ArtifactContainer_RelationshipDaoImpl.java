@@ -6,6 +6,7 @@ import spemarti.ArtifactContainer_Relationship;
 import spemarti.custom.dao.ArtifactContainer_RelationshipDao;
 import spemarti.custom.dao.TOBaseHibernateDao;
 
+@SuppressWarnings("unchecked")
 public class ArtifactContainer_RelationshipDaoImpl extends TOBaseHibernateDao<ArtifactContainer_Relationship, String> implements ArtifactContainer_RelationshipDao {
 
 	/**
