@@ -647,15 +647,6 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFragmentDefinition_Fragment_Relationship() {
-		return (EReference)fragmentDefinitionEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getWorkProductDefinition() {
 		return workProductDefinitionEClass;
 	}
@@ -1227,14 +1218,10 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 		baselineHistoryEClass = createEClass(BASELINE_HISTORY);
 
 		fragmentDefinitionEClass = createEClass(FRAGMENT_DEFINITION);
-		createEReference(fragmentDefinitionEClass, FRAGMENT_DEFINITION__FRAGMENT_RELATIONSHIP);
 
 		workProductDefinitionEClass = createEClass(WORK_PRODUCT_DEFINITION);
 		createEAttribute(workProductDefinitionEClass, WORK_PRODUCT_DEFINITION__PRESENTATION_NAME);
 		createEAttribute(workProductDefinitionEClass, WORK_PRODUCT_DEFINITION__DESCRIPTION);
-
-		fragment_RelationshipEClass = createEClass(FRAGMENT_RELATIONSHIP);
-		createEReference(fragment_RelationshipEClass, FRAGMENT_RELATIONSHIP__CONTAINERS);
 
 		diagramEClass = createEClass(DIAGRAM);
 		createEReference(diagramEClass, DIAGRAM__IMAGE);
@@ -1292,6 +1279,9 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 
 		artifactFragment_RelationshipEClass = createEClass(ARTIFACT_FRAGMENT_RELATIONSHIP);
 		createEReference(artifactFragment_RelationshipEClass, ARTIFACT_FRAGMENT_RELATIONSHIP__ARTIFACT);
+
+		fragment_RelationshipEClass = createEClass(FRAGMENT_RELATIONSHIP);
+		createEReference(fragment_RelationshipEClass, FRAGMENT_RELATIONSHIP__CONTAINERS);
 
 		containerDefinition_RelationshipEClass = createEClass(CONTAINER_DEFINITION_RELATIONSHIP);
 		createEReference(containerDefinition_RelationshipEClass, CONTAINER_DEFINITION_RELATIONSHIP__CHILDREN);
@@ -1436,14 +1426,10 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 		initEClass(baselineHistoryEClass, BaselineHistory.class, "BaselineHistory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(fragmentDefinitionEClass, FragmentDefinition.class, "FragmentDefinition", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFragmentDefinition_Fragment_Relationship(), this.getFragment_Relationship(), this.getFragment_Relationship_Containers(), "fragment_Relationship", null, 1, 1, FragmentDefinition.class, !IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, !IS_ORDERED);
 
 		initEClass(workProductDefinitionEClass, WorkProductDefinition.class, "WorkProductDefinition", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getWorkProductDefinition_PresentationName(), ecorePackage.getEString(), "presentationName", null, 1, 1, WorkProductDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getWorkProductDefinition_Description(), ecorePackage.getEString(), "description", null, 1, 1, WorkProductDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(fragment_RelationshipEClass, Fragment_Relationship.class, "Fragment_Relationship", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFragment_Relationship_Containers(), this.getFragmentDefinition(), this.getFragmentDefinition_Fragment_Relationship(), "containers", null, 1, -1, Fragment_Relationship.class, !IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, !IS_ORDERED);
 
 		initEClass(diagramEClass, Diagram.class, "Diagram", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDiagram_Image(), this.getImage(), null, "image", null, 0, -1, Diagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1524,6 +1510,9 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 
 		initEClass(artifactFragment_RelationshipEClass, ArtifactFragment_Relationship.class, "ArtifactFragment_Relationship", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getArtifactFragment_Relationship_Artifact(), this.getArtifactDefinition(), this.getArtifactDefinition_ArtifactFragment_Relationship(), "artifact", null, 1, 1, ArtifactFragment_Relationship.class, !IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, !IS_ORDERED);
+
+		initEClass(fragment_RelationshipEClass, Fragment_Relationship.class, "Fragment_Relationship", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFragment_Relationship_Containers(), this.getFragmentDefinition(), null, "containers", null, 1, -1, Fragment_Relationship.class, !IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, !IS_ORDERED);
 
 		initEClass(containerDefinition_RelationshipEClass, ContainerDefinition_Relationship.class, "ContainerDefinition_Relationship", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContainerDefinition_Relationship_Children(), this.getContainerDefinition(), this.getContainerDefinition_ContainerDefinition_Relationship2(), "children", null, 0, -1, ContainerDefinition_Relationship.class, !IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, !IS_ORDERED);

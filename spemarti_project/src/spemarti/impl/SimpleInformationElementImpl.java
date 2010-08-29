@@ -28,7 +28,6 @@ import spemarti.WorkProductDefinition;
  * <ul>
  *   <li>{@link spemarti.impl.SimpleInformationElementImpl#getPresentationName <em>Presentation Name</em>}</li>
  *   <li>{@link spemarti.impl.SimpleInformationElementImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link spemarti.impl.SimpleInformationElementImpl#getFragment_Relationship <em>Fragment Relationship</em>}</li>
  * </ul>
  * </p>
  *
@@ -141,39 +140,6 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Fragment_Relationship getFragment_Relationship() {
-		Fragment_Relationship fragment_Relationship = basicGetFragment_Relationship();
-		return fragment_Relationship != null && fragment_Relationship.eIsProxy() ? (Fragment_Relationship)eResolveProxy((InternalEObject)fragment_Relationship) : fragment_Relationship;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Fragment_Relationship basicGetFragment_Relationship() {
-		// TODO: implement this method to return the 'Fragment Relationship' reference
-		// -> do not perform proxy resolution
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setFragment_Relationship(Fragment_Relationship newFragment_Relationship) {
-		// TODO: implement this method to set the 'Fragment Relationship' reference
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -181,9 +147,6 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 				return getPresentationName();
 			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DESCRIPTION:
 				return getDescription();
-			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP:
-				if (resolve) return getFragment_Relationship();
-				return basicGetFragment_Relationship();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -201,9 +164,6 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 				return;
 			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DESCRIPTION:
 				setDescription((String)newValue);
-				return;
-			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP:
-				setFragment_Relationship((Fragment_Relationship)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -223,9 +183,6 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP:
-				setFragment_Relationship((Fragment_Relationship)null);
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -242,8 +199,6 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 				return PRESENTATION_NAME_EDEFAULT == null ? presentationName != null : !PRESENTATION_NAME_EDEFAULT.equals(presentationName);
 			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP:
-				return basicGetFragment_Relationship() != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -264,7 +219,6 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 		}
 		if (baseClass == FragmentDefinition.class) {
 			switch (derivedFeatureID) {
-				case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP: return SpemartiPackage.FRAGMENT_DEFINITION__FRAGMENT_RELATIONSHIP;
 				default: return -1;
 			}
 		}
@@ -287,7 +241,6 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 		}
 		if (baseClass == FragmentDefinition.class) {
 			switch (baseFeatureID) {
-				case SpemartiPackage.FRAGMENT_DEFINITION__FRAGMENT_RELATIONSHIP: return SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__FRAGMENT_RELATIONSHIP;
 				default: return -1;
 			}
 		}

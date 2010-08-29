@@ -30,7 +30,6 @@ public interface Fragment_Relationship extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Containers</b></em>' reference list.
 	 * The list contents are of type {@link spemarti.FragmentDefinition}.
-	 * It is bidirectional and its opposite is '{@link spemarti.FragmentDefinition#getFragment_Relationship <em>Fragment Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Containers</em>' reference list isn't clear,
@@ -39,8 +38,7 @@ public interface Fragment_Relationship extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Containers</em>' reference list.
 	 * @see spemarti.SpemartiPackage#getFragment_Relationship_Containers()
-	 * @see spemarti.FragmentDefinition#getFragment_Relationship
-	 * @model opposite="fragment_Relationship" required="true" volatile="true" derived="true" ordered="false"
+	 * @model required="true" volatile="true" derived="true" ordered="false"
 	 * @generated
 	 */
 	EList<FragmentDefinition> getContainers();

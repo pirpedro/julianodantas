@@ -68,7 +68,6 @@ public class SpemartiFactoryImpl extends EFactoryImpl implements SpemartiFactory
 			case SpemartiPackage.BASELINE: return createBaseline();
 			case SpemartiPackage.CONFIGURATION: return createConfiguration();
 			case SpemartiPackage.BASELINE_HISTORY: return createBaselineHistory();
-			case SpemartiPackage.FRAGMENT_RELATIONSHIP: return createFragment_Relationship();
 			case SpemartiPackage.DIAGRAM: return createDiagram();
 			case SpemartiPackage.QUESTION: return createQuestion();
 			case SpemartiPackage.TEXT: return createText();
@@ -82,6 +81,7 @@ public class SpemartiFactoryImpl extends EFactoryImpl implements SpemartiFactory
 			case SpemartiPackage.ARTIFACT_CONTAINER_RELATIONSHIP: return createArtifactContainer_Relationship();
 			case SpemartiPackage.ARTIFACT_DEFINITION: return createArtifactDefinition();
 			case SpemartiPackage.ARTIFACT_FRAGMENT_RELATIONSHIP: return createArtifactFragment_Relationship();
+			case SpemartiPackage.FRAGMENT_RELATIONSHIP: return createFragment_Relationship();
 			case SpemartiPackage.CONTAINER_DEFINITION_RELATIONSHIP: return createContainerDefinition_Relationship();
 			case SpemartiPackage.CONTAINER_FRAGMENT_RELATIONSHIP: return createContainerFragment_Relationship();
 			case SpemartiPackage.LABELED_TEXT: return createLabeledText();
