@@ -42,7 +42,7 @@ public class VCSServiceImpl implements VCSService {
 		hbds.setProperties(props);
 		
 		hbds.setEPackages(new EPackage[] { SpemartiPackage.eINSTANCE });
-		hbds.initialize();
+		//hbds.initialize();
 		sessionFactory = hbds.getSessionFactory();
 		
 		spemartiFactory = SpemartiPackage.eINSTANCE.getSpemartiFactory();
@@ -103,6 +103,14 @@ public class VCSServiceImpl implements VCSService {
 		}
 		
 	}
+	
+	@Override
+	public SimpleInformationElement checkOut(String versionId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 	
 	public static void main(String[] args){
 		
