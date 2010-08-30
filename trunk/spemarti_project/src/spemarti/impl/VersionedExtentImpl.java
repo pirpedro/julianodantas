@@ -38,7 +38,6 @@ import spemarti.VersionedExtent;
  *   <li>{@link spemarti.impl.VersionedExtentImpl#getAnnotation <em>Annotation</em>}</li>
  *   <li>{@link spemarti.impl.VersionedExtentImpl#getVersionhistory <em>Versionhistory</em>}</li>
  *   <li>{@link spemarti.impl.VersionedExtentImpl#getConfiguration <em>Configuration</em>}</li>
- *   <li>{@link spemarti.impl.VersionedExtentImpl#getConflict <em>Conflict</em>}</li>
  *   <li>{@link spemarti.impl.VersionedExtentImpl#getPreviousVersion <em>Previous Version</em>}</li>
  *   <li>{@link spemarti.impl.VersionedExtentImpl#getBaseVersion <em>Base Version</em>}</li>
  * </ul>
@@ -106,16 +105,6 @@ public class VersionedExtentImpl extends EObjectImpl implements VersionedExtent 
 	 * @ordered
 	 */
 	protected Configuration configuration;
-
-	/**
-	 * The cached value of the '{@link #getConflict() <em>Conflict</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConflict()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Version> conflict;
 
 	/**
 	 * The cached value of the '{@link #getPreviousVersion() <em>Previous Version</em>}' reference list.
@@ -282,18 +271,6 @@ public class VersionedExtentImpl extends EObjectImpl implements VersionedExtent 
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, SpemartiPackage.VERSIONED_EXTENT__CONFIGURATION, newConfiguration, newConfiguration));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Version> getConflict() {
-		if (conflict == null) {
-			conflict = new EObjectResolvingEList<Version>(Version.class, this, SpemartiPackage.VERSIONED_EXTENT__CONFLICT);
-		}
-		return conflict;
 	}
 
 	/**
@@ -471,8 +448,6 @@ public class VersionedExtentImpl extends EObjectImpl implements VersionedExtent 
 			case SpemartiPackage.VERSIONED_EXTENT__CONFIGURATION:
 				if (resolve) return getConfiguration();
 				return basicGetConfiguration();
-			case SpemartiPackage.VERSIONED_EXTENT__CONFLICT:
-				return getConflict();
 			case SpemartiPackage.VERSIONED_EXTENT__PREVIOUS_VERSION:
 				return getPreviousVersion();
 			case SpemartiPackage.VERSIONED_EXTENT__BASE_VERSION:
@@ -499,10 +474,6 @@ public class VersionedExtentImpl extends EObjectImpl implements VersionedExtent 
 				return;
 			case SpemartiPackage.VERSIONED_EXTENT__CONFIGURATION:
 				setConfiguration((Configuration)newValue);
-				return;
-			case SpemartiPackage.VERSIONED_EXTENT__CONFLICT:
-				getConflict().clear();
-				getConflict().addAll((Collection<? extends Version>)newValue);
 				return;
 			case SpemartiPackage.VERSIONED_EXTENT__PREVIOUS_VERSION:
 				getPreviousVersion().clear();
@@ -532,9 +503,6 @@ public class VersionedExtentImpl extends EObjectImpl implements VersionedExtent 
 			case SpemartiPackage.VERSIONED_EXTENT__CONFIGURATION:
 				setConfiguration((Configuration)null);
 				return;
-			case SpemartiPackage.VERSIONED_EXTENT__CONFLICT:
-				getConflict().clear();
-				return;
 			case SpemartiPackage.VERSIONED_EXTENT__PREVIOUS_VERSION:
 				getPreviousVersion().clear();
 				return;
@@ -561,8 +529,6 @@ public class VersionedExtentImpl extends EObjectImpl implements VersionedExtent 
 				return versionhistory != null;
 			case SpemartiPackage.VERSIONED_EXTENT__CONFIGURATION:
 				return configuration != null;
-			case SpemartiPackage.VERSIONED_EXTENT__CONFLICT:
-				return conflict != null && !conflict.isEmpty();
 			case SpemartiPackage.VERSIONED_EXTENT__PREVIOUS_VERSION:
 				return previousVersion != null && !previousVersion.isEmpty();
 			case SpemartiPackage.VERSIONED_EXTENT__BASE_VERSION:

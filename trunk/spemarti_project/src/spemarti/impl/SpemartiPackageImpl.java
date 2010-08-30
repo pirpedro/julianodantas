@@ -386,7 +386,7 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getVersionedExtent_Conflict() {
+	public EReference getVersionedExtent_PreviousVersion() {
 		return (EReference)versionedExtentEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -395,17 +395,8 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getVersionedExtent_PreviousVersion() {
-		return (EReference)versionedExtentEClass.getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getVersionedExtent_BaseVersion() {
-		return (EReference)versionedExtentEClass.getEStructuralFeatures().get(6);
+		return (EReference)versionedExtentEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -1183,7 +1174,6 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 		createEAttribute(versionedExtentEClass, VERSIONED_EXTENT__ANNOTATION);
 		createEReference(versionedExtentEClass, VERSIONED_EXTENT__VERSIONHISTORY);
 		createEReference(versionedExtentEClass, VERSIONED_EXTENT__CONFIGURATION);
-		createEReference(versionedExtentEClass, VERSIONED_EXTENT__CONFLICT);
 		createEReference(versionedExtentEClass, VERSIONED_EXTENT__PREVIOUS_VERSION);
 		createEReference(versionedExtentEClass, VERSIONED_EXTENT__BASE_VERSION);
 
@@ -1355,7 +1345,6 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 		initEAttribute(getVersionedExtent_Annotation(), ecorePackage.getEString(), "annotation", null, 0, 1, VersionedExtent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getVersionedExtent_Versionhistory(), this.getVersionHistory(), null, "versionhistory", null, 1, 1, VersionedExtent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getVersionedExtent_Configuration(), this.getConfiguration(), this.getConfiguration_VersionedExtent(), "configuration", null, 1, 1, VersionedExtent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getVersionedExtent_Conflict(), this.getVersion(), null, "conflict", null, 0, -1, VersionedExtent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getVersionedExtent_PreviousVersion(), this.getVersion(), null, "previousVersion", null, 0, -1, VersionedExtent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getVersionedExtent_BaseVersion(), this.getVersion(), null, "baseVersion", null, 1, 1, VersionedExtent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
