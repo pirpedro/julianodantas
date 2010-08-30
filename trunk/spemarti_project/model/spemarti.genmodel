@@ -23,7 +23,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//VersionedExtent/annotation"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/versionhistory"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/configuration"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/conflict"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/previousVersion"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference spemarti.ecore#//VersionedExtent/baseVersion"/>
       <genOperations ecoreOperation="spemarti.ecore#//VersionedExtent/checkOut"/>
