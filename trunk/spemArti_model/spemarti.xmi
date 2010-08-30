@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://schema.omg.org/spec/UML/2.1.1" xsi:schemaLocation="http://schema.omg.org/spec/UML/2.1.1 http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_nlib9rGIEd-lmpEK-LNr6A" name="spemarti">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_nlib97GIEd-lmpEK-LNr6A">
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://schema.omg.org/spec/UML/2.1.1" xsi:schemaLocation="http://schema.omg.org/spec/UML/2.1.1 http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_4uekM7PdEd-lmpEK-LNr6A" name="spemarti">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_4uekNLPdEd-lmpEK-LNr6A">
     <importedPackage xmi:type="uml:Model" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlib-LGIEd-lmpEK-LNr6A" name="Image">
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlib-bGIEd-lmpEK-LNr6A" general="_nlicALGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4uekNbPdEd-lmpEK-LNr6A" name="Image">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4uekNrPdEd-lmpEK-LNr6A" general="_4uekPbPdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlib-rGIEd-lmpEK-LNr6A" name="Diagram">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlib-7GIEd-lmpEK-LNr6A" annotatedElement="_nlib-rGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4uekN7PdEd-lmpEK-LNr6A" name="Diagram">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4uekOLPdEd-lmpEK-LNr6A" annotatedElement="_4uekN7PdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Diagram&lt;/font>&lt;/b>&#xD;
 &lt;/p>&#xD;
@@ -53,14 +53,14 @@
     &lt;font face=&quot;Times New Roman&quot;>armazenar a imagem que ele representa.&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlib_LGIEd-lmpEK-LNr6A" general="_nlicBrGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlib_bGIEd-lmpEK-LNr6A" name="image" visibility="public" type="_nlib-LGIEd-lmpEK-LNr6A" aggregation="shared" association="_nlicBLGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlib_rGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlib_7GIEd-lmpEK-LNr6A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4uekObPdEd-lmpEK-LNr6A" general="_4uekRbPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4uekOrPdEd-lmpEK-LNr6A" name="image" visibility="public" type="_4uekNbPdEd-lmpEK-LNr6A" aggregation="shared" association="_4uekQ7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4uekO7PdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4uekPLPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlicALGIEd-lmpEK-LNr6A" name="SimpleInformationElement" isAbstract="true">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlicAbGIEd-lmpEK-LNr6A" annotatedElement="_nlicALGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4uekPbPdEd-lmpEK-LNr6A" name="SimpleInformationElement" isAbstract="true">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4uekPrPdEd-lmpEK-LNr6A" annotatedElement="_4uekPbPdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>Simple Information Element&lt;/font> &lt;font&#xD;
     face=&quot;Times New Roman&quot;>é uma metaclasse abstrata para generalizar&lt;/font>&#xD;
@@ -96,14 +96,18 @@
     face=&quot;Times New Roman&quot;>UnlimitedNatural&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>).&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlicArGIEd-lmpEK-LNr6A" general="_nljDAbGIEd-lmpEK-LNr6A"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlicA7GIEd-lmpEK-LNr6A" general="_nlkRX7GIEd-lmpEK-LNr6A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4uekP7PdEd-lmpEK-LNr6A" general="_4ufKrLPdEd-lmpEK-LNr6A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4uekQLPdEd-lmpEK-LNr6A" general="_4ufxvLPdEd-lmpEK-LNr6A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4uekQbPdEd-lmpEK-LNr6A" general="_4ufK2LPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4uekQrPdEd-lmpEK-LNr6A" name="discriminator" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlicBLGIEd-lmpEK-LNr6A" memberEnd="_nlib_bGIEd-lmpEK-LNr6A _nlicBbGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nlicBbGIEd-lmpEK-LNr6A" name="" visibility="private" type="_nlib-rGIEd-lmpEK-LNr6A" association="_nlicBLGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4uekQ7PdEd-lmpEK-LNr6A" memberEnd="_4uekOrPdEd-lmpEK-LNr6A _4uekRLPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4uekRLPdEd-lmpEK-LNr6A" name="" visibility="private" type="_4uekN7PdEd-lmpEK-LNr6A" association="_4uekQ7PdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlicBrGIEd-lmpEK-LNr6A" name="ComplexInformationElement" isAbstract="true">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlicB7GIEd-lmpEK-LNr6A" annotatedElement="_nlicBrGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4uekRbPdEd-lmpEK-LNr6A" name="ComplexInformationElement" isAbstract="true">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4uekRrPdEd-lmpEK-LNr6A" annotatedElement="_4uekRbPdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>ComplexInformationElement&lt;/font> &lt;font&#xD;
     face=&quot;Times New Roman&quot;>é uma metaclasse abstrata para generalizar&lt;/font>&#xD;
@@ -157,10 +161,10 @@
     informação.&lt;/strong>&lt;/font>&lt;/font>&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlicCLGIEd-lmpEK-LNr6A" general="_nlicALGIEd-lmpEK-LNr6A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4uekR7PdEd-lmpEK-LNr6A" general="_4uekPbPdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlicCbGIEd-lmpEK-LNr6A" name="Question">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlicCrGIEd-lmpEK-LNr6A" annotatedElement="_nlicCbGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4uekSLPdEd-lmpEK-LNr6A" name="Question">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4uekSbPdEd-lmpEK-LNr6A" annotatedElement="_4uekSLPdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Question&lt;/font>&lt;/b>&#xD;
 &lt;/p>&#xD;
@@ -225,18 +229,18 @@
     face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlicC7GIEd-lmpEK-LNr6A" general="_nlicBrGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlicDLGIEd-lmpEK-LNr6A" name="asks" visibility="public" type="_nljC5LGIEd-lmpEK-LNr6A" aggregation="composite" association="_nljC6LGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlicDbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlicDrGIEd-lmpEK-LNr6A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4uekSrPdEd-lmpEK-LNr6A" general="_4uekRbPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4uekS7PdEd-lmpEK-LNr6A" name="asks" visibility="public" type="_4ufKj7PdEd-lmpEK-LNr6A" aggregation="composite" association="_4ufKk7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKcLPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKcbPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlicD7GIEd-lmpEK-LNr6A" name="answers" visibility="public" type="_nljC5LGIEd-lmpEK-LNr6A" aggregation="composite" association="_nljC6rGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlicELGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlicEbGIEd-lmpEK-LNr6A" value="1"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKcrPdEd-lmpEK-LNr6A" name="answers" visibility="public" type="_4ufKj7PdEd-lmpEK-LNr6A" aggregation="composite" association="_4ufKlbPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKc7PdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKdLPdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlicErGIEd-lmpEK-LNr6A" name="List">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlicE7GIEd-lmpEK-LNr6A" annotatedElement="_nlicErGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufKdbPdEd-lmpEK-LNr6A" name="List">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKdrPdEd-lmpEK-LNr6A" annotatedElement="_4ufKdbPdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Times New Roman&quot;>A metaclasse&lt;/font> &lt;font&#xD;
     face=&quot;Courier&quot;>List&lt;/font> &lt;font face=&quot;Times New Roman&quot;>estrutura o tipo de informação Lista, reponsável por&#xD;
@@ -346,25 +350,25 @@
     como um agrupador sequencial.&lt;/font>&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlicFLGIEd-lmpEK-LNr6A" general="_nlicBrGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlicFbGIEd-lmpEK-LNr6A" name="isLabeled" visibility="public">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufKd7PdEd-lmpEK-LNr6A" general="_4uekRbPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKeLPdEd-lmpEK-LNr6A" name="isLabeled" visibility="public">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Boolean"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlicFrGIEd-lmpEK-LNr6A" name="isOrdered" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKebPdEd-lmpEK-LNr6A" name="isOrdered" visibility="public">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Boolean"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlicF7GIEd-lmpEK-LNr6A" name="isEnumerated" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKerPdEd-lmpEK-LNr6A" name="isEnumerated" visibility="public">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Boolean"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljC0LGIEd-lmpEK-LNr6A" name="contents" visibility="public" type="_nlicALGIEd-lmpEK-LNr6A" aggregation="shared" association="_nljC_7GIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljC0bGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljC0rGIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKe7PdEd-lmpEK-LNr6A" name="contents" visibility="public" type="_4uekPbPdEd-lmpEK-LNr6A" aggregation="shared" association="_4ufKqrPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKfLPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKfbPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljC07GIEd-lmpEK-LNr6A" name="orderByAZ" visibility="public"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljC1LGIEd-lmpEK-LNr6A" name="orderByZA" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufKfrPdEd-lmpEK-LNr6A" name="orderByAZ" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufKf7PdEd-lmpEK-LNr6A" name="orderByZA" visibility="public"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nljC1bGIEd-lmpEK-LNr6A" name="Matrix">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nljC1rGIEd-lmpEK-LNr6A" annotatedElement="_nljC1bGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufKgLPdEd-lmpEK-LNr6A" name="Matrix">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKgbPdEd-lmpEK-LNr6A" annotatedElement="_4ufKgLPdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Matrix&lt;/font>&lt;/b>&#xD;
 &lt;/p>&#xD;
@@ -431,18 +435,18 @@
     face=&quot;Courier&quot;>Matrix&lt;/font>&lt;font face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nljC17GIEd-lmpEK-LNr6A" general="_nlicBrGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljC2LGIEd-lmpEK-LNr6A" name="header" visibility="private" type="_nlicErGIEd-lmpEK-LNr6A" association="_nljC97GIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljC2bGIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljC2rGIEd-lmpEK-LNr6A" value="1"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufKgrPdEd-lmpEK-LNr6A" general="_4uekRbPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKg7PdEd-lmpEK-LNr6A" name="header" visibility="private" type="_4ufKdbPdEd-lmpEK-LNr6A" association="_4ufKorPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKhLPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKhbPdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljC27GIEd-lmpEK-LNr6A" name="lines" visibility="public" type="_nlicErGIEd-lmpEK-LNr6A" aggregation="shared" association="_nljC-7GIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljC3LGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljC3bGIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKhrPdEd-lmpEK-LNr6A" name="lines" visibility="public" type="_4ufKdbPdEd-lmpEK-LNr6A" aggregation="shared" association="_4ufKprPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKh7PdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKiLPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nljC3rGIEd-lmpEK-LNr6A" name="Table">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nljC37GIEd-lmpEK-LNr6A" annotatedElement="_nljC3rGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufKibPdEd-lmpEK-LNr6A" name="Table">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKirPdEd-lmpEK-LNr6A" annotatedElement="_4ufKibPdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Table&lt;/font>&lt;/b>&#xD;
 &lt;/p>&#xD;
@@ -497,14 +501,14 @@
     &lt;font face=&quot;Courier&quot;>Tabela&lt;/font>&lt;font face=&quot;Times New Roman&quot;>.&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nljC4LGIEd-lmpEK-LNr6A" general="_nljC1bGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljC4bGIEd-lmpEK-LNr6A" name="matrixes" visibility="public" type="_nljC1bGIEd-lmpEK-LNr6A" aggregation="shared" association="_nljC7LGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljC4rGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljC47GIEd-lmpEK-LNr6A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufKi7PdEd-lmpEK-LNr6A" general="_4ufKgLPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKjLPdEd-lmpEK-LNr6A" name="matrixes" visibility="public" type="_4ufKgLPdEd-lmpEK-LNr6A" aggregation="shared" association="_4ufKl7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKjbPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKjrPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nljC5LGIEd-lmpEK-LNr6A" name="Text">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nljC5bGIEd-lmpEK-LNr6A" annotatedElement="_nljC5LGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufKj7PdEd-lmpEK-LNr6A" name="Text">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKkLPdEd-lmpEK-LNr6A" annotatedElement="_4ufKj7PdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Text&lt;/font>&lt;/b>&#xD;
 &lt;/p>&#xD;
@@ -543,22 +547,22 @@
     preenchido.&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nljC5rGIEd-lmpEK-LNr6A" general="_nlicALGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljC57GIEd-lmpEK-LNr6A" name="value" visibility="public">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufKkbPdEd-lmpEK-LNr6A" general="_4uekPbPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKkrPdEd-lmpEK-LNr6A" name="value" visibility="public">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljC6LGIEd-lmpEK-LNr6A" memberEnd="_nlicDLGIEd-lmpEK-LNr6A _nljC6bGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljC6bGIEd-lmpEK-LNr6A" name="" visibility="private" type="_nlicCbGIEd-lmpEK-LNr6A" association="_nljC6LGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufKk7PdEd-lmpEK-LNr6A" memberEnd="_4uekS7PdEd-lmpEK-LNr6A _4ufKlLPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufKlLPdEd-lmpEK-LNr6A" name="" visibility="private" type="_4uekSLPdEd-lmpEK-LNr6A" association="_4ufKk7PdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljC6rGIEd-lmpEK-LNr6A" name="answers" memberEnd="_nlicD7GIEd-lmpEK-LNr6A _nljC67GIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljC67GIEd-lmpEK-LNr6A" name="" visibility="private" type="_nlicCbGIEd-lmpEK-LNr6A" association="_nljC6rGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufKlbPdEd-lmpEK-LNr6A" name="answers" memberEnd="_4ufKcrPdEd-lmpEK-LNr6A _4ufKlrPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufKlrPdEd-lmpEK-LNr6A" name="" visibility="private" type="_4uekSLPdEd-lmpEK-LNr6A" association="_4ufKlbPdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljC7LGIEd-lmpEK-LNr6A" memberEnd="_nljC4bGIEd-lmpEK-LNr6A _nljC7bGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljC7bGIEd-lmpEK-LNr6A" name="" visibility="private" type="_nljC3rGIEd-lmpEK-LNr6A" association="_nljC7LGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufKl7PdEd-lmpEK-LNr6A" memberEnd="_4ufKjLPdEd-lmpEK-LNr6A _4ufKmLPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufKmLPdEd-lmpEK-LNr6A" name="" visibility="private" type="_4ufKibPdEd-lmpEK-LNr6A" association="_4ufKl7PdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nljC7rGIEd-lmpEK-LNr6A" name="ElementGroup">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nljC77GIEd-lmpEK-LNr6A" annotatedElement="_nljC7rGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufKmbPdEd-lmpEK-LNr6A" name="ElementGroup">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKmrPdEd-lmpEK-LNr6A" annotatedElement="_4ufKmbPdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Group&lt;/font>&lt;/b>&#xD;
 &lt;/p>&#xD;
@@ -681,414 +685,398 @@
     &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>diferentes informações relacionadas.&lt;/font>&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nljC8LGIEd-lmpEK-LNr6A" general="_nlicErGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljC8bGIEd-lmpEK-LNr6A" name="childs" visibility="public" type="_nljC7rGIEd-lmpEK-LNr6A" aggregation="shared" association="_nlk4TbGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljC8rGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljC87GIEd-lmpEK-LNr6A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufKm7PdEd-lmpEK-LNr6A" general="_4ufKdbPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKnLPdEd-lmpEK-LNr6A" name="childs" visibility="public" type="_4ufKmbPdEd-lmpEK-LNr6A" aggregation="shared" association="_4ufyDrPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKnbPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKnrPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljC9LGIEd-lmpEK-LNr6A" name="internalContents" visibility="public" type="_nlicALGIEd-lmpEK-LNr6A" aggregation="composite" association="_nlk4UbGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljC9bGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljC9rGIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKn7PdEd-lmpEK-LNr6A" name="internalContents" visibility="public" type="_4uekPbPdEd-lmpEK-LNr6A" aggregation="composite" association="_4ufyErPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKoLPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKobPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljC97GIEd-lmpEK-LNr6A" memberEnd="_nljC2LGIEd-lmpEK-LNr6A _nljC-LGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljC-LGIEd-lmpEK-LNr6A" name="" visibility="private" type="_nljC1bGIEd-lmpEK-LNr6A" association="_nljC97GIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljC-bGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljC-rGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufKorPdEd-lmpEK-LNr6A" memberEnd="_4ufKg7PdEd-lmpEK-LNr6A _4ufKo7PdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufKo7PdEd-lmpEK-LNr6A" name="" visibility="private" type="_4ufKgLPdEd-lmpEK-LNr6A" association="_4ufKorPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKpLPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKpbPdEd-lmpEK-LNr6A"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljC-7GIEd-lmpEK-LNr6A" memberEnd="_nljC27GIEd-lmpEK-LNr6A _nljC_LGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljC_LGIEd-lmpEK-LNr6A" name="" visibility="private" type="_nljC1bGIEd-lmpEK-LNr6A" association="_nljC-7GIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljC_bGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljC_rGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufKprPdEd-lmpEK-LNr6A" memberEnd="_4ufKhrPdEd-lmpEK-LNr6A _4ufKp7PdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufKp7PdEd-lmpEK-LNr6A" name="" visibility="private" type="_4ufKgLPdEd-lmpEK-LNr6A" association="_4ufKprPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKqLPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKqbPdEd-lmpEK-LNr6A"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljC_7GIEd-lmpEK-LNr6A" memberEnd="_nljC0LGIEd-lmpEK-LNr6A _nljDALGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljDALGIEd-lmpEK-LNr6A" name="" visibility="private" type="_nlicErGIEd-lmpEK-LNr6A" association="_nljC_7GIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufKqrPdEd-lmpEK-LNr6A" memberEnd="_4ufKe7PdEd-lmpEK-LNr6A _4ufKq7PdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufKq7PdEd-lmpEK-LNr6A" name="" visibility="private" type="_4ufKdbPdEd-lmpEK-LNr6A" association="_4ufKqrPdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nljDAbGIEd-lmpEK-LNr6A" name="VersionedExtent">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nljDArGIEd-lmpEK-LNr6A" annotatedElement="_nljDAbGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufKrLPdEd-lmpEK-LNr6A" name="VersionedExtent">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKrbPdEd-lmpEK-LNr6A" annotatedElement="_4ufKrLPdEd-lmpEK-LNr6A">
       <body>Represents a MOF Extent for which versioning has been enabled.&#xD;
 Superclasses MOF:Extent</body>
     </ownedComment>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDA7GIEd-lmpEK-LNr6A" name="isCheckedOut" visibility="private" isReadOnly="true">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDBLGIEd-lmpEK-LNr6A" annotatedElement="_nljDA7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKrrPdEd-lmpEK-LNr6A" name="isCheckedOut" visibility="private" isReadOnly="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKr7PdEd-lmpEK-LNr6A" annotatedElement="_4ufKrrPdEd-lmpEK-LNr6A">
         <body>isCheckedOut, type = Boolean, isReadOnly = true&#xD;
 • A VersionedExtent is modifiable only if isCheckedOut is true.</body>
       </ownedComment>
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Boolean"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDBbGIEd-lmpEK-LNr6A" name="annotation" visibility="private">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDBrGIEd-lmpEK-LNr6A" annotatedElement="_nljDBbGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKsLPdEd-lmpEK-LNr6A" name="annotation" visibility="private">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKsbPdEd-lmpEK-LNr6A" annotatedElement="_4ufKsLPdEd-lmpEK-LNr6A">
         <body>annotation, type = String, [0..1]&#xD;
 • When isCheckedOut is true, this attribute contains the annotation attribute for the version that will be created when&#xD;
 this VersionedExtent is checked in. If the isCheckedOut is false that attribute does not exist and cannot be written&#xD;
 to.</body>
       </ownedComment>
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDB7GIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDCLGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKsrPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKs7PdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDCbGIEd-lmpEK-LNr6A" name="versionhistory" visibility="public" type="_nljp7bGIEd-lmpEK-LNr6A" association="_nljqDbGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDCrGIEd-lmpEK-LNr6A" annotatedElement="_nljDCbGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKtLPdEd-lmpEK-LNr6A" name="versionhistory" visibility="public" type="_4ufK-rPdEd-lmpEK-LNr6A" association="_4ufLGrPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKtbPdEd-lmpEK-LNr6A" annotatedElement="_4ufKtLPdEd-lmpEK-LNr6A">
         <body>versionHistory, type = VersionHistory, isReadOnly = true&#xD;
 • The VersionHistory that contains the versions for this VersionedExtent.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDC7GIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDDLGIEd-lmpEK-LNr6A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKtrPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKt7PdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDDbGIEd-lmpEK-LNr6A" name="conflict" visibility="public" type="_nljDMbGIEd-lmpEK-LNr6A" association="_nljqErGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDDrGIEd-lmpEK-LNr6A" annotatedElement="_nljDDbGIEd-lmpEK-LNr6A">
-        <body>conflict reference, type = Version, [0..*], isReadOnly = false, composite&#xD;
-• These are the conflicts created by a merge. After the client resolves the conflict (by appropriately modifying the&#xD;
-content of the VersionedExtent), the client indicates that the conflict has been resolved by adding the version to the&#xD;
-previousVersion list of the VersionedContext, and removing the version from the conflict list.</body>
-      </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDD7GIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDELGIEd-lmpEK-LNr6A"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDEbGIEd-lmpEK-LNr6A" name="previousVersion" visibility="public" type="_nljDMbGIEd-lmpEK-LNr6A" association="_nljqFrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDErGIEd-lmpEK-LNr6A" annotatedElement="_nljDEbGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKuLPdEd-lmpEK-LNr6A" name="previousVersion" visibility="public" type="_4ufK2LPdEd-lmpEK-LNr6A" association="_4ufLH7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKubPdEd-lmpEK-LNr6A" annotatedElement="_4ufKuLPdEd-lmpEK-LNr6A">
         <body>previousVersion, type = Version, [1..*], isReadOnly = false&#xD;
 • When isCheckedOut is true, this reference identifies the versions that will be the previousVersion for the version&#xD;
 that will be created when this VersionedExtent is checked in.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDE7GIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDFLGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKurPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKu7PdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDFbGIEd-lmpEK-LNr6A" name="baseVersion" visibility="public" type="_nljDMbGIEd-lmpEK-LNr6A" association="_nljqGrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDFrGIEd-lmpEK-LNr6A" annotatedElement="_nljDFbGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKvLPdEd-lmpEK-LNr6A" name="baseVersion" visibility="public" type="_4ufK2LPdEd-lmpEK-LNr6A" association="_4ufLI7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKvbPdEd-lmpEK-LNr6A" annotatedElement="_4ufKvLPdEd-lmpEK-LNr6A">
         <body>baseVersion, type = Version, isReadOnly = true&#xD;
 • The currently selected version for this VersionedExtent. This is the version that this VersionedExtent is currently&#xD;
 based on, but when checked-out, is not necessarily equal to. In particular, the base version of a checked-out&#xD;
 VersionedExtent is the Version content that was started with (i.e., that the current checked-out content is ‘based&#xD;
 on’).</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDF7GIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDGLGIEd-lmpEK-LNr6A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKvrPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKv7PdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDGbGIEd-lmpEK-LNr6A" name="configuration" visibility="public" type="_nljqHrGIEd-lmpEK-LNr6A" association="_nlkRDLGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDGrGIEd-lmpEK-LNr6A" annotatedElement="_nljDGbGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufKwLPdEd-lmpEK-LNr6A" name="configuration" visibility="public" type="_4ufLJ7PdEd-lmpEK-LNr6A" association="_4ufLRrPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKwbPdEd-lmpEK-LNr6A" annotatedElement="_4ufKwLPdEd-lmpEK-LNr6A">
         <body>configuration, type = Configuration, isReadOnly = true&#xD;
 • The Configuration to which this VersionedExtent belongs.</body>
       </ownedComment>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljDG7GIEd-lmpEK-LNr6A" name="checkOut" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDHLGIEd-lmpEK-LNr6A" annotatedElement="_nljDG7GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufKwrPdEd-lmpEK-LNr6A" name="checkOut" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKw7PdEd-lmpEK-LNr6A" annotatedElement="_4ufKwrPdEd-lmpEK-LNr6A">
         <body>checkOut () operation, return type = null, isQuery = false&#xD;
 • Allows modifications to be performed on the content of this VersionedExtent.</body>
       </ownedComment>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljDHbGIEd-lmpEK-LNr6A" name="checkIn" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDHrGIEd-lmpEK-LNr6A" annotatedElement="_nljDHbGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufKxLPdEd-lmpEK-LNr6A" name="checkIn" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKxbPdEd-lmpEK-LNr6A" annotatedElement="_4ufKxLPdEd-lmpEK-LNr6A">
         <body>checkIn (), return type = Version, isQuery = false&#xD;
 • Creates a new Version object with the current content of this VersionedExtent, disallows modifications to be made&#xD;
 to the content of this VersionedExtent until it is subsequently checked out. This Version is now available to other&#xD;
 Workspaces.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljDH7GIEd-lmpEK-LNr6A" name="version" type="_nljDMbGIEd-lmpEK-LNr6A" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufKxrPdEd-lmpEK-LNr6A" name="version" type="_4ufK2LPdEd-lmpEK-LNr6A" direction="return"/>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljDILGIEd-lmpEK-LNr6A" name="unCheckOut" visibility="public"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljDIbGIEd-lmpEK-LNr6A" name="lookupByVersionId" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDIrGIEd-lmpEK-LNr6A" annotatedElement="_nljDIbGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufKx7PdEd-lmpEK-LNr6A" name="unCheckOut" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufKyLPdEd-lmpEK-LNr6A" name="lookupByVersionId" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKybPdEd-lmpEK-LNr6A" annotatedElement="_4ufKyLPdEd-lmpEK-LNr6A">
         <body>lookupByVersionId (id : String), return type = Version, [0..1] isQuery = true&#xD;
 • Returns the version, if any, of this VersionedExtent having the specified id.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljDI7GIEd-lmpEK-LNr6A" name="name">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufKyrPdEd-lmpEK-LNr6A" name="name">
         <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljDJLGIEd-lmpEK-LNr6A" name="version" type="_nljDMbGIEd-lmpEK-LNr6A" direction="return">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDJbGIEd-lmpEK-LNr6A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDJrGIEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufKy7PdEd-lmpEK-LNr6A" name="version" type="_4ufK2LPdEd-lmpEK-LNr6A" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufKzLPdEd-lmpEK-LNr6A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufKzbPdEd-lmpEK-LNr6A"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljDJ7GIEd-lmpEK-LNr6A" name="lookupByLabel" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDKLGIEd-lmpEK-LNr6A" annotatedElement="_nljDJ7GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufKzrPdEd-lmpEK-LNr6A" name="lookupByLabel" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufKz7PdEd-lmpEK-LNr6A" annotatedElement="_4ufKzrPdEd-lmpEK-LNr6A">
         <body>lookupByLabel (label : String), return type = Version, [0..1], isQuery = true&#xD;
 • Returns the version, if any, of this VersionedExtent having the specified label.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljDKbGIEd-lmpEK-LNr6A" name="label">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufK0LPdEd-lmpEK-LNr6A" name="label">
         <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljDKrGIEd-lmpEK-LNr6A" name="version" type="_nljDMbGIEd-lmpEK-LNr6A" direction="return">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDK7GIEd-lmpEK-LNr6A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDLLGIEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufK0bPdEd-lmpEK-LNr6A" name="version" type="_4ufK2LPdEd-lmpEK-LNr6A" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufK0rPdEd-lmpEK-LNr6A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufK07PdEd-lmpEK-LNr6A"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljDLbGIEd-lmpEK-LNr6A" name="delete" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDLrGIEd-lmpEK-LNr6A" annotatedElement="_nljDLbGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufK1LPdEd-lmpEK-LNr6A" name="delete" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK1bPdEd-lmpEK-LNr6A" annotatedElement="_4ufK1LPdEd-lmpEK-LNr6A">
         <body>lookupByLabel (label : String), return type = Version, [0..1], isQuery = true&#xD;
 • Returns the version, if any, of this VersionedExtent having the specified label.</body>
       </ownedComment>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljDL7GIEd-lmpEK-LNr6A" name="createExtent" visibility="public">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljDMLGIEd-lmpEK-LNr6A" name="versionExtent" type="_nljDAbGIEd-lmpEK-LNr6A" direction="return"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufK1rPdEd-lmpEK-LNr6A" name="createExtent" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufK17PdEd-lmpEK-LNr6A" name="versionExtent" type="_4ufKrLPdEd-lmpEK-LNr6A" direction="return"/>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nljDMbGIEd-lmpEK-LNr6A" name="Version">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nljDMrGIEd-lmpEK-LNr6A" annotatedElement="_nljDMbGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufK2LPdEd-lmpEK-LNr6A" name="Version">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK2bPdEd-lmpEK-LNr6A" annotatedElement="_4ufK2LPdEd-lmpEK-LNr6A">
       <body>Each instance of Version is a snapshot of a VersionedExtent.</body>
     </ownedComment>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDM7GIEd-lmpEK-LNr6A" name="label" visibility="private" isReadOnly="true">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDNLGIEd-lmpEK-LNr6A" annotatedElement="_nljDM7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufK2rPdEd-lmpEK-LNr6A" name="label" visibility="private" isReadOnly="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK27PdEd-lmpEK-LNr6A" annotatedElement="_4ufK2rPdEd-lmpEK-LNr6A">
         <body>label, type = Label, multivalued [0..*], isReadOnly = true&#xD;
 • A user assigned string that can be used to identify the version. Several can be applied to one version. Also, version&#xD;
 labels must be unique among all the version labels within the VersionHistory of that version.</body>
       </ownedComment>
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDNbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDNrGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufK3LPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufK3bPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDN7GIEd-lmpEK-LNr6A" name="id" visibility="private" isReadOnly="true">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDOLGIEd-lmpEK-LNr6A" annotatedElement="_nljDN7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufK3rPdEd-lmpEK-LNr6A" name="id" visibility="private" isReadOnly="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK37PdEd-lmpEK-LNr6A" annotatedElement="_4ufK3rPdEd-lmpEK-LNr6A">
         <body>id, type = String, isReadOnly = true&#xD;
 • This attribute is an id for the version that is unique within the VersionHistory of that version.&#xD;
 • The format of the string is implementation-defined.</body>
       </ownedComment>
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDObGIEd-lmpEK-LNr6A" name="creationDate" visibility="private">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDOrGIEd-lmpEK-LNr6A" annotatedElement="_nljDObGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufK4LPdEd-lmpEK-LNr6A" name="creationDate" visibility="private">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK4bPdEd-lmpEK-LNr6A" annotatedElement="_4ufK4LPdEd-lmpEK-LNr6A">
         <body>creationDate, type = Long, isReadOnly = true&#xD;
 • Used to record the timestamp when the Version object was created.</body>
       </ownedComment>
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDO7GIEd-lmpEK-LNr6A" name="annotation" visibility="private">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDPLGIEd-lmpEK-LNr6A" annotatedElement="_nljDO7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufK4rPdEd-lmpEK-LNr6A" name="annotation" visibility="private">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK47PdEd-lmpEK-LNr6A" annotatedElement="_4ufK4rPdEd-lmpEK-LNr6A">
         <body>annotation, type = String, [0..1]&#xD;
 • This attribute can contain a description of the version.</body>
       </ownedComment>
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDPbGIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDPrGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufK5LPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufK5bPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDP7GIEd-lmpEK-LNr6A" name="previousVersion" visibility="public" type="_nljDMbGIEd-lmpEK-LNr6A" isOrdered="true" association="_nljqBbGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDQLGIEd-lmpEK-LNr6A" annotatedElement="_nljDP7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufK5rPdEd-lmpEK-LNr6A" name="previousVersion" visibility="public" type="_4ufK2LPdEd-lmpEK-LNr6A" isOrdered="true" association="_4ufLErPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK57PdEd-lmpEK-LNr6A" annotatedElement="_4ufK5rPdEd-lmpEK-LNr6A">
         <body>previousVersion, type = Version, [0..*], isReadOnly = true, inverse = nextVersion&#xD;
 • This refers to the immediately previous version (or versions, in case this Version resulted from a merge). Every&#xD;
 Version that is not the root version of a VersionHistory has at least one previousVersion.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDQbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljDQrGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufK6LPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufK6bPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljDQ7GIEd-lmpEK-LNr6A" name="nextVersion" visibility="public" type="_nljDMbGIEd-lmpEK-LNr6A" association="_nljqBbGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljDRLGIEd-lmpEK-LNr6A" annotatedElement="_nljDQ7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufK6rPdEd-lmpEK-LNr6A" name="nextVersion" visibility="public" type="_4ufK2LPdEd-lmpEK-LNr6A" association="_4ufLErPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK67PdEd-lmpEK-LNr6A" annotatedElement="_4ufK6rPdEd-lmpEK-LNr6A">
         <body>nextVersion, type = Version, [0..*], isReadOnly = true, inverse = previousVersion&#xD;
 • This refers to ordered subsequent versions.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljDRbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljp4LGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufK7LPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufK7bPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljp4bGIEd-lmpEK-LNr6A" name="baseline" visibility="public" type="_nlkRSLGIEd-lmpEK-LNr6A" association="_nlkRXrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljp4rGIEd-lmpEK-LNr6A" annotatedElement="_nljp4bGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufK7rPdEd-lmpEK-LNr6A" name="baseline" visibility="public" type="_4ufxpbPdEd-lmpEK-LNr6A" association="_4ufxu7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK77PdEd-lmpEK-LNr6A" annotatedElement="_4ufK7rPdEd-lmpEK-LNr6A">
         <body>baseline, type = Baseline, [0..*], isReadOnly = true, inverse = version&#xD;
 • This refers to the Baselines that reference this Version.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljp47GIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljp5LGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufK8LPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufK8bPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljp5bGIEd-lmpEK-LNr6A" name="addLabel" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljp5rGIEd-lmpEK-LNr6A" annotatedElement="_nljp5bGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufK8rPdEd-lmpEK-LNr6A" name="addLabel" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK87PdEd-lmpEK-LNr6A" annotatedElement="_4ufK8rPdEd-lmpEK-LNr6A">
         <body>addLabel (newLabel: Label) operation, return type = void&#xD;
 • Adds a label to the version. If that label currently appears on another version in the version history of this Version,&#xD;
 it is automatically removed from that other version. See the label attribute for further details.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljp57GIEd-lmpEK-LNr6A" name="label">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufK9LPdEd-lmpEK-LNr6A" name="label">
         <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljp6LGIEd-lmpEK-LNr6A" name="removeLabel" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljp6bGIEd-lmpEK-LNr6A" annotatedElement="_nljp6LGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufK9bPdEd-lmpEK-LNr6A" name="removeLabel" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK9rPdEd-lmpEK-LNr6A" annotatedElement="_4ufK9bPdEd-lmpEK-LNr6A">
         <body>removeLabel (oldLabel: Label) operation, return type = void&#xD;
 • Removes the indicated label from the version. See the label attribute for further details.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljp6rGIEd-lmpEK-LNr6A" name="label">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufK97PdEd-lmpEK-LNr6A" name="label">
         <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljp67GIEd-lmpEK-LNr6A" name="delete" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljp7LGIEd-lmpEK-LNr6A" annotatedElement="_nljp67GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufK-LPdEd-lmpEK-LNr6A" name="delete" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK-bPdEd-lmpEK-LNr6A" annotatedElement="_4ufK-LPdEd-lmpEK-LNr6A">
         <body>delete (), return type = void&#xD;
 • Removes the version object. This method also fixes up the links in the version graph so that it is still valid.</body>
       </ownedComment>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nljp7bGIEd-lmpEK-LNr6A" name="VersionHistory">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nljp7rGIEd-lmpEK-LNr6A" annotatedElement="_nljp7bGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufK-rPdEd-lmpEK-LNr6A" name="VersionHistory">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK-7PdEd-lmpEK-LNr6A" annotatedElement="_4ufK-rPdEd-lmpEK-LNr6A">
       <body>A VersionHistory contains all versions of a given VersionedExtent.</body>
     </ownedComment>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljp77GIEd-lmpEK-LNr6A" name="versions" visibility="public" type="_nljDMbGIEd-lmpEK-LNr6A" aggregation="composite" association="_nljqBrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljp8LGIEd-lmpEK-LNr6A" annotatedElement="_nljp77GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufK_LPdEd-lmpEK-LNr6A" name="versions" visibility="public" type="_4ufK2LPdEd-lmpEK-LNr6A" aggregation="composite" association="_4ufLE7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufK_bPdEd-lmpEK-LNr6A" annotatedElement="_4ufK_LPdEd-lmpEK-LNr6A">
         <body>versions, type = Version, [1..*], isReadOnly = true&#xD;
 • This refers to all versions in this VersionHistory, including the rootVersion. Ordering of the versions is defined by&#xD;
 the previousVersion/nextVersion relations.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljp8bGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljp8rGIEd-lmpEK-LNr6A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufK_rPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufK_7PdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljp87GIEd-lmpEK-LNr6A" name="rootVersion" visibility="public" type="_nljDMbGIEd-lmpEK-LNr6A" association="_nljqCbGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljp9LGIEd-lmpEK-LNr6A" annotatedElement="_nljp87GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLALPdEd-lmpEK-LNr6A" name="rootVersion" visibility="public" type="_4ufK2LPdEd-lmpEK-LNr6A" association="_4ufLFrPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLAbPdEd-lmpEK-LNr6A" annotatedElement="_4ufLALPdEd-lmpEK-LNr6A">
         <body>rootVersion, type = Version, isReadOnly = true&#xD;
 • This refers to the initial version of the VersionedExtent. The rootVersion has no previousVersion. All other&#xD;
 versions have at least one previousVersion.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljp9bGIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljp9rGIEd-lmpEK-LNr6A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLArPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLA7PdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljp97GIEd-lmpEK-LNr6A" name="delete" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljp-LGIEd-lmpEK-LNr6A" annotatedElement="_nljp97GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufLBLPdEd-lmpEK-LNr6A" name="delete" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLBbPdEd-lmpEK-LNr6A" annotatedElement="_4ufLBLPdEd-lmpEK-LNr6A">
         <body>delete (), return type = void&#xD;
 • Removes the VersionHistory object. This method also deletes all Versions in the VersionHistory.</body>
       </ownedComment>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljp-bGIEd-lmpEK-LNr6A" name="lookupByLabel" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljp-rGIEd-lmpEK-LNr6A" annotatedElement="_nljp-bGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufLBrPdEd-lmpEK-LNr6A" name="lookupByLabel" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLB7PdEd-lmpEK-LNr6A" annotatedElement="_4ufLBrPdEd-lmpEK-LNr6A">
         <body>lookupByLabel (label : Label), return type = Version, [0..1], isQuery = true&#xD;
 • Returns the version, if any, in this VersionedHistory having the specified label.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljp-7GIEd-lmpEK-LNr6A" name="label">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufLCLPdEd-lmpEK-LNr6A" name="label">
         <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljp_LGIEd-lmpEK-LNr6A" name="version" type="_nljDMbGIEd-lmpEK-LNr6A" direction="return">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljp_bGIEd-lmpEK-LNr6A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljp_rGIEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufLCbPdEd-lmpEK-LNr6A" name="version" type="_4ufK2LPdEd-lmpEK-LNr6A" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLCrPdEd-lmpEK-LNr6A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLC7PdEd-lmpEK-LNr6A"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nljp_7GIEd-lmpEK-LNr6A" name="lookupByVersionId" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljqALGIEd-lmpEK-LNr6A" annotatedElement="_nljp_7GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufLDLPdEd-lmpEK-LNr6A" name="lookupByVersionId" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLDbPdEd-lmpEK-LNr6A" annotatedElement="_4ufLDLPdEd-lmpEK-LNr6A">
         <body>lookupByVersionId (id : String), return type = Version, [0..1], isQuery = true&#xD;
 • Returns the Version, if any, in this VersionHistory having the specified id.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljqAbGIEd-lmpEK-LNr6A" name="id">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufLDrPdEd-lmpEK-LNr6A" name="id">
         <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nljqArGIEd-lmpEK-LNr6A" name="version" type="_nljDMbGIEd-lmpEK-LNr6A" direction="return">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljqA7GIEd-lmpEK-LNr6A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljqBLGIEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufLD7PdEd-lmpEK-LNr6A" name="version" type="_4ufK2LPdEd-lmpEK-LNr6A" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLELPdEd-lmpEK-LNr6A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLEbPdEd-lmpEK-LNr6A"/>
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljqBbGIEd-lmpEK-LNr6A" name="versionHasLineage" memberEnd="_nljDP7GIEd-lmpEK-LNr6A _nljDQ7GIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljqBrGIEd-lmpEK-LNr6A" memberEnd="_nljp77GIEd-lmpEK-LNr6A _nljqB7GIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljqB7GIEd-lmpEK-LNr6A" name="versionHistory" visibility="public" type="_nljp7bGIEd-lmpEK-LNr6A" isReadOnly="true" association="_nljqBrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljqCLGIEd-lmpEK-LNr6A" annotatedElement="_nljqB7GIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufLErPdEd-lmpEK-LNr6A" name="versionHasLineage" memberEnd="_4ufK5rPdEd-lmpEK-LNr6A _4ufK6rPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufLE7PdEd-lmpEK-LNr6A" memberEnd="_4ufK_LPdEd-lmpEK-LNr6A _4ufLFLPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufLFLPdEd-lmpEK-LNr6A" name="versionHistory" visibility="public" type="_4ufK-rPdEd-lmpEK-LNr6A" isReadOnly="true" association="_4ufLE7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLFbPdEd-lmpEK-LNr6A" annotatedElement="_4ufLFLPdEd-lmpEK-LNr6A">
         <body>versionHistory, type = VersionHistory, isReadOnly = true&#xD;
 • The VersionHistory for this Version.</body>
       </ownedComment>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljqCbGIEd-lmpEK-LNr6A" memberEnd="_nljp87GIEd-lmpEK-LNr6A _nljqCrGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljqCrGIEd-lmpEK-LNr6A" name="" visibility="private" type="_nljp7bGIEd-lmpEK-LNr6A" association="_nljqCbGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljqC7GIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljqDLGIEd-lmpEK-LNr6A" value="1"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufLFrPdEd-lmpEK-LNr6A" memberEnd="_4ufLALPdEd-lmpEK-LNr6A _4ufLF7PdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufLF7PdEd-lmpEK-LNr6A" name="" visibility="private" type="_4ufK-rPdEd-lmpEK-LNr6A" association="_4ufLFrPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLGLPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLGbPdEd-lmpEK-LNr6A" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljqDbGIEd-lmpEK-LNr6A" memberEnd="_nljDCbGIEd-lmpEK-LNr6A _nljqDrGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljqDrGIEd-lmpEK-LNr6A" name="versionedExtents" visibility="private" type="_nljDAbGIEd-lmpEK-LNr6A" association="_nljqDbGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nljqD7GIEd-lmpEK-LNr6A" annotatedElement="_nljqDrGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufLGrPdEd-lmpEK-LNr6A" memberEnd="_4ufKtLPdEd-lmpEK-LNr6A _4ufLG7PdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufLG7PdEd-lmpEK-LNr6A" name="versionedExtents" visibility="private" type="_4ufKrLPdEd-lmpEK-LNr6A" association="_4ufLGrPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLHLPdEd-lmpEK-LNr6A" annotatedElement="_4ufLG7PdEd-lmpEK-LNr6A">
         <body>versionedExtents, type = VersionedExtents, [0..*], isReadOnly = true, inverse = configuration&#xD;
 • The VersionedExtents that belong to this Configuration.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljqELGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljqEbGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLHbPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLHrPdEd-lmpEK-LNr6A"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljqErGIEd-lmpEK-LNr6A" memberEnd="_nljDDbGIEd-lmpEK-LNr6A _nljqE7GIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljqE7GIEd-lmpEK-LNr6A" name="" visibility="private" type="_nljDAbGIEd-lmpEK-LNr6A" association="_nljqErGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljqFLGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljqFbGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufLH7PdEd-lmpEK-LNr6A" memberEnd="_4ufKuLPdEd-lmpEK-LNr6A _4ufLILPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufLILPdEd-lmpEK-LNr6A" name="" visibility="private" type="_4ufKrLPdEd-lmpEK-LNr6A" association="_4ufLH7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLIbPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLIrPdEd-lmpEK-LNr6A"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljqFrGIEd-lmpEK-LNr6A" memberEnd="_nljDEbGIEd-lmpEK-LNr6A _nljqF7GIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljqF7GIEd-lmpEK-LNr6A" name="" visibility="private" type="_nljDAbGIEd-lmpEK-LNr6A" association="_nljqFrGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljqGLGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljqGbGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufLI7PdEd-lmpEK-LNr6A" memberEnd="_4ufKvLPdEd-lmpEK-LNr6A _4ufLJLPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufLJLPdEd-lmpEK-LNr6A" name="" visibility="private" type="_4ufKrLPdEd-lmpEK-LNr6A" association="_4ufLI7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLJbPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLJrPdEd-lmpEK-LNr6A"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nljqGrGIEd-lmpEK-LNr6A" memberEnd="_nljDFbGIEd-lmpEK-LNr6A _nljqG7GIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nljqG7GIEd-lmpEK-LNr6A" name="" visibility="private" type="_nljDAbGIEd-lmpEK-LNr6A" association="_nljqGrGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nljqHLGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nljqHbGIEd-lmpEK-LNr6A"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nljqHrGIEd-lmpEK-LNr6A" name="Configuration">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nljqH7GIEd-lmpEK-LNr6A" annotatedElement="_nljqHrGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufLJ7PdEd-lmpEK-LNr6A" name="Configuration">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLKLPdEd-lmpEK-LNr6A" annotatedElement="_4ufLJ7PdEd-lmpEK-LNr6A">
       <body>Selects a Baseline for the Workspace and determines the other Configurations that are the members of this Configuration.</body>
     </ownedComment>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nljqILGIEd-lmpEK-LNr6A" name="id" visibility="private" isReadOnly="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLKbPdEd-lmpEK-LNr6A" name="id" visibility="private" isReadOnly="true">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkQ8LGIEd-lmpEK-LNr6A" name="member-of" visibility="public" type="_nljqHrGIEd-lmpEK-LNr6A" association="_nlkRCLGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkQ8bGIEd-lmpEK-LNr6A" annotatedElement="_nlkQ8LGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLKrPdEd-lmpEK-LNr6A" name="member-of" visibility="public" type="_4ufLJ7PdEd-lmpEK-LNr6A" association="_4ufLQrPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLK7PdEd-lmpEK-LNr6A" annotatedElement="_4ufLKrPdEd-lmpEK-LNr6A">
         <body>member-of, type = Configuration, [0..*], isReadOnly = false, inverse = member&#xD;
 • Configurations which logically include this Configuration.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkQ8rGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkQ87GIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLLLPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLLbPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkQ9LGIEd-lmpEK-LNr6A" name="member" visibility="public" type="_nljqHrGIEd-lmpEK-LNr6A" association="_nlkRCLGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkQ9bGIEd-lmpEK-LNr6A" annotatedElement="_nlkQ9LGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLLrPdEd-lmpEK-LNr6A" name="member" visibility="public" type="_4ufLJ7PdEd-lmpEK-LNr6A" association="_4ufLQrPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLL7PdEd-lmpEK-LNr6A" annotatedElement="_4ufLLrPdEd-lmpEK-LNr6A">
         <body>member, type = Configuration, [0..*], isReadOnly = true, inverse = member-of&#xD;
 • Configurations which are logically included in this Configuration.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkQ9rGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkQ97GIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLMLPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLMbPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkQ-LGIEd-lmpEK-LNr6A" name="versionedExtent" visibility="public" type="_nljDAbGIEd-lmpEK-LNr6A" association="_nlkRDLGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkQ-bGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkQ-rGIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLMrPdEd-lmpEK-LNr6A" name="versionedExtent" visibility="public" type="_4ufKrLPdEd-lmpEK-LNr6A" association="_4ufLRrPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLM7PdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLNLPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkQ-7GIEd-lmpEK-LNr6A" name="previousBaseline" visibility="public" type="_nlkRSLGIEd-lmpEK-LNr6A" association="_nlkRW7GIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkQ_LGIEd-lmpEK-LNr6A" annotatedElement="_nlkQ-7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLNbPdEd-lmpEK-LNr6A" name="previousBaseline" visibility="public" type="_4ufxpbPdEd-lmpEK-LNr6A" association="_4ufxuLPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLNrPdEd-lmpEK-LNr6A" annotatedElement="_4ufLNbPdEd-lmpEK-LNr6A">
         <body>previousBaseline, type = Baseline, [1..*], isReadOnly = true&#xD;
 • This reference identifies the baselines that will be the previousVersion for the baseline that will be created when&#xD;
 makeBaseline is applied to this Configuration.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkQ_bGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkQ_rGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLN7PdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLOLPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkQ_7GIEd-lmpEK-LNr6A" name="baseline" visibility="public" type="_nlkRSLGIEd-lmpEK-LNr6A" association="_nlkRXbGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRALGIEd-lmpEK-LNr6A" annotatedElement="_nlkQ_7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLObPdEd-lmpEK-LNr6A" name="baseline" visibility="public" type="_4ufxpbPdEd-lmpEK-LNr6A" association="_4ufxurPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLOrPdEd-lmpEK-LNr6A" annotatedElement="_4ufLObPdEd-lmpEK-LNr6A">
         <body>baseline, type = Baseline, [1..1], isReadOnly = true&#xD;
 • The Baseline that is used by this Configuration to select a set of Versions.</body>
       </ownedComment>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRAbGIEd-lmpEK-LNr6A" name="annotation" visibility="private">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRArGIEd-lmpEK-LNr6A" annotatedElement="_nlkRAbGIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLO7PdEd-lmpEK-LNr6A" name="annotation" visibility="private">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLPLPdEd-lmpEK-LNr6A" annotatedElement="_4ufLO7PdEd-lmpEK-LNr6A">
         <body>annotation, type = String&#xD;
 • The annotation of a new Configuration that is used for the annotation of a new Baseline that is created through the&#xD;
 makeBaseline operation.</body>
       </ownedComment>
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nlkRA7GIEd-lmpEK-LNr6A" name="makeBaseline" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRBLGIEd-lmpEK-LNr6A" annotatedElement="_nlkRA7GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufLPbPdEd-lmpEK-LNr6A" name="makeBaseline" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLPrPdEd-lmpEK-LNr6A" annotatedElement="_4ufLPbPdEd-lmpEK-LNr6A">
         <body>makeBaseline (), return type = void isQuery = true&#xD;
 • Creates a new Baseline based upon the Versions selected in the Workspace by the versionedExtents of this&#xD;
 Configuration. This also copies the annotation into the new Baseline and removes the annotation from the&#xD;
 Configuration.</body>
       </ownedComment>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nlkRBbGIEd-lmpEK-LNr6A" name="getBaselineHistory" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRBrGIEd-lmpEK-LNr6A" annotatedElement="_nlkRBbGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufLP7PdEd-lmpEK-LNr6A" name="getBaselineHistory" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLQLPdEd-lmpEK-LNr6A" annotatedElement="_4ufLP7PdEd-lmpEK-LNr6A">
         <body>getBaselineHistory (), return type = BaselineHistory isQuery = true&#xD;
 • Returns the BaselineHistory for this Configuration.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRB7GIEd-lmpEK-LNr6A" name="baselineHistory" type="_nlkRCbGIEd-lmpEK-LNr6A" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufLQbPdEd-lmpEK-LNr6A" name="baselineHistory" type="_4ufLQ7PdEd-lmpEK-LNr6A" direction="return"/>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlkRCLGIEd-lmpEK-LNr6A" memberEnd="_nlkQ8LGIEd-lmpEK-LNr6A _nlkQ9LGIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlkRCbGIEd-lmpEK-LNr6A" name="BaselineHistory">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRCrGIEd-lmpEK-LNr6A" annotatedElement="_nlkRCbGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufLQrPdEd-lmpEK-LNr6A" memberEnd="_4ufLKrPdEd-lmpEK-LNr6A _4ufLLrPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufLQ7PdEd-lmpEK-LNr6A" name="BaselineHistory">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLRLPdEd-lmpEK-LNr6A" annotatedElement="_4ufLQ7PdEd-lmpEK-LNr6A">
       <body>A BaselineHistory contains all the Baselines, just as a VersionHistory contains all Versions of a given Versioned Extent.&#xD;
 Superclasses VersionHistory</body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlkRC7GIEd-lmpEK-LNr6A" general="_nljp7bGIEd-lmpEK-LNr6A"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufLRbPdEd-lmpEK-LNr6A" general="_4ufK-rPdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlkRDLGIEd-lmpEK-LNr6A" memberEnd="_nljDGbGIEd-lmpEK-LNr6A _nlkQ-LGIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlkRDbGIEd-lmpEK-LNr6A" name="Workspace">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRDrGIEd-lmpEK-LNr6A" annotatedElement="_nlkRDbGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufLRrPdEd-lmpEK-LNr6A" memberEnd="_4ufKwLPdEd-lmpEK-LNr6A _4ufLMrPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufLR7PdEd-lmpEK-LNr6A" name="Workspace">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLSLPdEd-lmpEK-LNr6A" annotatedElement="_4ufLR7PdEd-lmpEK-LNr6A">
       <body>This selects a set of versions that are accessed together for a Session or Sessions. Unlike Session this is a persistent&#xD;
 object.&#xD;
 A Workspace selects versions via VersionedExtent objects.&#xD;
@@ -1096,61 +1084,61 @@ A Workspace selects versions via VersionedExtent objects.&#xD;
 An important constraint is that a Workspace may contain at most one VersionedExtent for a given VersionHistory and at&#xD;
 most one Configuration for a given BaselineHistory.</body>
     </ownedComment>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRD7GIEd-lmpEK-LNr6A" name="id" visibility="private">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLSbPdEd-lmpEK-LNr6A" name="id" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRELGIEd-lmpEK-LNr6A" name="annotation" visibility="private">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLSrPdEd-lmpEK-LNr6A" name="annotation" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkREbGIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRErGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLS7PdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLTLPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRE7GIEd-lmpEK-LNr6A" name="versionedExtent" visibility="public" type="_nljDAbGIEd-lmpEK-LNr6A" aggregation="composite" association="_nlkROrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRFLGIEd-lmpEK-LNr6A" annotatedElement="_nlkRE7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLTbPdEd-lmpEK-LNr6A" name="versionedExtent" visibility="public" type="_4ufKrLPdEd-lmpEK-LNr6A" aggregation="composite" association="_4ufxl7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLTrPdEd-lmpEK-LNr6A" annotatedElement="_4ufLTbPdEd-lmpEK-LNr6A">
         <body>versionedExtent, type = VersionedExtent, [0..*], isReadOnly = true&#xD;
 • This refers to all VersionedExtents in this Workspace (inclusive of checked out extents).</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRFbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRFrGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLT7PdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLULPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRF7GIEd-lmpEK-LNr6A" name="configuration" visibility="public" type="_nljqHrGIEd-lmpEK-LNr6A" aggregation="composite" association="_nlkRRrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRGLGIEd-lmpEK-LNr6A" annotatedElement="_nlkRF7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufLUbPdEd-lmpEK-LNr6A" name="configuration" visibility="public" type="_4ufLJ7PdEd-lmpEK-LNr6A" aggregation="composite" association="_4ufxo7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLUrPdEd-lmpEK-LNr6A" annotatedElement="_4ufLUbPdEd-lmpEK-LNr6A">
         <body>configuration, type = Configuration, [0..*], isReadOnly = true&#xD;
 • This refers to all Configurations in this Workspace.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRGbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRGrGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufLU7PdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufLVLPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nlkRG7GIEd-lmpEK-LNr6A" name="copy" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRHLGIEd-lmpEK-LNr6A" annotatedElement="_nlkRG7GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufLVbPdEd-lmpEK-LNr6A" name="copy" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLVrPdEd-lmpEK-LNr6A" annotatedElement="_4ufLVbPdEd-lmpEK-LNr6A">
         <body>copy (workspace : Workspace), return type = Workspace, isQuery = false&#xD;
 • Returns a new workspace that selects the same configuration of Versions and Baselines as the specified workspace.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRHbGIEd-lmpEK-LNr6A" name="workspace" type="_nlkRDbGIEd-lmpEK-LNr6A"/>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRHrGIEd-lmpEK-LNr6A" name="newWorkspace" type="_nlkRDbGIEd-lmpEK-LNr6A" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufLV7PdEd-lmpEK-LNr6A" name="workspace" type="_4ufLR7PdEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufLWLPdEd-lmpEK-LNr6A" name="newWorkspace" type="_4ufLR7PdEd-lmpEK-LNr6A" direction="return"/>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nlkRH7GIEd-lmpEK-LNr6A" name="restore" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRILGIEd-lmpEK-LNr6A" annotatedElement="_nlkRH7GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufLWbPdEd-lmpEK-LNr6A" name="restore" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufLWrPdEd-lmpEK-LNr6A" annotatedElement="_4ufLWbPdEd-lmpEK-LNr6A">
         <body>restore (version: Version), return type = VersionedExtent, isQuery = false&#xD;
 • Create a new VersionedExtent in this Workspace for the specified Version, or if the Version is a Baseline, a new&#xD;
 Configuration in this Workspace for the specified Baseline. This Workspace must not already select a Version for&#xD;
 the VersionHistory of the specified Version.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRIbGIEd-lmpEK-LNr6A" name="version" type="_nljDMbGIEd-lmpEK-LNr6A"/>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRIrGIEd-lmpEK-LNr6A" name="versionExtent" type="_nljDAbGIEd-lmpEK-LNr6A" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufLW7PdEd-lmpEK-LNr6A" name="version" type="_4ufK2LPdEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufLXLPdEd-lmpEK-LNr6A" name="versionExtent" type="_4ufKrLPdEd-lmpEK-LNr6A" direction="return"/>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nlkRI7GIEd-lmpEK-LNr6A" name="update" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRJLGIEd-lmpEK-LNr6A" annotatedElement="_nlkRI7GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufxgLPdEd-lmpEK-LNr6A" name="update" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxgbPdEd-lmpEK-LNr6A" annotatedElement="_4ufxgLPdEd-lmpEK-LNr6A">
         <body>update (version : Version), return type = null, isQuery = false&#xD;
 • Updates the VersionedExtent in this Workspace for the VersionHistory of this Version to select the specified&#xD;
 Version, or if the Version is a Baseline, updates the Configuration in this Workspace for the BaselineHistory of&#xD;
 this Baseline to select the specified Baseline (which then updates the Workspace with each of the versions in that&#xD;
 Baseline).</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRJbGIEd-lmpEK-LNr6A" name="version" type="_nljDMbGIEd-lmpEK-LNr6A"/>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRJrGIEd-lmpEK-LNr6A" name="newVersion" type="_nljDMbGIEd-lmpEK-LNr6A" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufxgrPdEd-lmpEK-LNr6A" name="version" type="_4ufK2LPdEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufxg7PdEd-lmpEK-LNr6A" name="newVersion" type="_4ufK2LPdEd-lmpEK-LNr6A" direction="return"/>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nlkRJ7GIEd-lmpEK-LNr6A" name="merge" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRKLGIEd-lmpEK-LNr6A" annotatedElement="_nlkRJ7GIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufxhLPdEd-lmpEK-LNr6A" name="merge" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxhbPdEd-lmpEK-LNr6A" annotatedElement="_4ufxhLPdEd-lmpEK-LNr6A">
         <body>merge (version : Version), return type = null, isQuery = false&#xD;
 • If the Version is not a Baseline, this merges the specified Version into the VersionedExtent in this Workspace for&#xD;
 the VersionHistory of this Version. If the version is a predecessor or equal to the baseVersion of the&#xD;
@@ -1165,118 +1153,114 @@ Configuration is updated to select the Baseline. If the Baseline is not a predec
 the +baseline of the Configuration, the specified Baseline is added to the previousBaseline property of the&#xD;
 Configuration, and each of the versions of the specified Baseline are merged into the Workspace.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRKbGIEd-lmpEK-LNr6A" name="version" type="_nljDMbGIEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufxhrPdEd-lmpEK-LNr6A" name="version" type="_4ufK2LPdEd-lmpEK-LNr6A"/>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nlkRKrGIEd-lmpEK-LNr6A" name="lookupByVersionHistory" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRK7GIEd-lmpEK-LNr6A" annotatedElement="_nlkRKrGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufxh7PdEd-lmpEK-LNr6A" name="lookupByVersionHistory" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxiLPdEd-lmpEK-LNr6A" annotatedElement="_4ufxh7PdEd-lmpEK-LNr6A">
         <body>lookupByVersionHistory (versionHistory : VersionHistory), return type = VersionedExtent, [0..1] isQuery = true&#xD;
 • Returns the VersionedExtent, if any, in this Workspace for the specified versionHistory.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRLLGIEd-lmpEK-LNr6A" name="versionHistory" type="_nljp7bGIEd-lmpEK-LNr6A"/>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRLbGIEd-lmpEK-LNr6A" name="versionedExtent" type="_nljDAbGIEd-lmpEK-LNr6A" direction="return">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRLrGIEd-lmpEK-LNr6A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRL7GIEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufxibPdEd-lmpEK-LNr6A" name="versionHistory" type="_4ufK-rPdEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufxirPdEd-lmpEK-LNr6A" name="versionedExtent" type="_4ufKrLPdEd-lmpEK-LNr6A" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxi7PdEd-lmpEK-LNr6A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxjLPdEd-lmpEK-LNr6A"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nlkRMLGIEd-lmpEK-LNr6A" name="getVersionSet" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRMbGIEd-lmpEK-LNr6A" annotatedElement="_nlkRMLGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufxjbPdEd-lmpEK-LNr6A" name="getVersionSet" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxjrPdEd-lmpEK-LNr6A" annotatedElement="_4ufxjbPdEd-lmpEK-LNr6A">
         <body>getVersionSet (), return type = VersionedExtent, [0..*] isQuery = true&#xD;
 • Returns the VersionedExtents, inclusive of those that are checked out, that are being referenced by this Workspace.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRMrGIEd-lmpEK-LNr6A" name="versionedExtents" type="_nljDAbGIEd-lmpEK-LNr6A" direction="return">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRM7GIEd-lmpEK-LNr6A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRNLGIEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufxj7PdEd-lmpEK-LNr6A" name="versionedExtents" type="_4ufKrLPdEd-lmpEK-LNr6A" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxkLPdEd-lmpEK-LNr6A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxkbPdEd-lmpEK-LNr6A"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_nlkRNbGIEd-lmpEK-LNr6A" name="getCheckedOutVersionSet" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRNrGIEd-lmpEK-LNr6A" annotatedElement="_nlkRNbGIEd-lmpEK-LNr6A">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ufxkrPdEd-lmpEK-LNr6A" name="getCheckedOutVersionSet" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxk7PdEd-lmpEK-LNr6A" annotatedElement="_4ufxkrPdEd-lmpEK-LNr6A">
         <body>getCheckedOutVersionSet (), return type = VersionedExtent, [0..1] isQuery = true&#xD;
 • Returns only the VersionExtents referenced by this Workspace that have a status of checked out.</body>
       </ownedComment>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nlkRN7GIEd-lmpEK-LNr6A" name="versionSet" type="_nljDAbGIEd-lmpEK-LNr6A" direction="return">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkROLGIEd-lmpEK-LNr6A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRObGIEd-lmpEK-LNr6A"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4ufxlLPdEd-lmpEK-LNr6A" name="versionSet" type="_4ufKrLPdEd-lmpEK-LNr6A" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxlbPdEd-lmpEK-LNr6A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxlrPdEd-lmpEK-LNr6A"/>
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlkROrGIEd-lmpEK-LNr6A" memberEnd="_nlkRE7GIEd-lmpEK-LNr6A _nlkRO7GIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nlkRO7GIEd-lmpEK-LNr6A" name="workspace" visibility="public" type="_nlkRDbGIEd-lmpEK-LNr6A" association="_nlkROrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRPLGIEd-lmpEK-LNr6A" annotatedElement="_nlkRO7GIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufxl7PdEd-lmpEK-LNr6A" memberEnd="_4ufLTbPdEd-lmpEK-LNr6A _4ufxmLPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufxmLPdEd-lmpEK-LNr6A" name="workspace" visibility="public" type="_4ufLR7PdEd-lmpEK-LNr6A" association="_4ufxl7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxmbPdEd-lmpEK-LNr6A" annotatedElement="_4ufxmLPdEd-lmpEK-LNr6A">
         <body>workspace, type = Workspace, [1], isReadOnly = true&#xD;
 • This reference identifies the Workspaces that contain this VersionedExtent.</body>
       </ownedComment>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlkRPbGIEd-lmpEK-LNr6A" name="Session">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRPrGIEd-lmpEK-LNr6A" annotatedElement="_nlkRPbGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufxmrPdEd-lmpEK-LNr6A" name="Session">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxm7PdEd-lmpEK-LNr6A" annotatedElement="_4ufxmrPdEd-lmpEK-LNr6A">
       <body>This logically represents the client’s current session. By first attaching and selecting the Workspace through the Session,&#xD;
 the other MOF 2 APIs can transparently access specific versions without being aware of it.</body>
     </ownedComment>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRP7GIEd-lmpEK-LNr6A" name="workspace" visibility="public" type="_nlkRDbGIEd-lmpEK-LNr6A" association="_nlkRQrGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRQLGIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRQbGIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxnLPdEd-lmpEK-LNr6A" name="workspace" visibility="public" type="_4ufLR7PdEd-lmpEK-LNr6A" association="_4ufxn7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxnbPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxnrPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlkRQrGIEd-lmpEK-LNr6A" memberEnd="_nlkRP7GIEd-lmpEK-LNr6A _nlkRQ7GIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nlkRQ7GIEd-lmpEK-LNr6A" name="session" visibility="private" type="_nlkRPbGIEd-lmpEK-LNr6A" association="_nlkRQrGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRRLGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRRbGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufxn7PdEd-lmpEK-LNr6A" memberEnd="_4ufxnLPdEd-lmpEK-LNr6A _4ufxoLPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufxoLPdEd-lmpEK-LNr6A" name="session" visibility="private" type="_4ufxmrPdEd-lmpEK-LNr6A" association="_4ufxn7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxobPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxorPdEd-lmpEK-LNr6A"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlkRRrGIEd-lmpEK-LNr6A" memberEnd="_nlkRF7GIEd-lmpEK-LNr6A _nlkRR7GIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nlkRR7GIEd-lmpEK-LNr6A" name="workspace" visibility="private" type="_nlkRDbGIEd-lmpEK-LNr6A" association="_nlkRRrGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufxo7PdEd-lmpEK-LNr6A" memberEnd="_4ufLUbPdEd-lmpEK-LNr6A _4ufxpLPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufxpLPdEd-lmpEK-LNr6A" name="workspace" visibility="private" type="_4ufLR7PdEd-lmpEK-LNr6A" association="_4ufxo7PdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlkRSLGIEd-lmpEK-LNr6A" name="Baseline">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRSbGIEd-lmpEK-LNr6A" annotatedElement="_nlkRSLGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufxpbPdEd-lmpEK-LNr6A" name="Baseline">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxprPdEd-lmpEK-LNr6A" annotatedElement="_4ufxpbPdEd-lmpEK-LNr6A">
       <body>Selects a set of Versions, with no two versions from the same VersionHistory.&#xD;
 &#xD;
 Superclasses Version</body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlkRSrGIEd-lmpEK-LNr6A" general="_nljDMbGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRS7GIEd-lmpEK-LNr6A" name="member-of" visibility="public" type="_nlkRSLGIEd-lmpEK-LNr6A" isReadOnly="true" association="_nlkRWrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRTLGIEd-lmpEK-LNr6A" annotatedElement="_nlkRS7GIEd-lmpEK-LNr6A">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufxp7PdEd-lmpEK-LNr6A" general="_4ufK2LPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxqLPdEd-lmpEK-LNr6A" name="member-of" visibility="public" type="_4ufxpbPdEd-lmpEK-LNr6A" isReadOnly="true" association="_4ufxt7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxqbPdEd-lmpEK-LNr6A" annotatedElement="_4ufxqLPdEd-lmpEK-LNr6A">
         <body>member-of, type = Configuration, [0..*], isReadOnly = true, inverse = member&#xD;
 • Baselines which logically include this Baseline.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRTbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRTrGIEd-lmpEK-LNr6A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxqrPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxq7PdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRT7GIEd-lmpEK-LNr6A" name="member" visibility="public" type="_nlkRSLGIEd-lmpEK-LNr6A" isReadOnly="true" association="_nlkRWrGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRULGIEd-lmpEK-LNr6A" annotatedElement="_nlkRT7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxrLPdEd-lmpEK-LNr6A" name="member" visibility="public" type="_4ufxpbPdEd-lmpEK-LNr6A" isReadOnly="true" association="_4ufxt7PdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxrbPdEd-lmpEK-LNr6A" annotatedElement="_4ufxrLPdEd-lmpEK-LNr6A">
         <body>member, type = Configuration, [0..*], isReadOnly = true, inverse = member-of&#xD;
 • Baselines which are logically included in this Baseline.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRUbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRUrGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxrrPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxr7PdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRU7GIEd-lmpEK-LNr6A" name="configuration" visibility="public" type="_nljqHrGIEd-lmpEK-LNr6A" association="_nlkRXbGIEd-lmpEK-LNr6A">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlkRVLGIEd-lmpEK-LNr6A" annotatedElement="_nlkRU7GIEd-lmpEK-LNr6A">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxsLPdEd-lmpEK-LNr6A" name="configuration" visibility="public" type="_4ufLJ7PdEd-lmpEK-LNr6A" association="_4ufxurPdEd-lmpEK-LNr6A">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxsbPdEd-lmpEK-LNr6A" annotatedElement="_4ufxsLPdEd-lmpEK-LNr6A">
         <body>configuration, type = Configuration, [0..*], isReadOnly = true, inverse = baseline&#xD;
 • Configurations that refer to this Baseline.</body>
       </ownedComment>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRVbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRVrGIEd-lmpEK-LNr6A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxsrPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxs7PdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRV7GIEd-lmpEK-LNr6A" name="version" visibility="public" type="_nljDMbGIEd-lmpEK-LNr6A" association="_nlkRXrGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRWLGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRWbGIEd-lmpEK-LNr6A"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlkRWrGIEd-lmpEK-LNr6A" memberEnd="_nlkRS7GIEd-lmpEK-LNr6A _nlkRT7GIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlkRW7GIEd-lmpEK-LNr6A" memberEnd="_nlkQ-7GIEd-lmpEK-LNr6A _nlkRXLGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nlkRXLGIEd-lmpEK-LNr6A" name="" visibility="private" type="_nljqHrGIEd-lmpEK-LNr6A" association="_nlkRW7GIEd-lmpEK-LNr6A"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlkRXbGIEd-lmpEK-LNr6A" memberEnd="_nlkQ_7GIEd-lmpEK-LNr6A _nlkRU7GIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlkRXrGIEd-lmpEK-LNr6A" memberEnd="_nlkRV7GIEd-lmpEK-LNr6A _nljp4bGIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlkRX7GIEd-lmpEK-LNr6A" name="FragmentDefinition" isAbstract="true">
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlkRYLGIEd-lmpEK-LNr6A" general="_nlk4ALGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlkRYbGIEd-lmpEK-LNr6A" name="fragment_Relationship" visibility="private" type="_nlk4QbGIEd-lmpEK-LNr6A" association="_nlk4RbGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlkRYrGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlkRY7GIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxtLPdEd-lmpEK-LNr6A" name="version" visibility="public" type="_4ufK2LPdEd-lmpEK-LNr6A" association="_4ufxu7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxtbPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxtrPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlk4ALGIEd-lmpEK-LNr6A" name="WorkProductDefinition" isAbstract="true">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlk4AbGIEd-lmpEK-LNr6A" annotatedElement="_nlk4ALGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufxt7PdEd-lmpEK-LNr6A" memberEnd="_4ufxqLPdEd-lmpEK-LNr6A _4ufxrLPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufxuLPdEd-lmpEK-LNr6A" memberEnd="_4ufLNbPdEd-lmpEK-LNr6A _4ufxubPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufxubPdEd-lmpEK-LNr6A" name="" visibility="private" type="_4ufLJ7PdEd-lmpEK-LNr6A" association="_4ufxuLPdEd-lmpEK-LNr6A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufxurPdEd-lmpEK-LNr6A" memberEnd="_4ufLObPdEd-lmpEK-LNr6A _4ufxsLPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufxu7PdEd-lmpEK-LNr6A" memberEnd="_4ufxtLPdEd-lmpEK-LNr6A _4ufK7rPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufxvLPdEd-lmpEK-LNr6A" name="FragmentDefinition" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufxvbPdEd-lmpEK-LNr6A" general="_4ufxvrPdEd-lmpEK-LNr6A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufxvrPdEd-lmpEK-LNr6A" name="WorkProductDefinition" isAbstract="true">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufxv7PdEd-lmpEK-LNr6A" annotatedElement="_4ufxvrPdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>Descrição:&lt;/font>&lt;/b> &lt;font face=&quot;Courier&quot;>WorkProductDefinition&lt;/font> &lt;font&#xD;
     face=&quot;Times New Roman&quot;>é uma metaclasse que representa os produtos de&lt;/font>&#xD;
@@ -1319,49 +1303,49 @@ Superclasses Version</body>
     &lt;font face=&quot;Times New Roman&quot;>&lt;font face=&quot;Times New Roman&quot;>produtos de trabalho.&lt;/font>&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4ArGIEd-lmpEK-LNr6A" name="presentationName" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxwLPdEd-lmpEK-LNr6A" name="presentationName" visibility="public">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4A7GIEd-lmpEK-LNr6A" name="description" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxwbPdEd-lmpEK-LNr6A" name="description" visibility="public">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlk4BLGIEd-lmpEK-LNr6A" name="ContainerDefinition">
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlk4BbGIEd-lmpEK-LNr6A" general="_nlk4ALGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4BrGIEd-lmpEK-LNr6A" name="artifactContainer_Relationship" visibility="private" type="_nlk4KrGIEd-lmpEK-LNr6A" association="_nlk4MrGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4B7GIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4CLGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufxwrPdEd-lmpEK-LNr6A" name="ContainerDefinition">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufxw7PdEd-lmpEK-LNr6A" general="_4ufxvrPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxxLPdEd-lmpEK-LNr6A" name="artifactContainer_Relationship" visibility="private" type="_4ufx6LPdEd-lmpEK-LNr6A" association="_4ufx8LPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxxbPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxxrPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4CbGIEd-lmpEK-LNr6A" name="containerDefinition_Relationship" visibility="private" type="_nlk4M7GIEd-lmpEK-LNr6A" association="_nlk4OrGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4CrGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4C7GIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxx7PdEd-lmpEK-LNr6A" name="containerDefinition_Relationship" visibility="private" type="_4ufx8bPdEd-lmpEK-LNr6A" association="_4ufx-LPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxyLPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxybPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4DLGIEd-lmpEK-LNr6A" name="containerDefinition_Relationship2" visibility="private" type="_nlk4M7GIEd-lmpEK-LNr6A" association="_nlk4O7GIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4DbGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4DrGIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxyrPdEd-lmpEK-LNr6A" name="containerDefinition_Relationship2" visibility="private" type="_4ufx8bPdEd-lmpEK-LNr6A" association="_4ufx-bPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxy7PdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxzLPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4D7GIEd-lmpEK-LNr6A" name="containerFragment_Relationship" visibility="private" type="_nlk4PLGIEd-lmpEK-LNr6A" association="_nlk4S7GIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4ELGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4EbGIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufxzbPdEd-lmpEK-LNr6A" name="containerFragment_Relationship" visibility="private" type="_4ufx-rPdEd-lmpEK-LNr6A" association="_4ufyDLPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufxzrPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufxz7PdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlk4ErGIEd-lmpEK-LNr6A" name="ArtifactDefinition">
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlk4E7GIEd-lmpEK-LNr6A" general="_nlk4ALGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4FLGIEd-lmpEK-LNr6A" name="isExternal" visibility="public">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufx0LPdEd-lmpEK-LNr6A" name="ArtifactDefinition">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufx0bPdEd-lmpEK-LNr6A" general="_4ufxvrPdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx0rPdEd-lmpEK-LNr6A" name="isExternal" visibility="public">
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Boolean"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4FbGIEd-lmpEK-LNr6A" name="aKind" visibility="public" type="_nlk4IbGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4FrGIEd-lmpEK-LNr6A" name="artifactContainer_Relationship" visibility="private" type="_nlk4KrGIEd-lmpEK-LNr6A" association="_nlk4MbGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4F7GIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4GLGIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx07PdEd-lmpEK-LNr6A" name="aKind" visibility="public" type="_4ufx37PdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx1LPdEd-lmpEK-LNr6A" name="artifactContainer_Relationship" visibility="private" type="_4ufx6LPdEd-lmpEK-LNr6A" association="_4ufx77PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufx1bPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufx1rPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4GbGIEd-lmpEK-LNr6A" name="artifactFragment_Relationship" visibility="private" type="_nlk4RrGIEd-lmpEK-LNr6A" association="_nlk4TLGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4GrGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4G7GIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx17PdEd-lmpEK-LNr6A" name="artifactFragment_Relationship" visibility="private" type="_4ufyB7PdEd-lmpEK-LNr6A" association="_4ufyDbPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufx2LPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufx2bPdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlk4HLGIEd-lmpEK-LNr6A" name="LabeledText">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_nlk4HbGIEd-lmpEK-LNr6A" annotatedElement="_nlk4HLGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufx2rPdEd-lmpEK-LNr6A" name="LabeledText">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4ufx27PdEd-lmpEK-LNr6A" annotatedElement="_4ufx2rPdEd-lmpEK-LNr6A">
       <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>LabeledText&lt;/font>&lt;/b>&#xD;
 &lt;/p>&#xD;
@@ -1422,9 +1406,9 @@ Superclasses Version</body>
     &lt;font face=&quot;Times New Roman&quot;>a ser preenchido.&lt;/font>&#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlk4HrGIEd-lmpEK-LNr6A" general="_nljC5LGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4H7GIEd-lmpEK-LNr6A" name="label" visibility="public">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_nlk4ILGIEd-lmpEK-LNr6A" annotatedElement="_nlk4H7GIEd-lmpEK-LNr6A">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufx3LPdEd-lmpEK-LNr6A" general="_4ufKj7PdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx3bPdEd-lmpEK-LNr6A" name="label" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4ufx3rPdEd-lmpEK-LNr6A" annotatedElement="_4ufx3bPdEd-lmpEK-LNr6A">
         <body>&lt;p align=&quot;left&quot;>&#xD;
     &lt;b>&lt;font face=&quot;Times New Roman&quot;>label&lt;/font>&lt;/b>&lt;font face=&quot;Times New Roman&quot;>:&lt;/font> &lt;i>&lt;font&#xD;
     face=&quot;Times New Roman&quot;>String&lt;/font>&lt;/i>&lt;font face=&quot;Times New Roman&quot;>, conteúdo do rótulo identificador a ser&#xD;
@@ -1446,78 +1430,83 @@ Superclasses Version</body>
       <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Enumeration" xmi:id="_nlk4IbGIEd-lmpEK-LNr6A" name="ArtifactKinds">
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nlk4IrGIEd-lmpEK-LNr6A" name="Document" classifier="_nlk4IbGIEd-lmpEK-LNr6A"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nlk4I7GIEd-lmpEK-LNr6A" name="SpreadSheet" classifier="_nlk4IbGIEd-lmpEK-LNr6A"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nlk4JLGIEd-lmpEK-LNr6A" name="Diagram" classifier="_nlk4IbGIEd-lmpEK-LNr6A"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nlk4JbGIEd-lmpEK-LNr6A" name="Graphic" classifier="_nlk4IbGIEd-lmpEK-LNr6A"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nlk4JrGIEd-lmpEK-LNr6A" name="UMLModel" classifier="_nlk4IbGIEd-lmpEK-LNr6A"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nlk4J7GIEd-lmpEK-LNr6A" name="SourceCode" classifier="_nlk4IbGIEd-lmpEK-LNr6A"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nlk4KLGIEd-lmpEK-LNr6A" name="Binary" classifier="_nlk4IbGIEd-lmpEK-LNr6A"/>
-    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nlk4KbGIEd-lmpEK-LNr6A" name="Other" classifier="_nlk4IbGIEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_4ufx37PdEd-lmpEK-LNr6A" name="ArtifactKinds">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4ufx4LPdEd-lmpEK-LNr6A" name="Document" classifier="_4ufx37PdEd-lmpEK-LNr6A"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4ufx4bPdEd-lmpEK-LNr6A" name="SpreadSheet" classifier="_4ufx37PdEd-lmpEK-LNr6A"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4ufx4rPdEd-lmpEK-LNr6A" name="Diagram" classifier="_4ufx37PdEd-lmpEK-LNr6A"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4ufx47PdEd-lmpEK-LNr6A" name="Graphic" classifier="_4ufx37PdEd-lmpEK-LNr6A"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4ufx5LPdEd-lmpEK-LNr6A" name="UMLModel" classifier="_4ufx37PdEd-lmpEK-LNr6A"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4ufx5bPdEd-lmpEK-LNr6A" name="SourceCode" classifier="_4ufx37PdEd-lmpEK-LNr6A"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4ufx5rPdEd-lmpEK-LNr6A" name="Binary" classifier="_4ufx37PdEd-lmpEK-LNr6A"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4ufx57PdEd-lmpEK-LNr6A" name="Other" classifier="_4ufx37PdEd-lmpEK-LNr6A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlk4KrGIEd-lmpEK-LNr6A" name="ArtifactContainer_Relationship">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4K7GIEd-lmpEK-LNr6A" name="artifact" visibility="public" type="_nlk4ErGIEd-lmpEK-LNr6A" isDerived="true" association="_nlk4MbGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4LLGIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4LbGIEd-lmpEK-LNr6A" value="1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufx6LPdEd-lmpEK-LNr6A" name="ArtifactContainer_Relationship">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx6bPdEd-lmpEK-LNr6A" name="artifact" visibility="public" type="_4ufx0LPdEd-lmpEK-LNr6A" isDerived="true" association="_4ufx77PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufx6rPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufx67PdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4LrGIEd-lmpEK-LNr6A" name="containers" visibility="public" type="_nlk4BLGIEd-lmpEK-LNr6A" isDerived="true" aggregation="shared" association="_nlk4MrGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4L7GIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4MLGIEd-lmpEK-LNr6A" value="1"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlk4MbGIEd-lmpEK-LNr6A" memberEnd="_nlk4K7GIEd-lmpEK-LNr6A _nlk4FrGIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlk4MrGIEd-lmpEK-LNr6A" memberEnd="_nlk4LrGIEd-lmpEK-LNr6A _nlk4BrGIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlk4M7GIEd-lmpEK-LNr6A" name="ContainerDefinition_Relationship">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4NLGIEd-lmpEK-LNr6A" name="parent" visibility="public" type="_nlk4BLGIEd-lmpEK-LNr6A" isDerived="true" association="_nlk4OrGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4NbGIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4NrGIEd-lmpEK-LNr6A" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4N7GIEd-lmpEK-LNr6A" name="children" visibility="public" type="_nlk4BLGIEd-lmpEK-LNr6A" isDerived="true" association="_nlk4O7GIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4OLGIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4ObGIEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx7LPdEd-lmpEK-LNr6A" name="containers" visibility="public" type="_4ufxwrPdEd-lmpEK-LNr6A" isDerived="true" aggregation="shared" association="_4ufx8LPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufx7bPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufx7rPdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlk4OrGIEd-lmpEK-LNr6A" memberEnd="_nlk4CbGIEd-lmpEK-LNr6A _nlk4NLGIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlk4O7GIEd-lmpEK-LNr6A" memberEnd="_nlk4DLGIEd-lmpEK-LNr6A _nlk4N7GIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlk4PLGIEd-lmpEK-LNr6A" name="ContainerFragment_Relationship">
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlk4PbGIEd-lmpEK-LNr6A" general="_nlk4QbGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4PrGIEd-lmpEK-LNr6A" name="container" visibility="public" type="_nlk4BLGIEd-lmpEK-LNr6A" isDerived="true" association="_nlk4S7GIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4P7GIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4QLGIEd-lmpEK-LNr6A" value="1"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufx77PdEd-lmpEK-LNr6A" memberEnd="_4ufx6bPdEd-lmpEK-LNr6A _4ufx1LPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufx8LPdEd-lmpEK-LNr6A" memberEnd="_4ufx7LPdEd-lmpEK-LNr6A _4ufxxLPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufx8bPdEd-lmpEK-LNr6A" name="ContainerDefinition_Relationship">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx8rPdEd-lmpEK-LNr6A" name="parent" visibility="public" type="_4ufxwrPdEd-lmpEK-LNr6A" isDerived="true" association="_4ufx-LPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufx87PdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufx9LPdEd-lmpEK-LNr6A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx9bPdEd-lmpEK-LNr6A" name="children" visibility="public" type="_4ufxwrPdEd-lmpEK-LNr6A" isDerived="true" association="_4ufx-bPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufx9rPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufx97PdEd-lmpEK-LNr6A"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlk4QbGIEd-lmpEK-LNr6A" name="Fragment_Relationship">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4QrGIEd-lmpEK-LNr6A" name="containers" visibility="public" type="_nlkRX7GIEd-lmpEK-LNr6A" isDerived="true" aggregation="shared" association="_nlk4RbGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4Q7GIEd-lmpEK-LNr6A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4RLGIEd-lmpEK-LNr6A" value="1"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufx-LPdEd-lmpEK-LNr6A" memberEnd="_4ufxx7PdEd-lmpEK-LNr6A _4ufx8rPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufx-bPdEd-lmpEK-LNr6A" memberEnd="_4ufxyrPdEd-lmpEK-LNr6A _4ufx9bPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufx-rPdEd-lmpEK-LNr6A" name="ContainerFragment_Relationship">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufx-7PdEd-lmpEK-LNr6A" general="_4ufx_7PdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufx_LPdEd-lmpEK-LNr6A" name="container" visibility="public" type="_4ufxwrPdEd-lmpEK-LNr6A" isDerived="true" association="_4ufyDLPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufx_bPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufx_rPdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlk4RbGIEd-lmpEK-LNr6A" memberEnd="_nlk4QrGIEd-lmpEK-LNr6A _nlkRYbGIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_nlk4RrGIEd-lmpEK-LNr6A" name="ArtifactFragment_Relationship">
-    <generalization xmi:type="uml:Generalization" xmi:id="_nlk4R7GIEd-lmpEK-LNr6A" general="_nlk4QbGIEd-lmpEK-LNr6A"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_nlk4SLGIEd-lmpEK-LNr6A" name="artifact" visibility="public" type="_nlk4ErGIEd-lmpEK-LNr6A" isDerived="true" association="_nlk4TLGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4SbGIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4SrGIEd-lmpEK-LNr6A" value="1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufx_7PdEd-lmpEK-LNr6A" name="Fragment_Relationship">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufyALPdEd-lmpEK-LNr6A" name="containers" visibility="public" type="_4ufxvLPdEd-lmpEK-LNr6A" isDerived="true" aggregation="shared" association="_4ufyA7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufyAbPdEd-lmpEK-LNr6A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufyArPdEd-lmpEK-LNr6A" value="1"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlk4S7GIEd-lmpEK-LNr6A" memberEnd="_nlk4PrGIEd-lmpEK-LNr6A _nlk4D7GIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlk4TLGIEd-lmpEK-LNr6A" memberEnd="_nlk4SLGIEd-lmpEK-LNr6A _nlk4GbGIEd-lmpEK-LNr6A"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlk4TbGIEd-lmpEK-LNr6A" memberEnd="_nljC8bGIEd-lmpEK-LNr6A _nlk4TrGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nlk4TrGIEd-lmpEK-LNr6A" name="parent" visibility="public" type="_nljC7rGIEd-lmpEK-LNr6A" association="_nlk4TbGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4T7GIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4ULGIEd-lmpEK-LNr6A" value="1"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufyA7PdEd-lmpEK-LNr6A" name="" memberEnd="_4ufyALPdEd-lmpEK-LNr6A _4ufyBLPdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufyBLPdEd-lmpEK-LNr6A" name="fragment_Relationship" visibility="public" type="_4ufx_7PdEd-lmpEK-LNr6A" association="_4ufyA7PdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufyBbPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufyBrPdEd-lmpEK-LNr6A" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_nlk4UbGIEd-lmpEK-LNr6A" memberEnd="_nljC9LGIEd-lmpEK-LNr6A _nlk4UrGIEd-lmpEK-LNr6A">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_nlk4UrGIEd-lmpEK-LNr6A" name="elementgroup" visibility="private" type="_nljC7rGIEd-lmpEK-LNr6A" association="_nlk4UbGIEd-lmpEK-LNr6A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlk4U7GIEd-lmpEK-LNr6A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlk4VLGIEd-lmpEK-LNr6A" value="1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4ufyB7PdEd-lmpEK-LNr6A" name="ArtifactFragment_Relationship">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ufyCLPdEd-lmpEK-LNr6A" general="_4ufx_7PdEd-lmpEK-LNr6A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4ufyCbPdEd-lmpEK-LNr6A" name="artifact" visibility="public" type="_4ufx0LPdEd-lmpEK-LNr6A" isDerived="true" association="_4ufyDbPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufyCrPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufyC7PdEd-lmpEK-LNr6A" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufyDLPdEd-lmpEK-LNr6A" memberEnd="_4ufx_LPdEd-lmpEK-LNr6A _4ufxzbPdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufyDbPdEd-lmpEK-LNr6A" memberEnd="_4ufyCbPdEd-lmpEK-LNr6A _4ufx17PdEd-lmpEK-LNr6A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufyDrPdEd-lmpEK-LNr6A" memberEnd="_4ufKnLPdEd-lmpEK-LNr6A _4ufyD7PdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufyD7PdEd-lmpEK-LNr6A" name="parent" visibility="public" type="_4ufKmbPdEd-lmpEK-LNr6A" association="_4ufyDrPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufyELPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufyEbPdEd-lmpEK-LNr6A" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nlk4VbGIEd-lmpEK-LNr6A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_4ufyErPdEd-lmpEK-LNr6A" memberEnd="_4ufKn7PdEd-lmpEK-LNr6A _4ufyE7PdEd-lmpEK-LNr6A">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4ufyE7PdEd-lmpEK-LNr6A" name="elementgroup" visibility="private" type="_4ufKmbPdEd-lmpEK-LNr6A" association="_4ufyErPdEd-lmpEK-LNr6A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ufyFLPdEd-lmpEK-LNr6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ufyFbPdEd-lmpEK-LNr6A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4ufyFrPdEd-lmpEK-LNr6A">
     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nlk4VrGIEd-lmpEK-LNr6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4ufyF7PdEd-lmpEK-LNr6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://schema.omg.org/spec/UML/2.1.1/StandardProfileL2.xmi#_yzU58YinEdqtvbnfB2L_5w"/>
       </eAnnotations>
     </xmi:Extension>
