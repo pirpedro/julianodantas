@@ -68,12 +68,6 @@
         <details key="documentation" value="configuration, type = Configuration, isReadOnly = true&#xD;&#xA;• The Configuration to which this VersionedExtent belongs."/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="conflict" ordered="false"
-        upperBound="-1" eType="#//Version">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="conflict reference, type = Version, [0..*], isReadOnly = false, composite&#xD;&#xA;• These are the conflicts created by a merge. After the client resolves the conflict (by appropriately modifying the&#xD;&#xA;content of the VersionedExtent), the client indicates that the conflict has been resolved by adding the version to the&#xD;&#xA;previousVersion list of the VersionedContext, and removing the version from the conflict list."/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="previousVersion" ordered="false"
         upperBound="-1" eType="#//Version">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

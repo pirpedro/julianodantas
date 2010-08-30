@@ -107,22 +107,13 @@ public interface SpemartiPackage extends EPackage {
 	int VERSIONED_EXTENT__CONFIGURATION = 3;
 
 	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VERSIONED_EXTENT__CONFLICT = 4;
-
-	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VERSIONED_EXTENT__PREVIOUS_VERSION = 5;
+	int VERSIONED_EXTENT__PREVIOUS_VERSION = 4;
 
 	/**
 	 * The feature id for the '<em><b>Base Version</b></em>' reference.
@@ -131,7 +122,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VERSIONED_EXTENT__BASE_VERSION = 6;
+	int VERSIONED_EXTENT__BASE_VERSION = 5;
 
 	/**
 	 * The number of structural features of the '<em>Versioned Extent</em>' class.
@@ -140,7 +131,7 @@ public interface SpemartiPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VERSIONED_EXTENT_FEATURE_COUNT = 7;
+	int VERSIONED_EXTENT_FEATURE_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link spemarti.impl.SimpleInformationElementImpl <em>Simple Information Element</em>}' class.
@@ -187,15 +178,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int SIMPLE_INFORMATION_ELEMENT__CONFIGURATION = VERSIONED_EXTENT__CONFIGURATION;
-
-	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE_INFORMATION_ELEMENT__CONFLICT = VERSIONED_EXTENT__CONFLICT;
 
 	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
@@ -287,15 +269,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMAGE__CONFIGURATION = SIMPLE_INFORMATION_ELEMENT__CONFIGURATION;
-
-	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMAGE__CONFLICT = SIMPLE_INFORMATION_ELEMENT__CONFLICT;
 
 	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
@@ -829,15 +802,6 @@ public interface SpemartiPackage extends EPackage {
 	int COMPLEX_INFORMATION_ELEMENT__CONFIGURATION = SIMPLE_INFORMATION_ELEMENT__CONFIGURATION;
 
 	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMPLEX_INFORMATION_ELEMENT__CONFLICT = SIMPLE_INFORMATION_ELEMENT__CONFLICT;
-
-	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -927,15 +891,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int DIAGRAM__CONFIGURATION = COMPLEX_INFORMATION_ELEMENT__CONFIGURATION;
-
-	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGRAM__CONFLICT = COMPLEX_INFORMATION_ELEMENT__CONFLICT;
 
 	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
@@ -1036,15 +991,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUESTION__CONFIGURATION = COMPLEX_INFORMATION_ELEMENT__CONFIGURATION;
-
-	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUESTION__CONFLICT = COMPLEX_INFORMATION_ELEMENT__CONFLICT;
 
 	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
@@ -1156,15 +1102,6 @@ public interface SpemartiPackage extends EPackage {
 	int TEXT__CONFIGURATION = SIMPLE_INFORMATION_ELEMENT__CONFIGURATION;
 
 	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TEXT__CONFLICT = SIMPLE_INFORMATION_ELEMENT__CONFLICT;
-
-	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1263,15 +1200,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int LIST__CONFIGURATION = COMPLEX_INFORMATION_ELEMENT__CONFIGURATION;
-
-	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LIST__CONFLICT = COMPLEX_INFORMATION_ELEMENT__CONFLICT;
 
 	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
@@ -1401,15 +1329,6 @@ public interface SpemartiPackage extends EPackage {
 	int MATRIX__CONFIGURATION = COMPLEX_INFORMATION_ELEMENT__CONFIGURATION;
 
 	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MATRIX__CONFLICT = COMPLEX_INFORMATION_ELEMENT__CONFLICT;
-
-	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1517,15 +1436,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int TABLE__CONFIGURATION = MATRIX__CONFIGURATION;
-
-	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TABLE__CONFLICT = MATRIX__CONFLICT;
 
 	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
@@ -1644,15 +1554,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int ELEMENT_GROUP__CONFIGURATION = LIST__CONFIGURATION;
-
-	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ELEMENT_GROUP__CONFLICT = LIST__CONFLICT;
 
 	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
@@ -2195,15 +2096,6 @@ public interface SpemartiPackage extends EPackage {
 	int LABELED_TEXT__CONFIGURATION = TEXT__CONFIGURATION;
 
 	/**
-	 * The feature id for the '<em><b>Conflict</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABELED_TEXT__CONFLICT = TEXT__CONFLICT;
-
-	/**
 	 * The feature id for the '<em><b>Previous Version</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2350,17 +2242,6 @@ public interface SpemartiPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getVersionedExtent_Configuration();
-
-	/**
-	 * Returns the meta object for the reference list '{@link spemarti.VersionedExtent#getConflict <em>Conflict</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Conflict</em>'.
-	 * @see spemarti.VersionedExtent#getConflict()
-	 * @see #getVersionedExtent()
-	 * @generated
-	 */
-	EReference getVersionedExtent_Conflict();
 
 	/**
 	 * Returns the meta object for the reference list '{@link spemarti.VersionedExtent#getPreviousVersion <em>Previous Version</em>}'.
@@ -3343,14 +3224,6 @@ public interface SpemartiPackage extends EPackage {
 		 * @generated
 		 */
 		EReference VERSIONED_EXTENT__CONFIGURATION = eINSTANCE.getVersionedExtent_Configuration();
-
-		/**
-		 * The meta object literal for the '<em><b>Conflict</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference VERSIONED_EXTENT__CONFLICT = eINSTANCE.getVersionedExtent_Conflict();
 
 		/**
 		 * The meta object literal for the '<em><b>Previous Version</b></em>' reference list feature.

@@ -27,7 +27,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link spemarti.VersionedExtent#getAnnotation <em>Annotation</em>}</li>
  *   <li>{@link spemarti.VersionedExtent#getVersionhistory <em>Versionhistory</em>}</li>
  *   <li>{@link spemarti.VersionedExtent#getConfiguration <em>Configuration</em>}</li>
- *   <li>{@link spemarti.VersionedExtent#getConflict <em>Conflict</em>}</li>
  *   <li>{@link spemarti.VersionedExtent#getPreviousVersion <em>Previous Version</em>}</li>
  *   <li>{@link spemarti.VersionedExtent#getBaseVersion <em>Base Version</em>}</li>
  * </ul>
@@ -134,24 +133,6 @@ public interface VersionedExtent extends EObject {
 	 * @generated
 	 */
 	void setConfiguration(Configuration value);
-
-	/**
-	 * Returns the value of the '<em><b>Conflict</b></em>' reference list.
-	 * The list contents are of type {@link spemarti.Version}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * conflict reference, type = Version, [0..*], isReadOnly = false, composite
-	 * • These are the conflicts created by a merge. After the client resolves the conflict (by appropriately modifying the
-	 * content of the VersionedExtent), the client indicates that the conflict has been resolved by adding the version to the
-	 * previousVersion list of the VersionedContext, and removing the version from the conflict list.
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Conflict</em>' reference list.
-	 * @see spemarti.SpemartiPackage#getVersionedExtent_Conflict()
-	 * @model ordered="false"
-	 * @generated
-	 */
-	EList<Version> getConflict();
 
 	/**
 	 * Returns the value of the '<em><b>Previous Version</b></em>' reference list.
