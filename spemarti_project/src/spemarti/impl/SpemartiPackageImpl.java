@@ -341,6 +341,15 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getSimpleInformationElement_Discriminator() {
+		return (EAttribute)simpleInformationElementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getVersionedExtent() {
 		return versionedExtentEClass;
 	}
@@ -1168,6 +1177,7 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 		imageEClass = createEClass(IMAGE);
 
 		simpleInformationElementEClass = createEClass(SIMPLE_INFORMATION_ELEMENT);
+		createEAttribute(simpleInformationElementEClass, SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR);
 
 		versionedExtentEClass = createEClass(VERSIONED_EXTENT);
 		createEAttribute(versionedExtentEClass, VERSIONED_EXTENT__IS_CHECKED_OUT);
@@ -1339,6 +1349,7 @@ public class SpemartiPackageImpl extends EPackageImpl implements SpemartiPackage
 		initEClass(imageEClass, Image.class, "Image", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(simpleInformationElementEClass, SimpleInformationElement.class, "SimpleInformationElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSimpleInformationElement_Discriminator(), ecorePackage.getEString(), "discriminator", null, 1, 1, SimpleInformationElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(versionedExtentEClass, VersionedExtent.class, "VersionedExtent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getVersionedExtent_IsCheckedOut(), ecorePackage.getEBoolean(), "isCheckedOut", null, 1, 1, VersionedExtent.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

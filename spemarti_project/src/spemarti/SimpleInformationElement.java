@@ -49,10 +49,42 @@ package spemarti;
  * </p>
  * <!-- end-model-doc -->
  *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link spemarti.SimpleInformationElement#getDiscriminator <em>Discriminator</em>}</li>
+ * </ul>
+ * </p>
  *
  * @see spemarti.SpemartiPackage#getSimpleInformationElement()
  * @model abstract="true"
  * @generated
  */
 public interface SimpleInformationElement extends VersionedExtent, FragmentDefinition {
+
+	/**
+	 * Returns the value of the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Discriminator</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Discriminator</em>' attribute.
+	 * @see #setDiscriminator(String)
+	 * @see spemarti.SpemartiPackage#getSimpleInformationElement_Discriminator()
+	 * @model required="true" ordered="false"
+	 * @generated
+	 */
+	String getDiscriminator();
+
+	/**
+	 * Sets the value of the '{@link spemarti.SimpleInformationElement#getDiscriminator <em>Discriminator</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Discriminator</em>' attribute.
+	 * @see #getDiscriminator()
+	 * @generated
+	 */
+	void setDiscriminator(String value);
 } // SimpleInformationElement
