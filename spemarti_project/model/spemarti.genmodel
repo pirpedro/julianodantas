@@ -17,7 +17,9 @@
       <genEnumLiterals ecoreEnumLiteral="spemarti.ecore#//ArtifactKinds/Other"/>
     </genEnums>
     <genClasses ecoreClass="spemarti.ecore#//Image"/>
-    <genClasses image="false" ecoreClass="spemarti.ecore#//SimpleInformationElement"/>
+    <genClasses image="false" ecoreClass="spemarti.ecore#//SimpleInformationElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//SimpleInformationElement/discriminator"/>
+    </genClasses>
     <genClasses ecoreClass="spemarti.ecore#//VersionedExtent">
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//VersionedExtent/isCheckedOut"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute spemarti.ecore#//VersionedExtent/annotation"/>
