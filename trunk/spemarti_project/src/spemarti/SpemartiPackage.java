@@ -216,13 +216,22 @@ public interface SpemartiPackage extends EPackage {
 	int SIMPLE_INFORMATION_ELEMENT__DESCRIPTION = VERSIONED_EXTENT_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR = VERSIONED_EXTENT_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Simple Information Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SIMPLE_INFORMATION_ELEMENT_FEATURE_COUNT = VERSIONED_EXTENT_FEATURE_COUNT + 2;
+	int SIMPLE_INFORMATION_ELEMENT_FEATURE_COUNT = VERSIONED_EXTENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link spemarti.impl.ImageImpl <em>Image</em>}' class.
@@ -305,6 +314,15 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMAGE__DESCRIPTION = SIMPLE_INFORMATION_ELEMENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE__DISCRIMINATOR = SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR;
 
 	/**
 	 * The number of structural features of the '<em>Image</em>' class.
@@ -838,6 +856,15 @@ public interface SpemartiPackage extends EPackage {
 	int COMPLEX_INFORMATION_ELEMENT__DESCRIPTION = SIMPLE_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPLEX_INFORMATION_ELEMENT__DISCRIMINATOR = SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR;
+
+	/**
 	 * The number of structural features of the '<em>Complex Information Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -927,6 +954,15 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int DIAGRAM__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGRAM__DISCRIMINATOR = COMPLEX_INFORMATION_ELEMENT__DISCRIMINATOR;
 
 	/**
 	 * The feature id for the '<em><b>Image</b></em>' reference list.
@@ -1027,6 +1063,15 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUESTION__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUESTION__DISCRIMINATOR = COMPLEX_INFORMATION_ELEMENT__DISCRIMINATOR;
 
 	/**
 	 * The feature id for the '<em><b>Asks</b></em>' containment reference list.
@@ -1138,6 +1183,15 @@ public interface SpemartiPackage extends EPackage {
 	int TEXT__DESCRIPTION = SIMPLE_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXT__DISCRIMINATOR = SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR;
+
+	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1236,6 +1290,15 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int LIST__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIST__DISCRIMINATOR = COMPLEX_INFORMATION_ELEMENT__DISCRIMINATOR;
 
 	/**
 	 * The feature id for the '<em><b>Is Labeled</b></em>' attribute.
@@ -1365,6 +1428,15 @@ public interface SpemartiPackage extends EPackage {
 	int MATRIX__DESCRIPTION = COMPLEX_INFORMATION_ELEMENT__DESCRIPTION;
 
 	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATRIX__DISCRIMINATOR = COMPLEX_INFORMATION_ELEMENT__DISCRIMINATOR;
+
+	/**
 	 * The feature id for the '<em><b>Header</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1472,6 +1544,15 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int TABLE__DESCRIPTION = MATRIX__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TABLE__DISCRIMINATOR = MATRIX__DISCRIMINATOR;
 
 	/**
 	 * The feature id for the '<em><b>Header</b></em>' reference.
@@ -1590,6 +1671,15 @@ public interface SpemartiPackage extends EPackage {
 	 * @ordered
 	 */
 	int ELEMENT_GROUP__DESCRIPTION = LIST__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_GROUP__DISCRIMINATOR = LIST__DISCRIMINATOR;
 
 	/**
 	 * The feature id for the '<em><b>Is Labeled</b></em>' attribute.
@@ -2132,6 +2222,15 @@ public interface SpemartiPackage extends EPackage {
 	int LABELED_TEXT__DESCRIPTION = TEXT__DESCRIPTION;
 
 	/**
+	 * The feature id for the '<em><b>Discriminator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABELED_TEXT__DISCRIMINATOR = TEXT__DISCRIMINATOR;
+
+	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2188,6 +2287,17 @@ public interface SpemartiPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSimpleInformationElement();
+
+	/**
+	 * Returns the meta object for the attribute '{@link spemarti.SimpleInformationElement#getDiscriminator <em>Discriminator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Discriminator</em>'.
+	 * @see spemarti.SimpleInformationElement#getDiscriminator()
+	 * @see #getSimpleInformationElement()
+	 * @generated
+	 */
+	EAttribute getSimpleInformationElement_Discriminator();
 
 	/**
 	 * Returns the meta object for class '{@link spemarti.VersionedExtent <em>Versioned Extent</em>}'.
@@ -3182,6 +3292,14 @@ public interface SpemartiPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SIMPLE_INFORMATION_ELEMENT = eINSTANCE.getSimpleInformationElement();
+
+		/**
+		 * The meta object literal for the '<em><b>Discriminator</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR = eINSTANCE.getSimpleInformationElement_Discriminator();
 
 		/**
 		 * The meta object literal for the '{@link spemarti.impl.VersionedExtentImpl <em>Versioned Extent</em>}' class.

@@ -25,6 +25,7 @@ import spemarti.WorkProductDefinition;
  * <ul>
  *   <li>{@link spemarti.impl.SimpleInformationElementImpl#getPresentationName <em>Presentation Name</em>}</li>
  *   <li>{@link spemarti.impl.SimpleInformationElementImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link spemarti.impl.SimpleInformationElementImpl#getDiscriminator <em>Discriminator</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,6 +71,26 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 	 * @ordered
 	 */
 	protected String description = DESCRIPTION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDiscriminator() <em>Discriminator</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDiscriminator()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DISCRIMINATOR_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDiscriminator() <em>Discriminator</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDiscriminator()
+	 * @generated
+	 * @ordered
+	 */
+	protected String discriminator = DISCRIMINATOR_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -137,6 +158,27 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getDiscriminator() {
+		return discriminator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDiscriminator(String newDiscriminator) {
+		String oldDiscriminator = discriminator;
+		discriminator = newDiscriminator;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR, oldDiscriminator, discriminator));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -144,6 +186,8 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 				return getPresentationName();
 			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DESCRIPTION:
 				return getDescription();
+			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR:
+				return getDiscriminator();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -161,6 +205,9 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 				return;
 			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DESCRIPTION:
 				setDescription((String)newValue);
+				return;
+			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR:
+				setDiscriminator((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -180,6 +227,9 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
+			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR:
+				setDiscriminator(DISCRIMINATOR_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -196,6 +246,8 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 				return PRESENTATION_NAME_EDEFAULT == null ? presentationName != null : !PRESENTATION_NAME_EDEFAULT.equals(presentationName);
 			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			case SpemartiPackage.SIMPLE_INFORMATION_ELEMENT__DISCRIMINATOR:
+				return DISCRIMINATOR_EDEFAULT == null ? discriminator != null : !DISCRIMINATOR_EDEFAULT.equals(discriminator);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -258,6 +310,8 @@ public abstract class SimpleInformationElementImpl extends VersionedExtentImpl i
 		result.append(presentationName);
 		result.append(", description: ");
 		result.append(description);
+		result.append(", discriminator: ");
+		result.append(discriminator);
 		result.append(')');
 		return result.toString();
 	}
