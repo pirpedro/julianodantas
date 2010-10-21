@@ -1,4 +1,3 @@
-import java.util.List;
 import java.util.Properties;
 
 import org.eclipse.emf.ecore.EPackage;
@@ -7,14 +6,8 @@ import org.eclipse.emf.teneo.hibernate.HbHelper;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Environment;
 
-import spemarti.LabeledText;
 import spemarti.SpemartiFactory;
 import spemarti.SpemartiPackage;
-import spemarti.Workspace;
-import spemarti.custom.dao.LabeledTextDao;
-import spemarti.custom.dao.WorkspaceDao;
-import spemarti.custom.dao.impl.LabeledTextDaoImpl;
-import spemarti.custom.dao.impl.WorkspaceDaoImpl;
 
 public class Main {
 
@@ -26,15 +19,6 @@ public class Main {
 		SpemartiFactory spemartiFactory = SpemartiPackage.eINSTANCE
 				.getSpemartiFactory();
 
-		Workspace workspace = spemartiFactory.createWorkspace();
-		workspace.setAnnotation("anotação");
-		workspace.setId("0113");
-		// // workspace.getConfiguration().add(configuration);
-		// // workspace.getVersionedExtent().add(versionedExtent);
-		// session.save(workspace);
-		WorkspaceDao workspaceDao = new WorkspaceDaoImpl(sessionFactory);
-		workspaceDao.save(workspace);
-		List<?> findByExample = workspaceDao.findByExample(workspace);
 		
 //		LabeledText labeledText = spemartiFactory.createLabeledText();
 //		LabeledTextDao labeledTextDao = new LabeledTextDaoImpl(sessionFactory);
